@@ -67,6 +67,7 @@ main {
 .header-top-col a, .header-top-date time {
     display: flex;
     gap: 5px;
+    justify-content: center;
 }
 
 .header-top a::before {
@@ -99,11 +100,12 @@ main {
     background: url(../icons/header/phone-hover.svg) center/contain no-repeat;
 }
 
-.header-top-date #currentTime::before {
-    content: '';
-    width: 20px;
-    height: 20px;
+.header-top-date a:before {
     background: url(../icons/header/date.svg) center/contain no-repeat;
+}
+
+.header-top-date a:hover:before {
+    background: url(../icons/header/date-hover.svg) center/contain no-repeat;
 }
 
 .header-top-visually-version a::before {
@@ -124,7 +126,7 @@ main {
 /* Header */
 
 @media only screen and (max-width: 992px) {
-    .header-top-col a span {
+    .header-top-col a>span {
         display: none;
     }
     

@@ -18,3 +18,9 @@ document.getElementById("currentTime").setAttribute("datetime", datetimeString);
 // Вывод текста в элемент
 const outputText = day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
 document.querySelector("#currentTime span").innerHTML = outputText;
+document.querySelector(".header-top-date a").setAttribute("data-bs-title", outputText);
+
+// Вывод подсказки в дате
+// *****
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
