@@ -1,0 +1,45 @@
+/* General rules */
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    /* --color-bg-dark: #131619;
+    --color-accent: #FDBF2D;
+    --color-grey-light: #c4c4c4;
+    --color-grey: #404040; */
+    --border-radius: 30px;
+    --border: 1px solid var(--color-white);
+    --font-family-base: 'Heebo', sans-serif;
+    --transition: all .3s;
+    /* --header-height: 90px;
+    --input-height: 54px; */
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    min-width: 320px;
+    font-family: var(--font-family-base);
+    font-weight: normal;
+    color: var(--color-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+/* General rules */
+
+/* Header */
+/* Header */
