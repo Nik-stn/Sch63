@@ -2,8 +2,10 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
-    /* --color-bg-dark: #131619;
+    --color-text: #2E3332;
+    --color-blue: #4285bf;
     --color-accent: #FDBF2D;
+    /* --color-bg-dark: #131619;
     --color-grey-light: #c4c4c4;
     --color-grey: #404040; */
     --border-radius: 30px;
@@ -22,7 +24,7 @@ body {
     min-width: 320px;
     font-family: var(--font-family-base);
     font-weight: normal;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 img {
@@ -36,10 +38,93 @@ img {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+a:hover,
+a.active,
+a:active {
+    color: var(--color-accent);
+}
+
+a::before {
+    transition: var(--transition);
+}
+
 main {
     flex: 1 1 auto;
 }
 /* General rules */
 
 /* Header */
+.header-top {
+    background-color: var(--color-blue);
+}
+
+/* .header-top .row>div:has(.header-top-lang) {
+    display: flex;
+    justify-content: center;
+} */
+
+.header-top-col a, .header-top-date time {
+    display: flex;
+    gap: 5px;
+}
+
+.header-top a::before {
+    content: '';
+    width: 20px;
+    aspect-ratio: 1;
+}
+
+.header-top-site-map a::before {
+    background: url(../icons/header/sitemap.svg) center/contain no-repeat;
+}
+
+.header-top-site-map a:hover::before {
+    background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
+}
+
+.header-top-contacts a.header-top-mail::before {
+    background: url(../icons/header/mail.svg) center/contain no-repeat;
+}
+
+.header-top-contacts a.header-top-mail:hover::before {
+    background: url(../icons/header/mail-hover.svg) center/contain no-repeat;
+}
+
+.header-top-contacts a.header-top-phone::before {
+    background: url(../icons/header/phone.svg) center/contain no-repeat;
+}
+
+.header-top-contacts a.header-top-phone:hover::before {
+    background: url(../icons/header/phone-hover.svg) center/contain no-repeat;
+}
+
+.header-top-date #currentTime::before {
+    content: '';
+    width: 20px;
+    aspect-ratio: 1;
+    background: url(../icons/header/date.svg) center/contain no-repeat;
+}
+
+.header-top-visually-version a::before {
+    background: url(../icons/header/eye.svg) center/contain no-repeat;
+}
+
+.header-top-visually-version a:hover::before {
+    background: url(../icons/header/eye-hover.svg) center/contain no-repeat;
+}
+
+.header-top-lang a.header-top-lang-rus::before {
+    background: url(../icons/header/rus.png) center/contain no-repeat;
+}
+
+.header-top-lang a.header-top-lang-be::before {
+    background: url(../icons/header/be.png) center/contain no-repeat;
+}
+
 /* Header */
