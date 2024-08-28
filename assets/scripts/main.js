@@ -17,4 +17,4 @@ document.getElementById("currentTime").setAttribute("datetime", datetimeString);
 
 // Вывод текста в элемент
 const outputText = day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
-document.getElementById("currentTime").innerHTML = outputText;
+document.querySelector("#currentTime span").innerHTML = outputText;
