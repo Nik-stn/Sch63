@@ -4,6 +4,7 @@
     --color-white: #fff;
     --color-text: #2E3332;
     --color-blue: #4285bf;
+    --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #072E99 100%);
     --color-accent: #FDBF2D;
     /* --color-bg-dark: #131619;
     --color-grey-light: #c4c4c4;
@@ -61,7 +62,9 @@ main {
 
 /* Header */
 .header-top {
-    background-color: var(--color-blue);
+    background-color: transparent;
+    background-image: var(--color-blue-gradient);
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .header-top-col a, .header-top-date time {
@@ -122,6 +125,10 @@ main {
 
 .header-top-lang a.header-top-lang-be::before {
     background: url(../icons/header/be.png) center/contain no-repeat;
+}
+
+.header-middle-title-box h1, .header-middle-title-box h2 a {
+    color: var(--color-text);
 }
 /* Header */
 
