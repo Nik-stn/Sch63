@@ -174,7 +174,10 @@ main {
     font-size: clamp(12px, 0.83vw, 16px);
 }
 
-
+.header-bottom .navbar {
+    background-color: transparent !important;
+    background-image: var(--color-blue-gradient);
+}
 /* Header */
 
 @media only screen and (max-width: 992px) {
