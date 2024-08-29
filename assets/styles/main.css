@@ -3,12 +3,9 @@
     --color-black: #000;
     --color-white: #fff;
     --color-text: #2E3332;
-    --color-blue: #4285bf;
+    --color-blue: #2E86EF;
     --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #072E99 100%);
     --color-accent: #FDBF2D;
-    /* --color-bg-dark: #131619;
-    --color-grey-light: #c4c4c4;
-    --color-grey: #404040; */
     --border-radius: 30px;
     --border: 1px solid var(--color-white);
     --font-family-base: 'Heebo', sans-serif;
@@ -26,6 +23,7 @@ body {
     font-family: var(--font-family-base);
     font-weight: normal;
     color: var(--color-white);
+    font-size: clamp(12px, 0.83vw, 16px);
 }
 
 img {
@@ -57,6 +55,16 @@ a::before {
 
 main {
     flex: 1 1 auto;
+}
+
+.btn-primary {
+    background-color: var(--color-blue);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active {
+    color: var(--color-accent);
 }
 /* General rules */
 
@@ -127,9 +135,46 @@ main {
     background: url(../icons/header/be.png) center/contain no-repeat;
 }
 
+.header-middle .row>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-middle-logo img {
+    max-width: clamp(150px, 15.63vw, 300px);
+}
+
 .header-middle-title-box h1, .header-middle-title-box h2 a {
     color: var(--color-text);
 }
+
+.header-middle-title-box h2 a:hover {
+    color: var(--color-accent);
+}
+
+.header-middle-h1 {
+    font-size: clamp(24px, 2.08vw, 40px);
+    font-weight: bold;
+}
+
+.header-middle-h2 {
+    font-size: clamp(18px, 1.67vw, 32px);
+    font-weight: 500;
+}
+
+.header-middle-badge img {
+    max-width: clamp(75px, 7.81vw, 150px);
+    margin: 3px;
+}
+
+.header-middle-buttons a {
+    margin-block: 3px;
+    font-weight: bold;
+    font-size: clamp(12px, 0.83vw, 16px);
+}
+
+
 /* Header */
 
 @media only screen and (max-width: 992px) {
