@@ -213,9 +213,33 @@ main {
 .header-bottom .form-control, .ya-site-form__submit {
     font-size: clamp(12px, 2.62vw, 16px);
 }
-
-
 /* Header */
+
+/* Slider-popular */
+.slider {
+    border: 2px solid var(--color-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .carousel-item, .slider .carousel-indicators {
+    margin-bottom: 0;
+}
+
+.slider .carousel-caption {
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: #0000006e;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px;
+}
+
+/* Slider-popular */
 
 @media only screen and (max-width: 991px) {
     .header-top-col a>span {
