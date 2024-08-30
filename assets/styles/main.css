@@ -64,6 +64,8 @@ main {
     background-color: var(--color-blue);
     border-radius: var(--border-radius);
     transition: var(--transition);
+    font-weight: bold;
+    font-size: clamp(12px, 2.62vw, 16px);
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active {
@@ -174,8 +176,6 @@ main {
 
 .header-middle-buttons a {
     margin-block: 3px;
-    font-weight: bold;
-    font-size: clamp(12px, 2.62vw, 16px);
 }
 
 .header-bottom .navbar {
@@ -239,6 +239,23 @@ main {
     padding: 12px;
 }
 
+.popular .popular-title {
+    color: var(--color-text);
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(16px, 2.46vw, 28px);
+}
+
+.popular-links .list-inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.popular-links .list-inline a {
+    border-radius: 10px;
+}
 /* Slider-popular */
 
 @media only screen and (max-width: 991px) {
