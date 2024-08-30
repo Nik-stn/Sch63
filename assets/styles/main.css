@@ -23,9 +23,7 @@ body {
     font-family: var(--font-family-base);
     font-weight: normal;
     color: var(--color-white);
-    /* font-size: clamp(12px, 1.83vw, 16px); */
-    /* font-size: clamp(12px, 0.83vw, 16px); */
-    font-size: 16px;
+    font-size: clamp(12px, 2.62vw, 16px);
 }
 
 img {
@@ -177,7 +175,7 @@ main {
 .header-middle-buttons a {
     margin-block: 3px;
     font-weight: bold;
-    /* font-size: clamp(12px, 0.83vw, 16px); */
+    font-size: clamp(12px, 2.62vw, 16px);
 }
 
 .header-bottom .navbar {
@@ -211,13 +209,26 @@ main {
     border-bottom-left-radius: 0;
     border-left: 0;
 }
+
+.header-bottom .form-control, .ya-site-form__submit {
+    font-size: clamp(12px, 2.62vw, 16px);
+}
+
+
 /* Header */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .header-top-col a>span {
         display: none;
     }
     
+    .header-bottom .offcanvas {
+        background-image: linear-gradient(180deg, #2E86EF 0%, #072E99 100%);
+    }
+
+    .header-bottom .offcanvas-body>a {
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
