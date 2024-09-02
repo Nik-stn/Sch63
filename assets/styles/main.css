@@ -6,7 +6,8 @@
     --color-blue: #2E86EF;
     --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #072E99 100%);
     --color-accent: #FDBF2D;
-    --border-radius: 30px;
+    --border-btn-radius: 30px;
+    --border-radius: 10px;
     --border: 1px solid var(--color-white);
     --font-family-base: 'Heebo', sans-serif;
     --transition: all .3s;
@@ -23,7 +24,7 @@ body {
     font-family: var(--font-family-base);
     font-weight: normal;
     color: var(--color-white);
-    font-size: clamp(12px, 2.62vw, 16px);
+    font-size: clamp(12px, 2.12vw, 16px);
 }
 
 img {
@@ -62,10 +63,10 @@ main {
 
 .btn-primary {
     background-color: var(--color-blue);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     transition: var(--transition);
     font-weight: bold;
-    font-size: clamp(12px, 2.62vw, 16px);
+    font-size: clamp(12px, 2.12vw, 16px);
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active {
@@ -211,7 +212,7 @@ main {
 }
 
 .header-bottom .form-control, .ya-site-form__submit {
-    font-size: clamp(12px, 2.62vw, 16px);
+    font-size: clamp(12px, 2.12vw, 16px);
 }
 /* Header */
 
@@ -222,7 +223,7 @@ main {
 /* Slider*/
 .slider {
     border: 2px solid var(--color-blue);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
 }
@@ -266,6 +267,39 @@ main {
 
 /* Slider*/
 
+/* Announcement */
+.section-tabs .tab-content {
+    border: 2px solid var(--color-blue);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-top: 0;
+    color: var(--color-text);
+}
+
+.section-tabs .nav-tabs {
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.section-tabs .nav-tabs .nav-link {
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.section-tabs .nav-tabs .nav-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-blue);
+    border-bottom: 0;
+    background-color: var(--color-blue);
+}
+
+.section-tabs .nav-tabs .nav-link.active {
+    border-color: var(--color-blue);
+    border-bottom: 0;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+/* Announcement */
+
 /* **** */
 /* Main */
 
@@ -289,7 +323,7 @@ main {
 }
 
 .popular-links .list-inline a {
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 /* Popular*/
 
