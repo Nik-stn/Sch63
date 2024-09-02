@@ -273,14 +273,14 @@ main {
 /* Aside */
 /* **** */
 
-/* Popular*/
-.popular .popular-title {
+.aside .aside-title {
     color: var(--color-text);
     font-weight: bold;
     text-align: center;
     font-size: clamp(16px, 2.46vw, 28px);
 }
 
+/* Popular*/
 .popular-links .list-inline {
     display: inline-flex;
     flex-wrap: wrap;
