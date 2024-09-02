@@ -215,7 +215,11 @@ main {
 }
 /* Header */
 
-/* Slider-popular */
+
+/* Main */
+/* **** */
+
+/* Slider*/
 .slider {
     border: 2px solid var(--color-blue);
     border-radius: 10px;
@@ -223,8 +227,25 @@ main {
     position: relative;
 }
 
+.slider .carousel {
+    height: 600px;
+}
+
 .slider .carousel-item, .slider .carousel-indicators {
     margin-bottom: 0;
+}
+
+.slider .carousel-inner, .slider .carousel-item {
+    height: inherit;
+}
+
+.slider .carousel-item img{
+    object-fit:cover;
+    min-height: 600px;
+}
+
+.slider .carousel-indicators [data-bs-target] {
+    width: clamp(20px, 2.62vw, 30px);
 }
 
 .slider .carousel-caption {
@@ -239,6 +260,20 @@ main {
     padding: 12px;
 }
 
+.slider .carousel-caption p {
+    margin-bottom: 0.5rem;
+}
+
+/* Slider*/
+
+/* **** */
+/* Main */
+
+
+/* Aside */
+/* **** */
+
+/* Popular*/
 .popular .popular-title {
     color: var(--color-text);
     font-weight: bold;
@@ -256,7 +291,21 @@ main {
 .popular-links .list-inline a {
     border-radius: 10px;
 }
-/* Slider-popular */
+/* Popular*/
+
+/* **** */
+/* Aside */
+
+
+@media only screen and (max-width: 1400px) {
+    .slider .carousel {
+        height: 500px;
+    }
+
+    .slider .carousel-item img{
+        min-height: 500px;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .header-top-col a>span {
@@ -270,11 +319,46 @@ main {
     .header-bottom .offcanvas-body>a {
         margin-bottom: 5px;
     }
+
+    .slider .carousel {
+        height: 400px;
+    }
+
+    .slider .carousel-item img{
+        min-height: 400px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .header-top-date span {
         display: none;
     }
+
+    .slider .carousel {
+        height: 325px;
+    }
     
+    .slider .carousel-item img{
+        min-height: 325px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slider .carousel {
+        height: 250px;
+    }
+    
+    .slider .carousel-item img{
+        min-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .slider .carousel {
+        height: 200px;
+    }
+    
+    .slider .carousel-item img{
+        min-height: 200px;
+    }
 }
