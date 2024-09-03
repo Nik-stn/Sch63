@@ -352,7 +352,7 @@ main {
     content: '';
     width: 15px;
     height: 15px;
-    background: url(../icons/header/date-grey.svg) center/contain no-repeat;
+    background: url(../icons/main/date-grey.svg) center/contain no-repeat;
 }
 
 .section-tabs .card .btn-primary {
