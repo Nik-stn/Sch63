@@ -3,6 +3,7 @@
     --color-black: #000;
     --color-white: #fff;
     --color-text: #2E3332;
+    --color-grey: #888888;
     --color-blue: #2E86EF;
     --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #072E99 100%);
     --color-accent: #FDBF2D;
@@ -337,6 +338,21 @@ main {
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     text-decoration: none;
+}
+
+.section-tabs .card time {
+    color: var(--color-grey);
+    display: flex;
+    gap: 2px;
+    font-size: clamp(10px, 1.27vw, 14px);
+    margin-bottom: 5px;
+}
+
+.section-tabs .card time::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../icons/header/date-grey.svg) center/contain no-repeat;
 }
 
 .section-tabs .card .btn-primary {
