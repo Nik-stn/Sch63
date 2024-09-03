@@ -298,6 +298,54 @@ main {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
+
+.section-tabs .card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.section-tabs .card .card-title {
+    line-height: 1;
+}
+
+.section-tabs .card .card-title a {
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: bold;
+    height: 72px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+.section-tabs .card>a {
+    height: 300px;
+    overflow: hidden;
+}
+
+.section-tabs .card img {
+    object-fit: cover;
+    min-height: 300px;
+}
+
+.section-tabs .card .card-text {
+    font-size: 16px;
+    height: 120px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+.section-tabs .card .btn-primary {
+    font-size: clamp(12px, 1.27vw, 16px);
+}
+
+.section-tabs .card .card-title a:hover {
+    color: var(--color-accent);
+}
 /* Announcement */
 
 /* **** */
@@ -339,6 +387,16 @@ main {
     .slider .carousel-item img{
         min-height: 500px;
     }
+
+    .section-tabs .card .card-title a {
+        height: 62px;
+        font-size: 21px;
+    }
+
+    .section-tabs .card .card-text {
+        font-size: 14px;
+        height: 102px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -361,6 +419,16 @@ main {
     .slider .carousel-item img{
         min-height: 400px;
     }
+
+    .section-tabs .card .card-title a {
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .section-tabs .card .card-text {
+        font-size: 12px;
+        height: 92px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -374,6 +442,14 @@ main {
     
     .slider .carousel-item img{
         min-height: 325px;
+    }
+
+    .section-tabs .card>a {
+        height: 200px;
+    }
+    
+    .section-tabs .card img {
+        min-height: 200px;
     }
 }
 
