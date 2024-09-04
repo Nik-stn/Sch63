@@ -395,6 +395,12 @@ main {
 /* Aside */
 
 
+/* Footer */
+.footer {
+    background-image: var(--color-blue-gradient);
+}
+/* Footer */
+
 @media only screen and (max-width: 1400px) {
     .slider .carousel {
         height: 500px;
