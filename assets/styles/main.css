@@ -428,6 +428,11 @@ main {
     margin-bottom: 0;
 }
 
+.footer-socials a:hover svg path {
+    transition: all .9s;
+    fill: var(--color-accent);
+}
+
 .footer-sch-map {
     width: 100%;
     position: relative;
@@ -452,7 +457,7 @@ main {
     background: rgb(255, 255, 255);
     border: 2px solid rgb(204, 204, 204);
     line-height: 1;
-    color: #2E3332;
+    color: var(--color-text);
 }
 /* Footer */
 
