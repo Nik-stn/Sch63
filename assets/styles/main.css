@@ -399,6 +399,26 @@ main {
 .footer {
     background-image: var(--color-blue-gradient);
 }
+
+.footer-title {
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+.footer-main p, .footer-main .nav-link {
+    font-size: clamp(12px, 1.33vw, 16px);
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.footer-main .footer-about a {
+    font-weight: 700;
+}
+
+.footer-quotes blockquote {
+    font-style: italic;
+    font-weight: 500;
+}
 /* Footer */
 
 @media only screen and (max-width: 1400px) {
