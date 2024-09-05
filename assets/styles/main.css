@@ -419,6 +419,10 @@ main {
     font-style: italic;
     font-weight: 500;
 }
+
+.banners-official img {
+    height: clamp(50px, 7.56vw, 75px);
+}
 /* Footer */
 
 @media only screen and (max-width: 1400px) {

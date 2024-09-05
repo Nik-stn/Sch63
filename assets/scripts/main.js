@@ -22,5 +22,33 @@ document.querySelector(".header-top-date a").setAttribute("data-bs-title", outpu
 
 // Вывод подсказки в дате
 // *****
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+
+
+
+// Owl-carousel
+// *****
+$('.owl-carousel.owl-slider').owlCarousel({
+    responsiveClass:true,
+	nav:true,
+	loop:true,
+	autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+	dots:false,
+	items:1,
+})
+
+$('.owl-carousel.owl-banners-official').owlCarousel({
+    responsiveClass:true,
+	nav:false,
+	loop:true,
+	margin:14,
+	autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+	dots:false,
+	autoWidth:true,
+})
