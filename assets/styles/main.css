@@ -427,6 +427,33 @@ main {
 .footer-copyright p {
     margin-bottom: 0;
 }
+
+.footer-sch-map {
+    width: 100%;
+    position: relative;
+    cursor: help;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer-sch-map iframe {
+    width: 100%;
+    border: 0;
+    height: 400px;
+}
+
+.sch-map-title {
+    position: absolute;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+    display: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(204, 204, 204);
+    line-height: 1;
+    color: #2E3332;
+}
 /* Footer */
 
 @media only screen and (max-width: 1400px) {
