@@ -405,13 +405,13 @@ main {
     font-size: clamp(16px, 2vw, 24px);
 }
 
-.footer-main p, .footer-main .nav-link {
+.footer-main p, .footer-main .nav-link, .footer-copyright p {
     font-size: clamp(12px, 1.33vw, 16px);
     padding: 0;
     margin-bottom: 5px;
 }
 
-.footer-main .footer-about a {
+.footer-main .footer-about a, .footer-copyright a {
     font-weight: 700;
 }
 
@@ -422,6 +422,10 @@ main {
 
 .banners-official img {
     height: clamp(50px, 7.56vw, 75px);
+}
+
+.footer-copyright p {
+    margin-bottom: 0;
 }
 /* Footer */
 
