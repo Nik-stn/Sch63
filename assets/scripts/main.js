@@ -49,6 +49,11 @@ const schMap = document.querySelector('.footer-sch-map');
  }
 
 
+ window.addEventListener('scroll', function() {
+    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
+});
+
+
 
 // Owl-carousel
 // *****
