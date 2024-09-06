@@ -57,22 +57,12 @@ const schMap = document.querySelector('.footer-sch-map');
 
 // Owl-carousel
 // *****
-$('.owl-carousel.owl-slider').owlCarousel({
-    responsiveClass:true,
-	nav:true,
-	loop:true,
-	autoplay:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true,
-	dots:false,
-	items:1,
-})
-
 $('.owl-carousel.owl-banners-official').owlCarousel({
     responsiveClass:true,
 	nav:false,
 	loop:true,
 	margin:14,
+    lazyLoad: true,
 	autoplay:true,
     autoplayTimeout:4000,
     autoplayHoverPause:true,
