@@ -392,6 +392,9 @@ main {
     font-weight: bold;
     text-align: center;
     font-size: clamp(16px, 2.46vw, 28px);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-blue);
 }
 
 /* Popular*/
@@ -404,6 +407,11 @@ main {
 
 .popular-links .list-inline a, .btn-archive {
     border-radius: var(--border-radius);
+}
+
+.slick-aside-banners img {
+    width: 100%;
+    margin-bottom: 30px;
 }
 /* Popular*/
 

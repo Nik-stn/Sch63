@@ -68,4 +68,13 @@ $('.owl-carousel.owl-banners-official').owlCarousel({
     autoplayHoverPause:true,
 	dots:false,
 	autoWidth:true,
-})
+});
+
+$('.slick-aside-banners').slick({
+    vertical:true,
+    // verticalSwiping: true,
+    slidesToShow: 10,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+});
