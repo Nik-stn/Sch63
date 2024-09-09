@@ -409,8 +409,11 @@ main {
     border-radius: var(--border-radius);
 }
 
-.slick-aside-banners a {
+.slick-aside-banners a img {
     width: 100%;
+}
+
+.slick-aside-banners a {
     margin-bottom: 30px;
 }
 /* Popular*/
@@ -533,7 +536,6 @@ main {
     }
 
     .slick-aside-banners a {
-        margin-bottom: 0;
         margin-right: 10px;
     }
 }

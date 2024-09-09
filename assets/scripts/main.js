@@ -72,7 +72,7 @@ $('.owl-carousel.owl-banners-official').owlCarousel({
 
 $('.slick-aside-banners').slick({
     vertical:true,
-    // verticalSwiping: true,
+    verticalSwiping: true,
     slidesToShow: 10,
     autoplay: true,
     autoplaySpeed: 2000,
