@@ -77,4 +77,34 @@ $('.slick-aside-banners').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                vertical:false,
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                vertical:false,
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                vertical:false,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                vertical:false,
+                slidesToShow: 2,
+            }
+        },
+      ]
 });

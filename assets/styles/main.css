@@ -409,7 +409,7 @@ main {
     border-radius: var(--border-radius);
 }
 
-.slick-aside-banners img {
+.slick-aside-banners a {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -505,13 +505,9 @@ main {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     .header-top-col a>span {
         display: none;
-    }
-    
-    .header-bottom .offcanvas {
-        background-image: linear-gradient(180deg, #2E86EF 0%, #072E99 100%);
     }
 
     .header-bottom .offcanvas-body>a {
@@ -534,6 +530,17 @@ main {
     .section-tabs .card .card-text {
         font-size: 12px;
         height: 92px;
+    }
+
+    .slick-aside-banners a {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header-bottom .offcanvas {
+        background-image: linear-gradient(180deg, #2E86EF 0%, #072E99 100%);
     }
 }
 
