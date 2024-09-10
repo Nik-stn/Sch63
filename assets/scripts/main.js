@@ -109,6 +109,22 @@ $('.slick-aside-banners').slick({
       ]
 });
 
+// Scroll-to-top
+// *****
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        $('#top').fadeIn();
+    } else {
+        $('#top').fadeOut();
+    }
+});
+
+$('#top').click(function() {
+    $('html, body').animate({scrollTop: 0}, 500);
+    return false;
+});
+
+
 // Poll
 // *****
 const spanRadio = document.querySelectorAll('.section-aside-poll input[type="radio"]~span');

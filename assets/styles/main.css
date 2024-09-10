@@ -71,6 +71,23 @@ main {
 .btn.btn-primary:hover, .btn.btn-primary:active {
     color: var(--color-accent);
 }
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: .5;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    transition: all .5s;
+    z-index: 10;
+    display: none;
+}
+
+#top:hover {
+    opacity: 1;
+}
 /* General rules */
 
 /* Header */
