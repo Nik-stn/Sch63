@@ -374,7 +374,7 @@
       <div class="container-fluid ">
         <div class="row">
 
-          <div class="col-lg-9 col-12 pt-3">
+          <div class="col-lg-10 col-12 pt-3">
 
             <!-- Main -->
             <main class="main">
@@ -1042,14 +1042,14 @@
 
           </div>
 
-          <div class="col-lg-3 col-12 pt-3">
+          <div class="col-lg-2 col-12 pt-3">
             
             <!--Aside -->
             <aside class="aside container-fluid">
 
               <div class="row">
 
-                <div class="col-12">
+                <div class="col-lg-12 col-sm-8 col-12">
                   <!-- Section-popular -->
                   <section class="section-popular">
                     
@@ -1089,7 +1089,7 @@
                 </div>
 
 
-                <div class="col-12">
+                <div class="col-12 order-lg-2 order-3">
                   <!-- Section-banners -->
                   <section class="section-aside-banners ">
                     <h2 class="aside-title aside-banners-title">Обратите внимание</h2>
@@ -1131,13 +1131,108 @@
                   <!-- ./Section-banners -->
                 </div>
 
-                <div class="col-12">
-                  <!-- Section-survey -->
-                  <section class="section-aside-survey ">
-                    <h2 class="aside-title aside-survey-title">Опрос</h2>
+                <div class="col-lg-12 col-sm-4 col-12 order-lg-3 order-2">
+                  <!-- Section-poll -->
+                  <section class="section-aside-poll text-center">
+                    <h2 class="aside-title aside-poll-title">Опрос</h2>
                     
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title">Кто Вы, посетитель нашего сайта?</h3>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                          Проголосовать
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade text-start" id="Modal1" tabindex="-1" aria-labelledby="LabelModal1" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="LabelModal1">Кто Вы, посетитель нашего сайта?</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="poll-list" id="2073">
+                                  <li><label class="poll-text">Учитель
+                                      <input   type="radio" value="1" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Ученик
+                                      <input   type="radio" value="2" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Родитель ученика
+                                      <input   type="radio" value="3" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Выпускник
+                                      <input   type="radio" value="4" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Друг ученика
+                                      <input   type="radio" value="5" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Случайный посетитель
+                                      <input   type="radio" value="6" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-primary" id="voite_button_2073" onclick="VoiteAjax(2073)">Ответить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title">Чего бы вы хотели видеть больше на нашем сайте?</h3>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                          Проголосовать
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade text-start" id="Modal2" tabindex="-1" aria-labelledby="LabelModal2" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="LabelModal2">Чего бы вы хотели видеть больше на нашем сайте?</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="poll-list" id="2073">
+                                  <li><label class="poll-text">Фотографий
+                                      <input   type="checkbox" value="1" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Информации об учениках
+                                      <input   type="checkbox" value="2" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Видео
+                                      <input   type="checkbox" value="3" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Информации о педагогах
+                                      <input   type="checkbox" value="4" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Анонс новостей
+                                      <input   type="checkbox" value="5" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Чего-нибудь
+                                      <input   type="checkbox" value="6" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-primary" id="voite_button_2073" onclick="VoiteAjax(2073)">Ответить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-archive">Опросы и результаты</a>
+                    
+
                   </section>
-                  <!-- ./Section-survey -->
+                  <!-- ./Section-poll -->
                 </div>
 
               </div>

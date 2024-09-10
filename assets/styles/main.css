@@ -386,6 +386,17 @@ main {
 
 /* Aside */
 /* **** */
+.row>div:has(aside) {
+    padding-inline: 0;
+}
+
+.aside .row>div {
+    margin-bottom: 5px;
+}
+
+.aside section {
+    margin-bottom: 10px;
+}
 
 .aside .aside-title {
     color: var(--color-text);
@@ -417,6 +428,123 @@ main {
     margin-bottom: 30px;
 }
 /* Popular*/
+
+/* Poll */
+.section-aside-poll .card {
+    margin-bottom: 10px;
+}
+
+.section-aside-poll .card .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.section-aside-poll .card-body>.btn.btn-primary, .section-aside-poll a.btn-archive {
+    font-size: clamp(12px, 1.14vw, 16px);
+}
+
+.poll-text {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.poll-result .pos {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    border-radius: 1.5em;
+}
+
+.post.poll-result .poll-result-stats, .poll-list {
+    list-style-type: none;
+}
+
+/* Hide the browser's default radio button */
+.poll-text input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.poll-checkbox,
+.poll-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.poll-radio {
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add background color */
+.poll-text:hover input~.poll-checkbox,
+.poll-text:hover input~.poll-radio {
+    background-color: var(--color-blue);
+}
+
+/* When the checkmark is checked, add background */
+.poll-text input:checked~.poll-checkbox,
+.poll-text input:checked~.poll-radio {
+    background-color: transparent;
+    background-image: var(--color-blue-gradient);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.poll-checkbox:after,
+.poll-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.poll-text input:checked~.poll-checkbox:after,
+.poll-text input:checked~.poll-radio:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.poll-text .poll-checkbox:after {
+    left: 30%;
+    top: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+
+/* Style the checkmark/indicator */
+.poll-text .poll-radio:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+/* Poll */
 
 /* **** */
 /* Aside */

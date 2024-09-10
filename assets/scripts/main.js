@@ -108,3 +108,11 @@ $('.slick-aside-banners').slick({
         },
       ]
 });
+
+// Poll
+// *****
+const spanRadio = document.querySelectorAll('.section-aside-poll input[type="radio"]~span');
+const spanCheckbox = document.querySelectorAll('.section-aside-poll input[type="checkbox"]~span');
+
+spanRadio.forEach( item => item.classList.add('poll-radio'))
+spanCheckbox.forEach( item => item.classList.add('poll-checkbox'))
