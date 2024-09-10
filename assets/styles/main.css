@@ -83,6 +83,7 @@ main {
     transition: all .5s;
     z-index: 10;
     display: none;
+    font-size: 40px;
 }
 
 #top:hover {
@@ -403,7 +404,7 @@ main {
 
 /* Aside */
 /* **** */
-.row>div:has(aside) {
+.row>div:has(aside){
     padding-inline: 0;
 }
 
@@ -419,13 +420,17 @@ main {
     color: var(--color-text);
     font-weight: bold;
     text-align: center;
-    font-size: clamp(16px, 2.46vw, 28px);
+    font-size: clamp(16px, 2.06vw, 28px);
     margin-bottom: 20px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--color-blue);
 }
 
 /* Popular*/
+.section-popular .btn.btn-primary {
+    font-size: clamp(12px, 1.33vw, 16px);
+}
+
 .popular-links .list-inline {
     display: inline-flex;
     flex-wrap: wrap;
@@ -453,7 +458,7 @@ main {
 
 .section-aside-poll .card .card-title {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: clamp(12px, 2.06vw, 16px);
     text-align: left;
 }
 

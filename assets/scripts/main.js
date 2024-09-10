@@ -54,7 +54,6 @@ const schMap = document.querySelector('.footer-sch-map');
 });
 
 
-
 // Owl-carousel
 // *****
 $('.owl-carousel.owl-banners-official').owlCarousel({
@@ -108,6 +107,7 @@ $('.slick-aside-banners').slick({
         },
       ]
 });
+
 
 // Scroll-to-top
 // *****
