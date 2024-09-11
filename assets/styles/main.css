@@ -83,7 +83,7 @@ main {
     transition: all .5s;
     z-index: 10;
     display: none;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #top:hover {
