@@ -404,10 +404,6 @@ main {
 
 /* Aside */
 /* **** */
-.row>div:has(aside){
-    padding-inline: 0;
-}
-
 .aside .row>div {
     margin-bottom: 5px;
 }
@@ -669,6 +665,28 @@ main {
 .main-page .content-box {
     color: var(--color-text);
 }
+
+.nav-page {
+    background-image: var(--color-blue-gradient);
+    border-radius: var(--border-radius);
+}
+
+.nav-page .navbar-nav {
+    flex: 1 1 auto;
+}
+
+.nav-page .navbar-nav .dropdown-item {
+    white-space: normal;
+}
+
+.nav-page .navbar-nav a {
+    padding-inline: 5px;
+    font-size: clamp(12px, 2.12vw, 16px);
+}
+
+.nav-page .navbar-nav .nav-link.active, .nav-page .navbar-nav .nav-link.show {
+    color: var(--color-accent);
+}
 /* Page */
 
 @media only screen and (max-width: 1400px) {
@@ -748,6 +766,12 @@ main {
     
     .section-tabs .card img {
         min-height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row>div:has(aside){
+        padding-inline: 0;
     }
 }
 
