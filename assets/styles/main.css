@@ -687,6 +687,22 @@ main {
 .nav-page .navbar-nav .nav-link.active, .nav-page .navbar-nav .nav-link.show {
     color: var(--color-accent);
 }
+
+.share-buttons-description {
+    margin: 18px 0 6px;
+    color: var(--color-text);
+}
+
+.share-buttons .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
+    width: clamp(20px, 2vw, 30px);
+    height: clamp(20px, 2vw, 30px);
+    background-size: clamp(20px, 2vw, 30px);
+    border-radius: 5px;
+}
+
+.share-buttons .ya-share2__list.ya-share2__list_direction_horizontal>.ya-share2__item {
+    margin-right: 6px;
+}
 /* Page */
 
 @media only screen and (max-width: 1400px) {
