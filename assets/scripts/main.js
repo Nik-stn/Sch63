@@ -26,7 +26,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 
-// Карта
+// Sch-map
 // *****
 const mapTitle = document.createElement('div'); mapTitle.className = 'sch-map-title';
 const schMap = document.querySelector('.footer-sch-map');
@@ -48,7 +48,8 @@ const schMap = document.querySelector('.footer-sch-map');
      mapTitle.style.display = 'none';
  }
 
-
+// Fixed header
+// *****
  window.addEventListener('scroll', function() {
     document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
 });
@@ -69,45 +70,6 @@ $('.owl-carousel.owl-banners-official').owlCarousel({
 	autoWidth:true,
 });
 
-$('.slick-aside-banners').slick({
-    vertical:true,
-    verticalSwiping: true,
-    slidesToShow: 10,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                vertical:false,
-                slidesToShow: 5,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                vertical:false,
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                vertical:false,
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                vertical:false,
-                slidesToShow: 2,
-            }
-        },
-      ]
-});
-
 
 // Scroll-to-top
 // *****
@@ -125,10 +87,4 @@ $('#top').click(function() {
 });
 
 
-// Poll
-// *****
-const spanRadio = document.querySelectorAll('.section-aside-poll input[type="radio"]~span');
-const spanCheckbox = document.querySelectorAll('.section-aside-poll input[type="checkbox"]~span');
 
-spanRadio.forEach( item => item.classList.add('poll-radio'))
-spanCheckbox.forEach( item => item.classList.add('poll-checkbox'))
