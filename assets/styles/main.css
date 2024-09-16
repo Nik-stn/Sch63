@@ -395,13 +395,13 @@ main {
 }
 
 .section-tabs .card>a {
-    height: 300px;
+    height: 250px;
     overflow: hidden;
 }
 
 .section-tabs .card img {
     object-fit: cover;
-    min-height: 300px;
+    min-height: 250px;
 }
 
 .section-tabs .card .card-text {
@@ -739,6 +739,16 @@ main {
     .section-tabs .card .card-text {
         font-size: 14px;
         height: 102px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-tabs .card>a {
+        height: 200px;
+    }
+
+    .section-tabs .card img {
+        min-height: 200px;
     }
 }
 
