@@ -244,6 +244,16 @@ main {
 
 /* Main */
 /* **** */
+.section-title {
+    color: var(--color-text);
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(16px, 2.06vw, 28px);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-blue);
+}
+
 
 /* Slider*/
 .slider {
@@ -301,6 +311,36 @@ main {
 }
 
 /* Slider*/
+
+/* Popular*/
+.section-popular .btn.btn-primary {
+    font-size: clamp(12px, 1.33vw, 16px);
+}
+
+.popular-links .list-inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popular-links .list-inline .list-inline-item {
+    width: 47%;
+}
+
+.popular-links .list-inline .list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.popular-links .list-inline .list-inline-item a {
+    width: 100%;
+    height: 100%;
+}
+
+.popular-links .list-inline a, .btn-archive {
+    border-radius: var(--border-radius);
+}
+/* Popular*/
 
 /* Announcement */
 .section-tabs .tab-content {
@@ -412,44 +452,8 @@ main {
     margin-bottom: 10px;
 }
 
-.aside .aside-title {
-    color: var(--color-text);
-    font-weight: bold;
-    text-align: center;
-    font-size: clamp(16px, 2.06vw, 28px);
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--color-blue);
-}
 
-/* Popular*/
-.section-popular .btn.btn-primary {
-    font-size: clamp(12px, 1.33vw, 16px);
-}
 
-.popular-links .list-inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.popular-links .list-inline .list-inline-item {
-    width: 47%;
-}
-
-.popular-links .list-inline .list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-.popular-links .list-inline .list-inline-item a {
-    width: 100%;
-    height: 100%;
-}
-
-.popular-links .list-inline a, .btn-archive {
-    border-radius: var(--border-radius);
-}
 
 .slick-aside-banners a img {
     width: 100%;
@@ -458,7 +462,7 @@ main {
 .slick-aside-banners a {
     margin-bottom: 30px;
 }
-/* Popular*/
+
 
 /* Poll */
 .section-aside-poll .card {
