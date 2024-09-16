@@ -11,7 +11,7 @@ spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
 $('.slick-aside-banners').slick({
     vertical:true,
     verticalSwiping: true,
-    slidesToShow: 10,
+    slidesToShow: 5,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
