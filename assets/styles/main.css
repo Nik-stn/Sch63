@@ -169,7 +169,7 @@ main {
     max-width: clamp(150px, 15.63vw, 300px);
 }
 
-.header-middle-title-box h1, .header-middle-title-box h2 a {
+.header-middle-title-box h2, .header-middle-title-box h2 a {
     color: var(--color-text);
 }
 
@@ -439,17 +439,16 @@ main {
 /* Announcement */
 
 /* Poll */
-.section-aside-poll .card {
+.section-poll .card {
     margin-bottom: 10px;
 }
 
-.section-aside-poll .card .card-title {
+.section-poll .card .card-title {
     font-weight: bold;
     font-size: clamp(12px, 2.06vw, 16px);
-    text-align: left;
 }
 
-.section-aside-poll .card-body>.btn.btn-primary, .section-aside-poll a.btn-archive {
+.section-poll .card-body>.btn.btn-primary, .section-poll a.btn-archive {
     font-size: clamp(12px, 1.14vw, 16px);
 }
 

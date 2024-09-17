@@ -72,8 +72,8 @@ $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
 
 // Poll
 // *****
-const spanRadio = document.querySelectorAll('.section-aside-poll input[type="radio"]~span');
-const spanCheckbox = document.querySelectorAll('.section-aside-poll input[type="checkbox"]~span');
+const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
+const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
 
 spanRadio.forEach( item => item.classList.add('poll-radio'));
 spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
