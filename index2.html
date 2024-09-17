@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Средняя школа №63</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/styles/slick.css">
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="assets/scripts/jquery.min.js"></script>
+    <style>
+      :root {
+        --color-blue: #61efff;
+        --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #61efff 100%);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+
+      <!-- Header -->
+      <header class="header">
+
+        <!-- Header-top -->
+        <div class="header-top">
+
+          <div class="container-fluid">
+            <div class="row align-items-center">
+
+              <div class="col col-md-2 col-lg">
+                <div class="header-top-col header-top-site-map">
+                  <a href="#"><span>Карта сайта</span></a>
+                </div>
+              </div>
+
+              <div class="col col-md-2 col-lg">
+                <div class="header-top-col header-top-contacts d-md-block d-flex gap-2">
+                  <a href="mailto:sch63@minskedu.gov.by" class="header-top-mail"><span>sch63@minskedu.gov.by</span></a>
+                  <a href="tel:+375172492500" class="header-top-phone"><span>+37517249-25-00</span></a>
+                </div>
+              </div>
+
+              <div class="col col-md-4 col-lg">
+                <div class="header-top-col header-top-date">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="" data-bs-placement="bottom"><time id="currentTime"  datetime=""><span></span></time></a>
+                </div>
+              </div>
+
+              <div class="col col-md-2 col-lg">
+                <div class="header-top-col header-top-visually-version">
+                  <a href="#"><span>Версия для слабовидящих</span></a>
+                </div>
+              </div>
+
+              <div class="col col-md-2 col-lg-1">
+                <div class="header-top-col header-top-lang">
+                  <a class="header-top-lang-rus" href="#">Рус</a>
+                  <a class="header-top-lang-be" href="#">Бел</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- ./Header-top -->
+
+        <!-- Header-middle -->
+        <div class="header-middle text-center py-3 py-lg-4 px-2">
+
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-sm-3 col-6">
+                <div class="header-middle-logo ">
+                  <a href="/"><img src="assets/images/logo.png" alt="Логотип средней школы 63" class="align-middle"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-6 order-sm-3">
+                <div class="header-middle-badge-buttons">
+
+                  <div class="header-middle-badge mb-xl-3 mb-1">
+                    <img src="assets/images/blazon-rb.png" alt="Герб Республики Беларусь">
+                    <img src="assets/images/blazon-minsk.png" alt="Герб Минска">
+                  </div>
+
+                  <div class="header-middle-buttons">
+                    <a href="#" class="btn btn-primary">Ресурсный центр</a>
+                    <a href="#" class="btn btn-primary">Сервисы</a>
+                    <a href="#" class="btn btn-primary">2024 - Год качества</a>
+                    <a href="#" class="btn btn-primary">Беларусь помнит!</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-12 order-sm-2 mt-sm-0 mt-2">
+                <div class="header-middle-title-box">
+                  <h1 class="visually-hidden">Государственное учреждение образования <br> "Средняя школа № 63 г. Минска имени М.Ф.Малакович"</h1>
+                  <h2 class="header-middle-h2"><a href="#">Министерство образования Республики Беларусь</a></h2>
+                  <h2 class="header-middle-h2"><a href="#">Комитет по образованию Мингорисполкома</a></h2>
+                  <h2 class="header-middle-h2"><a href="#">Управление по образованию администрации Первомайского района г. Минска</a></h2>
+                  <h2 class="header-middle-h1">Государственное учреждение образования <br> "Средняя школа № 63 г. Минска имени М.Ф.Малакович"</h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+        <!-- ./Header-middle -->
+
+        <!-- Header-bottom -->
+        <div class="header-bottom" id="header-nav">
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body align-items-center gap-2">
+                  <a class="nav-link" href="/"><img src="assets/icons/header/home.svg" alt=""></a>
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 level_0 gap-2">
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Об учреждении
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Обучающимся
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Родителям
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Учительская
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Пакет безопасности
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown parent">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Одно окно
+                      </a>
+                      <ul class="dropdown-menu level_1">
+                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
+                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
+                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
+                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
+                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
+                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
+                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
+                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
+                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                        <li><a class="dropdown-item" href="#">СППС</a></li>
+                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
+                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- Search -->
+              <form class="d-flex" role="search">
+                <div class="site_search">
+                  <div
+                    class="ya-site-form ya-site-form_bg_transparent ya-site-form_inited_yes"
+                    id="ya-site-form0"
+                  >
+                    <div class="ya-site-form__form">
+                      <table class="ya-site-form__wrap" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td class="ya-site-form__search-wrap">
+                              <table
+                                class="ya-site-form__search"
+                                cellpadding="0"
+                                cellspacing="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td class="ya-site-form__search-input">
+                                      <table class="ya-site-form__search-input-layout">
+                                        <tbody>
+                                          <tr>
+                                            <td class="ya-site-form__search-input-layout-l p-0">
+                                              <div class="ya-site-form__input">
+                                                <input
+                                                  name="text"
+                                                  type="search"
+                                                  value=""
+                                                  class="ya-site-form__input-text form-control"
+                                                  placeholder="Поиск по сайту"
+                                                  autocomplete="off"
+                                                />
+                                                <div class="ya-site-suggest">
+                                                  <div
+                                                    class="ya-site-suggest-popup"
+                                                    style="display: none"
+                                                  >
+                                                    <i class="ya-site-suggest__opera-gap"></i>
+                                                    <div class="ya-site-suggest-list">
+                                                      <div
+                                                        class="ya-site-suggest__iframe"
+                                                      ></div>
+                                                      <ul class="ya-site-suggest-items"></ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="ya-site-form__search-input-layout-r p-0">
+                                              <input class="btn btn-outline-success ya-site-form__submit px-0" value="🔍" type="button">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="ya-site-form__gap">
+                                      <div class="ya-site-form__gap-i"></div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                  <style type="text/css">
+                    .ya-page_js_yes .ya-site-form_inited_no {
+                      display: none;
+                    }
+                  </style>
+                
+                  <script type="text/javascript">
+                    (function (w, d, c) {
+                      var s = d.createElement("script"),
+                        h = d.getElementsByTagName("script")[0],
+                        e = d.documentElement;
+                      if ((" " + e.className + " ").indexOf(" ya-page_js_yes ") === -1) {
+                        e.className += " ya-page_js_yes";
+                      }
+                      s.type = "text/javascript";
+                      s.async = true;
+                      s.charset = "utf-8";
+                      s.src =
+                        (d.location.protocol === "https:" ? "https:" : "http:") +
+                        "//site.yandex.net/v2.0/js/all.js";
+                      h.parentNode.insertBefore(s, h);
+                      (w[c] || (w[c] = [])).push(function () {
+                        Ya.Site.Form.init();
+                      });
+                    })(window, document, "yandex_site_callbacks");
+                  </script>
+                </div>
+              </form>
+              <!-- ./Search -->
+
+            </div>
+          </nav>
+          
+        </div>
+        <!-- ./Header-bottom -->
+
+      </header>
+      <!-- ./Header -->
+
+      <!-- Main -->
+      <main class="main py-3">
+
+        <div class="container-fluid">
+          <div class="row">
+
+            <!-- Slider-section -->
+            <div class="col-lg-8 col-12 mb-3">
+              <section class="slider-section container">
+                <h2 class="visually-hidden">Слайдер и популярные разделы сайта средней школы №63</h2>
+                <div class="slider">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <figure class="carousel-item active">
+                        <img src="assets/images/slider/1.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/2.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/3.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/4.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                          <p>Some representative placeholder content for the third slide.</p>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/5.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/6.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/7.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/8.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                      <figure class="carousel-item">
+                        <img src="assets/images/slider/9.jpeg" width="1290" height="600" class="d-block w-100" alt="...">
+                        <figcaption class="carousel-caption  d-block">
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- ./Slider-section -->
+
+            <!-- Section-popular -->
+            <div class="col-lg-4 col-12 mb-3 align-self-center">
+              <section class="section-popular">
+                
+                <h2 class="section-title popular-title">Популярные разделы</h2>
+                
+                <div class="popular-links">
+                  <ul class="list-inline">
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Контакты</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Гостевая книга</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Платные образовательные услуги</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Выпускнику 2024</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Гостевая книга</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Платные образовательные услуги</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Контакты</a>
+                    </li>
+                    <li  class="list-inline-item">
+                      <a href="#" class="btn btn-primary">Выпускнику 2024</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </section>
+            </div>
+            <!-- ./Section-popular -->
+
+          </div>
+
+          <div class="row">
+
+            <!-- Announcement-section-->
+            <div class="col-lg-6 col-12">
+              <section class="section-announcement section-tabs mb-4">
+                <h2 class="visually-hidden">Объявления средней школы №63, визитка учреждения, карта безопасного маршрута</h2>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="anno" data-bs-toggle="tab" data-bs-target="#anno-pane" type="button" role="tab" aria-controls="anno-pane" aria-selected="true">Объявления</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="visiting-card" data-bs-toggle="tab" data-bs-target="#visiting-card-pane" type="button" role="tab" aria-controls="visiting-card-pane" aria-selected="false">Визитка учреждения</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="safe-map" data-bs-toggle="tab" data-bs-target="#safe-map-pane" type="button" role="tab" aria-controls="safe-map-pane" aria-selected="false">Карта безопасного маршрута</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="vacancy" data-bs-toggle="tab" data-bs-target="#vacancy-pane" type="button" role="tab" aria-controls="vacancy-pane" aria-selected="false">Вакансии</button>
+                  </li>
+                </ul>
+                <div class="tab-content tab-announcement p-2" id="myTabContent">
+                  <div class="tab-pane fade show active container-fluid" id="anno-pane" role="tabpanel" aria-labelledby="anno" tabindex="0">
+                  
+                    <div class="row">
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/1.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Фестиваль "Современные технологии при реализации образовательных программ специального образования"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/2.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Список учащихся 1 «А» и «Б» класса"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/3.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Соблюдайте Правила дорожного движения!</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example  </p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/4.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Соблюдайте Правила дорожного движения!</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/2.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Список учащихся 1 «А» и «Б» класса"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-announcement">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/3.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Фестиваль "Современные технологии при реализации образовательных программ специального образования"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div> -->
+
+                      <a href="#" class="btn btn-primary btn-archive">Архив объявлений</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="visiting-card-pane" role="tabpanel" aria-labelledby="visiting-card" tabindex="0">
+                    <h3 style="text-align: center">
+                      <span style="color: #003366"
+                        >Государственное учреждение образования&nbsp;</span
+                      ><br /><span style="color: #003366"
+                        >"Средняя школа №63 г.Минска имени М.Ф.Малакович"</span
+                      >
+                    </h3>
+                    <p>
+                      <img loading='lazy'
+                        src="assets/images/anno-news/visit-card.jpeg"
+                        align="right"
+                        width="307"
+                        height="187"
+                        vspace="5"
+                        hspace="5"
+                      />
+                    </p>
+                    <p>
+                      &laquo;Логика педагогического руководства школой такова, что нам невозможно
+                      работать, если мы не будем постоянно анализировать связь настоящего с прошлым
+                      и с будущим. Умение предвидеть &ndash; это прежде всего умение оглянуться на
+                      пройденный путь, обозреть его, увидеть в нем истоки сегодняшних успехов и
+                      недостатков&raquo;&nbsp;
+                    </p>
+                    <p>(В. А. Сухомлинский)&nbsp;</p>
+                    <p style="text-align: justify">
+                      "The logic of pedagogical management school is that we can not work if we do
+                      not constantly analyze the relationship of the present to the past and the
+                      future. The ability to anticipate - is primarily the ability to look back at
+                      the past, to survey it, to see in him the origins of today's successes and
+                      failures "(V.A.Sukhomlinsky)
+                    </p>
+                    <p align="justify">
+                      <strong><span style="color: #003366">Контакты:</span></strong>
+                    </p>
+                    <p>
+                      <img loading='lazy'
+                        src="http://gymn4.minsk.edu.by/sm_full.aspx?guid=5903"
+                        width="32"
+                        height="33"
+                        alt=""
+                      />&nbsp;Почтовый&nbsp;адрес: 220049&nbsp;<span size="3"
+                        >г. Минск, ул. Кедышко,19</span
+                      >
+                    </p>
+                    <p align="left">
+                      <img loading='lazy'
+                        src="http://gymn4.minsk.edu.by/sm_full.aspx?guid=5913"
+                        width="44"
+                        height="20"
+                        alt=""
+                      />Телефон:<span size="3">&nbsp;+37517 249-25-00</span>
+                    </p>
+                    <p align="left">
+                      <img loading='lazy'
+                        src="http://gymn4.minsk.edu.by/sm_full.aspx?guid=1093"
+                        width="39"
+                        height="43"
+                        alt=""
+                      />Факс:<span size="3">&nbsp;+37517 249-25-00</span>
+                    </p>
+                    
+                  </div>
+
+                  <div class="tab-pane fade" id="safe-map-pane" role="tabpanel" aria-labelledby="safe-map" tabindex="0">
+                    <p><img loading="lazy" src="assets/images/anno-news/safe-map1.jpeg" alt="Карта безопасного маршрута средней школы №63 г. Минска"></p>
+                    <p><img loading="lazy" src="assets/images/anno-news/safe-map2.jpeg" alt="Карта безопасного маршрута средней школы №63 г. Минска"></p>
+                  </div>
+                  
+                  <div class="tab-pane fade" id="vacancy-pane" role="tabpanel" aria-labelledby="vacancy" tabindex="0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sed quisquam expedita rem, repellat, dignissimos delectus saepe ab laborum, facere dicta quo sit tenetur dolorem natus quasi corrupti asperiores! Obcaecati!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quae rerum tempore repudiandae, eos incidunt nihil nemo similique asperiores, magni libero error minus labore quo deleniti quisquam atque? Ipsum, odit.
+                    Ab eveniet quis nam, unde eligendi sint recusandae laboriosam facere voluptatum, eos ut saepe consectetur quia quisquam, reiciendis ex! Deserunt placeat beatae reprehenderit vero quasi sit, laboriosam nemo voluptatum vitae?</p>
+                  </div>
+                </div>
+                
+              </section>
+            </div>
+            <!-- ./Announcement-section-->
+            
+            <!-- News-section-->
+            <div class="col-lg-6 col-12">
+              <section class="section-news section-tabs mb-4">
+                <h2 class="visually-hidden">Новости средней школы №63, новости Республики, новости региона, новости района</h2>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="news-sch" data-bs-toggle="tab" data-bs-target="#news-sch-pane" type="button" role="tab" aria-controls="news-sch-pane" aria-selected="true">Новости учреждения</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news-republic" data-bs-toggle="tab" data-bs-target="#news-republic-pane" type="button" role="tab" aria-controls="news-republic-pane" aria-selected="false">Новости Республики</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news-area" data-bs-toggle="tab" data-bs-target="#news-area-pane" type="button" role="tab" aria-controls="news-area-pane" aria-selected="false">Новости региона</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news-region" data-bs-toggle="tab" data-bs-target="#news-region-pane" type="button" role="tab" aria-controls="news-region-pane" aria-selected="false">Новости района</button>
+                  </li>
+                </ul>
+
+                <div class="tab-content tab-news-sch p-2" id="myTabContent">
+                  <div class="tab-pane fade show active container-fluid" id="news-sch-pane" role="tabpanel" aria-labelledby="news-sch" tabindex="0">
+                    
+                    <div class="row">
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/5.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Фестиваль "Современные технологии при реализации образовательных программ специального образования"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/6.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Список учащихся 1 «А» и «Б» класса"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/7.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Соблюдайте Правила дорожного движения!</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example  </p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/8.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Соблюдайте Правила дорожного движения!</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/7.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Список учащихся 1 «А» и «Б» класса"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-sch">
+                          <a href="#">
+                            <img width="432" height="300" loading='lazy' src="assets/images/anno-news/6.jpeg" class="card-img-top" alt="Новости средней школы №63">
+                          </a>
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Фестиваль "Современные технологии при реализации образовательных программ специального образования"</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div> -->
+
+                      <a href="#" class="btn btn-primary btn-archive">Архив новостей</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade tabs-news-rss container-fluid" id="news-republic-pane" role="tabpanel" aria-labelledby="news-republic" tabindex="0">
+
+                    <div class="row">
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Триумф белорусских школьников</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">20 июля в Беларуси начнётся приёмная кампания на уровень среднего специального образования</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Приём документов в большинство вузов Беларуси на бюджет завершится 17 июля</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Более 1 тыс. детей и подростков из Беларуси и России приняли участие в Международном фестивале-конкурсе детского и молодёжного творчества «Радуга над Витебском»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Образование, наука и молодёжная политика: многогранный Витебск открывает новые союзные возможности</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Образование, наука и молодёжная политика: многогранный Витебск открывает новые союзные возможности</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                  <div class="tab-pane fade tabs-news-rss container-fluid" id="news-area-pane" role="tabpanel" aria-labelledby="news-area" tabindex="0">
+
+                    <div class="row">
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Методическая секция</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">II фестиваль городских ресурсных центров по воспитательной работе</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Предпремьерный показ фильма «Культурный код»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Минский городской образовательный форум 2024</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Городской информационно-просветительский проект «Открытое знание»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Городской информационно-просветительский проект «Открытое знание»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade tabs-news-rss container-fluid" id="news-region-pane" role="tabpanel" aria-labelledby="news-region" tabindex="0">
+
+                    <div class="row">
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Соберем портфель первокласснику</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Августовский педагогический форум «Основные векторы развития системы образования Фрунзенского района г.Минска: результаты и перспективы»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Встреча с молодыми специалистами, прибывшими в учреждения образования Фрунзенского района «Легко ли быть молодым…»</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Лето Молодежного Совета во Фрунзенском районе продолжается</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Лето Молодежного Совета во Фрунзенском районе</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-4 col-sm-6 col-12 mb-3">
+                        <div class="card card-news-rss">
+                          <div class="card-body">
+                            <h3 class="card-title">
+                              <a href="#">Заседание Совета ветеранов педагогического труда</a>
+                            </h3>
+                            <time datetime="2024-08-14">14.08.2024</time>
+                            <a href="#" class="btn btn-primary">Подробнее...</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- ./News-section-->
+
+          </div>
+
+
+          <div class="row">
+
+            <!-- Section-poll -->
+            <div class="col-12">
+              <section class="section-poll text-center">
+                <h2 class="section-title poll-title">Опрос</h2>
+                
+                <div class="row">
+
+                  <div class="col-6">
+
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title">Кто Вы, посетитель нашего сайта?</h3>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                          Проголосовать
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade text-start" id="Modal1" tabindex="-1" aria-labelledby="LabelModal1" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="LabelModal1">Кто Вы, посетитель нашего сайта?</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="poll-list" id="2073">
+                                  <li><label class="poll-text">Учитель
+                                      <input   type="radio" value="1" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Ученик
+                                      <input   type="radio" value="2" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Родитель ученика
+                                      <input   type="radio" value="3" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Выпускник
+                                      <input   type="radio" value="4" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Друг ученика
+                                      <input   type="radio" value="5" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Случайный посетитель
+                                      <input   type="radio" value="6" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-primary" id="voite_button_2073" onclick="VoiteAjax(2073)">Ответить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title">Чего бы вы хотели видеть больше на нашем сайте?</h3>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                          Проголосовать
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade text-start" id="Modal2" tabindex="-1" aria-labelledby="LabelModal2" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title fs-5" id="LabelModal2">Чего бы вы хотели видеть больше на нашем сайте?</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="poll-list" id="2073">
+                                  <li><label class="poll-text">Фотографий
+                                      <input   type="checkbox" value="1" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Информации об учениках
+                                      <input   type="checkbox" value="2" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Видео
+                                      <input   type="checkbox" value="3" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Информации о педагогах
+                                      <input   type="checkbox" value="4" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Анонс новостей
+                                      <input   type="checkbox" value="5" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                  <li><label class="poll-text">Чего-нибудь
+                                      <input   type="checkbox" value="6" name="voite_elemen_2073"><span></span>
+                                  </label></li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-primary" id="voite_button_2073" onclick="VoiteAjax(2073)">Ответить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                 
+  
+                  
+                </div>
+
+                <a href="#" class="btn btn-primary btn-archive">Опросы и результаты</a>
+                
+
+              </section>
+            </div>
+            <!-- ./Section-poll -->
+
+          </div>
+
+        </div>
+
+       
+
+          
+
+         
+
+      </main>
+      <!--./Main -->
+
+      <!--Aside -->
+      <aside class="aside container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-12 col-sm-8 col-12">
+            
+          </div>
+
+
+          <div class="col-12 order-lg-2 order-3">
+            
+          </div>
+
+          <div class="col-lg-12 col-sm-4 col-12 order-lg-3 order-2">
+           
+          </div>
+
+        </div>
+        
+        
+        
+
+      </aside>
+      <!-- ./Aside -->
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+
+        <div class="footer-main mx-2">
+
+          <div class="container-fluid">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="footer-sch-map my-4 ">
+                  <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4db0572686eccb7c7a2e5ba6c6014d73d32e690efd3374650ebc490ad82d4d8f&amp;source=constructor"  frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-4">
+                <!-- Banners -->
+                <div class="banners">
+                  <h2 class="banners-title footer-title">Обратите внимание</h2>
+                  <div class="owl-carousel owl-banners owl-theme p-lg-1">
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/1.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/2.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/3.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/4.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/5.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/6.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/7.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/8.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/9.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/10.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/11.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/12.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/13.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/14.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/15.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/16.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/17.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/18.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/19.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/20.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/21.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/22.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/23.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/24.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/25.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/26.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/27.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/28.jpeg" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/29.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/30.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/31.png" alt=""></a>
+                    <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/32.png" alt=""></a>
+                  </div>
+                </div>
+                <!-- ./Banners -->
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                <div class="footer-about">
+                  <h3 class="footer-title">О нас</h3>
+                  <p>Почтовый адрес:  220049 г. Минск, ул. Кедышко,19</p>
+                  <p>Телефон: <a href="tel:+375172492500">+37517 249-25-00</a> (приемная)</p>
+                  <p>Факс: <a href="tel:+375172492500">+37517 249-25-00</a></p>
+                  <p>Электронная почта: <a href="mailto:sch63@minskedu.gov.by">sch63@minskedu.gov.by</a></p>
+                  <p>Регистрационное свидетельство №191121301 от 5 января 2012 г.</p>
+                </div>
+              </div>
+
+              
+              <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                <div class="footer-requisite">
+                  <h3 class="footer-title">Реквизиты</h3>
+                  <p>Управление образования, спорта и туризма администрации Первомайского района г. Минска номера счетов и банковского идентификационного кода банка:</p>
+                  <p>BY18 AKBB 3604 0136 2008 8550 0000 – бюджет</p>
+                  <p>BY82 AKBB 3632 0136 2005 0550 0000 – внебюджет</p>
+                  <p>БИКАКВВВY21529</p>
+                  <p>филиал 529 «Белсвязь» ОАО «АСББеларусбанк»</p>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                <nav class="footer-nav">
+                  <h3 class="footer-title">Полезные ссылки</h3>
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Карта сайта</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Архив объявлений</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Гостевая книга</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Поиск по сайту</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Результаты опросов</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Архив новостей</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                <div class="footer-quotes">
+                  <h3 class="footer-title">Цитаты</h3>
+                  <blockquote cite="https://lazurkin.com/interesnoe/tsitaty-pro-obuchenie">
+                    <p>Я никогда не учу своих учеников. Я только даю условия, при которых они могут сами учиться. А. Эйнштейн.</p>
+                  </blockquote>
+                </div>
+                <div class="footer-socials">
+                  <p>Инстаграмм-аккаунт школы</p>
+                  <a href="https://instagram.com/school_n63" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.47641 2.59237C7.25855 2.6434 6.42123 2.79768 5.71642 3.10097C5.05682 3.38483 4.66516 3.64639 4.17884 4.12778C3.51939 4.78055 3.10845 5.51414 2.85045 6.49922C2.62287 7.36813 2.57209 8.36855 2.57154 11.9922C2.57098 15.5556 2.61959 16.568 2.83294 17.4367C3.36487 19.6026 4.9543 20.9802 7.2892 21.2989C7.96007 21.3905 9.36436 21.4288 12.0439 21.4284C14.5358 21.4282 15.9727 21.393 16.6195 21.3164C17.941 21.1598 18.9774 20.7044 19.7909 19.9228C20.7115 19.0382 21.1984 17.9785 21.3767 16.4713C21.4465 15.8809 21.4458 8.01342 21.3759 7.45772C21.234 6.32941 20.8949 5.40103 20.3651 4.68987C20.1018 4.33644 19.5424 3.79964 19.1902 3.56241C18.3955 3.02713 17.4405 2.72992 16.1803 2.62566C15.5863 2.57652 9.4845 2.55016 8.47641 2.59237ZM16.4656 4.37227C17.5181 4.52795 18.1089 4.79036 18.6768 5.35433C19.0451 5.72007 19.2508 6.04552 19.4299 6.54552C19.7341 7.39534 19.7614 7.84502 19.7615 12.0106C19.7615 14.4104 19.748 15.5632 19.7153 15.9527C19.6079 17.2308 19.3532 17.9204 18.7527 18.5597C18.1316 19.2209 17.3504 19.5508 16.1434 19.6615C15.4896 19.7215 10.0873 19.7508 8.8437 19.7012C8.282 19.6788 7.69316 19.6425 7.5352 19.6205C6.83679 19.5236 6.15994 19.2778 5.74143 18.9691C5.47692 18.7741 5.0576 18.3199 4.90071 18.0585C4.59233 17.5447 4.40535 16.8186 4.34423 15.8974C4.23317 14.2241 4.26925 8.47896 4.39682 7.52864C4.52918 6.54209 4.83405 5.87995 5.41395 5.31953C6.05154 4.70336 6.88565 4.4035 8.17855 4.3256C8.4561 4.30886 10.3451 4.29935 12.3763 4.30444C15.5268 4.31233 16.1277 4.32228 16.4656 4.37227ZM16.5763 5.94797C16.1571 6.15707 15.9601 6.48005 15.9593 6.96003C15.9586 7.30749 16.0416 7.51331 16.277 7.74829C16.512 7.98286 16.7186 8.06599 17.0667 8.06599C17.3152 8.06599 17.3954 8.04966 17.572 7.96314C17.9457 7.77992 18.1569 7.4582 18.185 7.0293C18.2098 6.65003 18.1272 6.42744 17.864 6.16507C17.6194 5.92113 17.4075 5.83564 17.0475 5.83564C16.8472 5.83564 16.7596 5.85651 16.5763 5.94797ZM11.1596 7.22229C10.189 7.39718 9.33075 7.85236 8.60449 8.57732C7.64626 9.53379 7.18191 10.6485 7.18191 11.9922C7.18191 12.8017 7.33422 13.4686 7.67248 14.1402C8.70476 16.1896 10.9798 17.2407 13.194 16.6913C14.063 16.4758 14.7372 16.1004 15.3891 15.4693C15.9767 14.9006 16.372 14.281 16.6198 13.5405C16.7983 13.0073 16.8635 12.5927 16.8635 11.9922C16.8635 11.3951 16.7983 10.9769 16.6238 10.4559C16.3862 9.7465 16.0428 9.18574 15.5083 8.63457C14.7784 7.88193 13.8662 7.39442 12.8608 7.21979C12.4504 7.14849 11.5619 7.14978 11.1596 7.22229ZM12.6224 8.91054C14.3159 9.23514 15.4376 10.8936 15.1121 12.5918C14.9146 13.6223 14.1569 14.5355 13.1895 14.9089C12.7171 15.0912 12.4424 15.135 11.8962 15.1153C11.5088 15.1014 11.3555 15.0787 11.1022 14.998C9.9813 14.6411 9.16725 13.7412 8.93639 12.6038C8.8475 12.1659 8.8821 11.4848 9.01432 11.0705C9.36451 9.97308 10.2909 9.13339 11.3935 8.91412C11.7223 8.84868 12.2911 8.84706 12.6224 8.91054Z" fill="white"></path></svg></a>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="footer-extra container-fluid">
+
+          <div class="row">
+            <!-- Banners-official -->
+            <div class="col-12">
+              <div class="banners-official my-3">
+                <div class="owl-carousel owl-banners-official owl-theme">
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/1.jpeg" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/2.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/3.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/4.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/5.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/6.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/7.jpeg" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/8.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/9.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/10.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/11.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/12.jpeg" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/13.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/14.gif" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/15.jpeg" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/16.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/17.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/18.png" alt="Официальный баннер"></a>
+                  <a href="#" class="banners-official-links" target="_blank"><img loading="lazy" src="assets/images/banners-official/19.jpeg" alt="Официальный баннер"></a>
+                </div>
+              </div>
+            </div>
+            <!-- ./Banners-official -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6 col-12 mb-2">
+              <div class="footer-copyright">
+                <p>© sch63.minsk.edu.by, 2024</p>
+                <!-- Копирайт <script type="text/javascript">document.write('&copy; ' + window.location.hostname + ', ' + (new Date).getFullYear());</script> -->
+                <p>Разработка и сопровождение <a href="mailto:nikolayenko.stanislav@mail.ru">Николаенко С.П.</a> </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12 mb-2">
+              <div class="footer-counter">
+                <!-- Yandex.Metrika informer -->
+                <!-- <a href="https://metrika.yandex.ru/stat/?id=42520294&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/42520294/3_0_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:22185329,lang:'ru'});return false}catch(e){}"></a> -->
+                <!-- /Yandex.Metrika informer -->
+                <img src="assets/images/counter.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </footer>
+      <!-- ./Footer -->
+
+    </div>
+
+    <button id="top" class="btn btn-primary rounded-circle"><img src="assets/icons/main/arrow-up.svg" alt=""></button>
+    
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/owl.carousel.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

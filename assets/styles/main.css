@@ -5,7 +5,13 @@
     --color-text: #2E3332;
     --color-grey: #888888;
     --color-blue: #2E86EF;
+    /* --color-blue: #03e5b7;
+    --color-blue: #60dfcd;
+    --color-blue: #61efff; */
     --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #072E99 100%);
+    /* --color-blue-gradient: linear-gradient(315deg, #03e5b7 0%, #2E86EF 100%);
+    --color-blue-gradient: linear-gradient(315deg, #60dfcd 0%, #2E86EF 100%);
+    --color-blue-gradient: linear-gradient(90deg, #2E86EF 0%, #61efff 100%); */
     --color-accent: #FDBF2D;
     --border-btn-radius: 30px;
     --border-radius: 10px;
@@ -62,6 +68,7 @@ main {
 
 .btn-primary {
     background-color: var(--color-blue);
+    border: 0;
     border-radius: var(--border-btn-radius);
     transition: var(--transition);
     font-weight: bold;
