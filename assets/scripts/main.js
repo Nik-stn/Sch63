@@ -57,7 +57,7 @@ const schMap = document.querySelector('.footer-sch-map');
 
 // Owl-carousel
 // *****
-$('.owl-carousel.owl-banners-official').owlCarousel({
+$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
     responsiveClass:true,
 	nav:false,
 	loop:true,
@@ -70,6 +70,13 @@ $('.owl-carousel.owl-banners-official').owlCarousel({
 	autoWidth:true,
 });
 
+// Poll
+// *****
+const spanRadio = document.querySelectorAll('.section-aside-poll input[type="radio"]~span');
+const spanCheckbox = document.querySelectorAll('.section-aside-poll input[type="checkbox"]~span');
+
+spanRadio.forEach( item => item.classList.add('poll-radio'));
+spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
 
 // Scroll-to-top
 // *****

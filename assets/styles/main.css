@@ -438,6 +438,8 @@ main {
 }
 /* Announcement */
 
+
+
 /* **** */
 /* Main */
 
@@ -454,14 +456,6 @@ main {
 
 
 
-
-.slick-aside-banners a img {
-    width: 100%;
-}
-
-.slick-aside-banners a {
-    margin-bottom: 30px;
-}
 
 
 /* Poll */
@@ -612,6 +606,10 @@ main {
 
 .banners-official img {
     height: clamp(50px, 7.56vw, 75px);
+}
+
+.banners img {
+    height: clamp(75px, 7.56vw, 100px);
 }
 
 .footer-copyright p {
@@ -785,10 +783,6 @@ main {
     .section-tabs .card .card-text {
         font-size: 12px;
         height: 92px;
-    }
-
-    .slick-aside-banners a {
-        margin-right: 10px;
     }
 }
 
