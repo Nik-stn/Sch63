@@ -769,6 +769,14 @@ main {
         min-height: 400px;
     }
 
+    .section-tabs .card>a {
+        height: 250px;
+    }
+
+    .section-tabs .card img {
+        min-height: 250px;
+    }
+
     .section-tabs .card .card-title a {
         height: 48px;
         font-size: 16px;
