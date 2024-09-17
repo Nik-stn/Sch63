@@ -244,7 +244,7 @@ main {
 
 /* Main */
 /* **** */
-.section-title {
+.section-title, .aside-title {
     color: var(--color-text);
     font-weight: bold;
     text-align: center;
@@ -438,26 +438,6 @@ main {
 }
 /* Announcement */
 
-
-
-/* **** */
-/* Main */
-
-
-/* Aside */
-/* **** */
-.aside .row>div {
-    margin-bottom: 5px;
-}
-
-.aside section {
-    margin-bottom: 10px;
-}
-
-
-
-
-
 /* Poll */
 .section-aside-poll .card {
     margin-bottom: 10px;
@@ -574,6 +554,26 @@ main {
     background: #fff;
 }
 /* Poll */
+
+/* **** */
+/* Main */
+
+
+/* Aside */
+/* **** */
+.aside .row>div {
+    margin-bottom: 5px;
+}
+
+.aside section {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
 
 /* **** */
 /* Aside */
