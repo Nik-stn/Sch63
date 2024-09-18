@@ -7,10 +7,25 @@
     --color-tea: #60dfcd; 
     --color-gradient-blue-teal: linear-gradient(315deg, #60dfcd 0%, #2E86EF 100%);
     --color-accent:  var(--color-white);
-    --border-btn-radius: 30px;
+    --btn-border-radius: 30px;
     --border-radius: 10px;
     --font-family-base: 'Heebo', sans-serif;
     --transition: all .3s;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:  var(--color-tea);
+    border: 3px solid #f4f4f4;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 0px #f4f4f433;
 }
 
 html, body {
@@ -62,7 +77,7 @@ main {
 .btn-info {
     background-color: var(--color-tea);
     border: 0;
-    border-radius: var(--border-btn-radius);
+    border-radius: var(--btn-border-radius);
     transition: var(--transition);
     font-weight: bold;
     font-size: clamp(12px, 2.12vw, 16px);
@@ -174,7 +189,7 @@ main {
 }
 
 .header-middle-title-box h2 a:hover {
-    color: var(--color-accent);
+    color: var(--color-tea);
 }
 
 .header-middle-h1 {
