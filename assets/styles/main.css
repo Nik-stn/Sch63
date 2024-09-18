@@ -556,27 +556,6 @@ main {
 /* **** */
 /* Main */
 
-
-/* Aside */
-/* **** */
-.aside .row>div {
-    margin-bottom: 5px;
-}
-
-.aside section {
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-/* **** */
-/* Aside */
-
-
 /* Footer */
 .footer {
     background-image: var(--color-gradient-blue-teal);
@@ -662,11 +641,13 @@ main {
 }
 
 .main-page .breadcrumb a {
-    color: var(--color-tea);
+    color: var(--color-text);
+    font-weight: bold;
 }
 
 .main-page .breadcrumb a:hover, .main-page .breadcrumb li.active {
-    color: var(--color-accent);
+    color: var(--color-tea);
+    font-weight: bold;
 }
 /* Breadcrumb */
 
@@ -677,6 +658,12 @@ main {
 
 .main-page .content-box {
     color: var(--color-text);
+}
+
+.main-page a:hover,
+.main-page a.active,
+.main-page a:active {
+    color: var(--color-tea);
 }
 
 .nav-page {
@@ -690,6 +677,11 @@ main {
 
 .nav-page .navbar-nav .dropdown-item {
     white-space: normal;
+}
+
+.nav-page .navbar-nav .dropdown-item.active, .nav-page .navbar-nav .dropdown-item:hover {
+    background-color: var(--color-tea);
+    color: var(--color-text);
 }
 
 .nav-page .navbar-nav a {
