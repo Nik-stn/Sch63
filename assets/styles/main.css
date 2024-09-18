@@ -66,7 +66,7 @@ main {
     flex: 1 1 auto;
 }
 
-.btn-primary {
+.btn-info {
     background-color: var(--color-blue);
     border: 0;
     border-radius: var(--border-btn-radius);
@@ -75,7 +75,7 @@ main {
     font-size: clamp(12px, 2.12vw, 16px);
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active {
+.btn.btn-info:hover, .btn.btn-info:active {
     color: var(--color-accent);
 }
 
@@ -320,7 +320,7 @@ main {
 /* Slider*/
 
 /* Popular*/
-.section-popular .btn.btn-primary {
+.section-popular .btn.btn-info {
     font-size: clamp(12px, 1.33vw, 16px);
 }
 
@@ -436,7 +436,7 @@ main {
     background: url(../icons/main/date-grey.svg) center/contain no-repeat;
 }
 
-.section-tabs .card .btn-primary {
+.section-tabs .card .btn-info {
     font-size: clamp(12px, 1.27vw, 16px);
 }
 
@@ -455,7 +455,7 @@ main {
     font-size: clamp(12px, 2.06vw, 16px);
 }
 
-.section-poll .card-body>.btn.btn-primary, .section-poll a.btn-archive {
+.section-poll .card-body>.btn.btn-info, .section-poll a.btn-archive {
     font-size: clamp(12px, 1.14vw, 16px);
 }
 
