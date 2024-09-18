@@ -4,7 +4,7 @@
     --color-white: #fff;
     --color-text: #2E3332;
     --color-grey: #888888;
-    --color-tea: #60dfcd; 
+    --color-teal: #60dfcd; 
     --color-gradient-blue-teal: linear-gradient(315deg, #60dfcd 0%, #2E86EF 100%);
     --color-accent:  var(--color-white);
     --btn-border-radius: 30px;
@@ -22,7 +22,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background:  var(--color-tea);
+    background:  var(--color-teal);
     border: 3px solid #f4f4f4;
     border-radius: 20px;
     box-shadow: 4px 4px 8px 0px #f4f4f433;
@@ -75,7 +75,7 @@ main {
 }
 
 .btn-info {
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
     border: 0;
     border-radius: var(--btn-border-radius);
     transition: var(--transition);
@@ -189,7 +189,7 @@ main {
 }
 
 .header-middle-title-box h2 a:hover {
-    color: var(--color-tea);
+    color: var(--color-teal);
 }
 
 .header-middle-h1 {
@@ -233,7 +233,7 @@ main {
 }
 
 .header-bottom .navbar .level_1 a:hover {
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
 }
 
 .ya-site-form__input-text.form-control {
@@ -265,13 +265,13 @@ main {
     font-size: clamp(16px, 2.06vw, 28px);
     margin-bottom: 20px;
     padding-bottom: 5px;
-    border-bottom: 2px solid var(--color-tea);
+    border-bottom: 2px solid var(--color-teal);
 }
 
 
 /* Slider*/
 .slider {
-    border: 2px solid var(--color-tea);
+    border: 2px solid var(--color-teal);
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
@@ -358,7 +358,7 @@ main {
 
 /* Announcement */
 .section-tabs .tab-content {
-    border: 2px solid var(--color-tea);
+    border: 2px solid var(--color-teal);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     border-top: 0;
@@ -366,7 +366,7 @@ main {
 }
 
 .section-tabs .nav-tabs {
-    border-bottom: 2px solid var(--color-tea);
+    border-bottom: 2px solid var(--color-teal);
 }
 
 .section-tabs .nav-tabs .nav-link {
@@ -376,15 +376,15 @@ main {
 
 .section-tabs .nav-tabs .nav-link:hover {
     color: var(--color-accent);
-    border-color: var(--color-tea);
+    border-color: var(--color-teal);
     border-bottom: 0;
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
 }
 
 .section-tabs .nav-tabs .nav-link.active {
-    border-color: var(--color-tea);
+    border-color: var(--color-teal);
     border-bottom: 0;
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
     color: var(--color-text);
 }
 
@@ -519,7 +519,7 @@ main {
 /* On mouse-over, add background color */
 .poll-text:hover input~.poll-checkbox,
 .poll-text:hover input~.poll-radio {
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
 }
 
 /* When the checkmark is checked, add background */
@@ -644,7 +644,7 @@ main {
 /* Page */
 .main-page {
     padding: 19px 15px;
-    border: 3px solid var(--color-tea);
+    border: 3px solid var(--color-teal);
     height: fit-content;
     border-radius: 5px;
 }
@@ -652,7 +652,7 @@ main {
 /* Breadcrumb */
 .main-page .breadcrumb {
     padding-bottom: 5px;
-    border-bottom: 2px dotted var(--color-tea);
+    border-bottom: 2px dotted var(--color-teal);
 }
 
 .main-page .breadcrumb a {
@@ -661,7 +661,7 @@ main {
 }
 
 .main-page .breadcrumb a:hover, .main-page .breadcrumb li.active {
-    color: var(--color-tea);
+    color: var(--color-teal);
     font-weight: bold;
 }
 /* Breadcrumb */
@@ -678,7 +678,7 @@ main {
 .main-page a:hover,
 .main-page a.active,
 .main-page a:active {
-    color: var(--color-tea);
+    color: var(--color-teal);
 }
 
 .nav-page {
@@ -695,7 +695,7 @@ main {
 }
 
 .nav-page .navbar-nav .dropdown-item.active, .nav-page .navbar-nav .dropdown-item:hover {
-    background-color: var(--color-tea);
+    background-color: var(--color-teal);
     color: var(--color-text);
 }
 
@@ -793,7 +793,7 @@ main {
 
 @media only screen and (max-width: 991px) {
     .header-bottom .offcanvas {
-        background-image: linear-gradient(180deg, #2E86EF 0%, #072E99 100%);
+        background-image: var(--color-gradient-blue-teal);
     }
 }
 
