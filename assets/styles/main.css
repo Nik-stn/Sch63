@@ -186,20 +186,17 @@ main {
 
 .header-middle-title-box h2, .header-middle-title-box h2 a {
     color: var(--color-text);
+    font-size: clamp(18px, 1.67vw, 32px);
+    font-weight: 500;
 }
 
 .header-middle-title-box h2 a:hover {
     color: var(--color-teal);
 }
 
-.header-middle-h1 {
+.header-middle-title-box h1, .header-middle-title-box h2:last-child {
     font-size: clamp(24px, 2.08vw, 40px);
     font-weight: bold;
-}
-
-.header-middle-h2 {
-    font-size: clamp(18px, 1.67vw, 32px);
-    font-weight: 500;
 }
 
 .header-middle-badge img {
@@ -234,6 +231,10 @@ main {
 
 .header-bottom .navbar .level_1 a:hover {
     background-color: var(--color-teal);
+}
+
+.header-bottom .level_0 {
+    gap: 0.5rem;
 }
 
 .ya-site-form__input-text.form-control {
