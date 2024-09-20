@@ -78,6 +78,11 @@ const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkb
 spanRadio.forEach( item => item.classList.add('poll-radio'));
 spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
 
+// Header nav
+// *****
+const navbarNav = document.querySelector('.header-bottom .navbar .level_0').classList.add('navbar-nav');
+
+
 // Scroll-to-top
 // *****
 $(window).scroll(function() {

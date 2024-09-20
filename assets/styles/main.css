@@ -233,6 +233,10 @@ main {
     background-color: var(--color-teal);
 }
 
+.header-bottom  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .header-bottom .level_0 {
     gap: 0.5rem;
 }
