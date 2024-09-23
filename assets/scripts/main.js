@@ -80,7 +80,17 @@ spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
 
 // Header nav
 // *****
-const navbarNav = document.querySelector('.header-bottom .navbar .level_0').classList.add('navbar-nav');
+const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
+navbarNav.classList.add('navbar-nav');
+
+const navbarDropdown = document.querySelectorAll('.header-bottom .navbar .level_0>li.parent');
+navbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
+
+const navbarDropdownMenu = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1');
+navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
+
+const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
+navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
 
 
 // Scroll-to-top
