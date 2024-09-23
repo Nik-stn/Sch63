@@ -199,10 +199,30 @@ main {
     min-width: 350px;
 }
 
+.ya-site-form__search-input-layout-r, #ya-site-form0 .ya-site-form__search-input {
+    padding: 0 !important;
+}
+
+.header-bottom #ya-site-form0 .ya-site-form__wrap, .header-bottom #ya-site-form0 .ya-site-form__search {
+    width: initial;
+}
+
 .ya-site-form__input-text.form-control {
+    display: block;
+    padding: .375rem .75rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color) !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right: 0;
+    border-right: 0 !important;
 }
 
 .btn.btn-outline-success.ya-site-form__submit {
@@ -213,8 +233,9 @@ main {
     border-left: 0;
 }
 
-.header-bottom .form-control, .ya-site-form__submit {
-    font-size: clamp(12px, 2.12vw, 16px);
+.header-bottom #ya-site-form0 .form-control, .header-bottom #ya-site-form0 .ya-site-form__submit {
+    font-size: clamp(12px, 2.12vw, 16px) !important;
+    margin: 0;
 }
 /* Header */
 
