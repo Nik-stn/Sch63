@@ -126,54 +126,6 @@ main {
     height: 20px;
 }
 
-.header-top-site-map a::before {
-    background: url(../icons/header/sitemap.svg) center/contain no-repeat;
-}
-
-.header-top-site-map a:hover::before {
-    background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
-}
-
-.header-top-contacts a.header-top-mail::before {
-    background: url(../icons/header/mail.svg) center/contain no-repeat;
-}
-
-.header-top-contacts a.header-top-mail:hover::before {
-    background: url(../icons/header/mail-hover.svg) center/contain no-repeat;
-}
-
-.header-top-contacts a.header-top-phone::before {
-    background: url(../icons/header/phone.svg) center/contain no-repeat;
-}
-
-.header-top-contacts a.header-top-phone:hover::before {
-    background: url(../icons/header/phone-hover.svg) center/contain no-repeat;
-}
-
-.header-top-date a:before {
-    background: url(../icons/header/date.svg) center/contain no-repeat;
-}
-
-.header-top-date a:hover:before {
-    background: url(../icons/header/date-hover.svg) center/contain no-repeat;
-}
-
-.header-top-visually-version a::before {
-    background: url(../icons/header/eye.svg) center/contain no-repeat;
-}
-
-.header-top-visually-version a:hover::before {
-    background: url(../icons/header/eye-hover.svg) center/contain no-repeat;
-}
-
-.header-top-lang a.header-top-lang-rus::before {
-    background: url(../icons/header/rus.png) center/contain no-repeat;
-}
-
-.header-top-lang a.header-top-lang-be::before {
-    background: url(../icons/header/be.png) center/contain no-repeat;
-}
-
 .header-middle .row>div {
     display: flex;
     justify-content: center;
@@ -239,6 +191,12 @@ main {
 
 .header-bottom .level_0 {
     gap: 0.5rem;
+}
+
+.header-bottom .navbar-nav .dropdown-item {
+    white-space: normal;
+    width: 100%;
+    min-width: 350px;
 }
 
 .ya-site-form__input-text.form-control {
@@ -445,7 +403,6 @@ main {
     content: '';
     width: 15px;
     height: 15px;
-    background: url(../icons/main/date-grey.svg) center/contain no-repeat;
 }
 
 .section-tabs .card .btn-info {
