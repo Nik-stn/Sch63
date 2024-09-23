@@ -6,19 +6,19 @@
     background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
 }
 
-.header-top-contacts a.header-top-mail::before {
+.header-top-contacts .header-top-mail a::before {
     background: url(../icons/header/mail.svg) center/contain no-repeat;
 }
 
-.header-top-contacts a.header-top-mail:hover::before {
+.header-top-contacts .header-top-mail a:hover::before {
     background: url(../icons/header/mail-hover.svg) center/contain no-repeat;
 }
 
-.header-top-contacts a.header-top-phone::before {
+.header-top-contacts .header-top-phone a::before {
     background: url(../icons/header/phone.svg) center/contain no-repeat;
 }
 
-.header-top-contacts a.header-top-phone:hover::before {
+.header-top-contacts .header-top-phone a:hover::before {
     background: url(../icons/header/phone-hover.svg) center/contain no-repeat;
 }
 
