@@ -91,27 +91,6 @@ navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
 
 const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
 navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
-
-
-// Search form
-// *****
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new MutationObserver(() => {
-      const searchInput = document.querySelector('.ya-site-form__input-text');
-      const searchButton = document.querySelector('.ya-site-form__submit');
-  
-      if (searchInput && searchButton) {
-        searchInput.classList.add('form-control');
-  
-        searchButton.classList.add('btn', 'btn-outline-success', 'px-0');
-        searchButton.value = '🔍';
-  
-        observer.disconnect();
-      }
-    });
-  
-    observer.observe(document.body, { childList: true, subtree: true });
-  });
   
 // Scroll-to-top
 // *****
