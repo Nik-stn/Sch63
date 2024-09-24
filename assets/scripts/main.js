@@ -26,6 +26,50 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 
+// Active carousel
+// *****
+document.querySelector('.carousel-item').classList.add('active');
+
+
+// Poll
+// *****
+const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
+const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
+
+spanRadio.forEach( item => item.classList.add('poll-radio'));
+spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
+
+// Header nav
+// *****
+const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
+navbarNav.classList.add('navbar-nav');
+
+const navbarDropdown = document.querySelectorAll('.header-bottom .navbar .level_0>li.parent');
+navbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
+
+const navbarDropdownMenu = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1');
+navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
+
+const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
+navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
+
+
+// Owl-carousel
+// *****
+$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
+    responsiveClass:true,
+	nav:false,
+	loop:true,
+	margin:14,
+    lazyLoad: true,
+	autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+	dots:false,
+	autoWidth:true,
+});
+
+
 // Sch-map
 // *****
 const mapTitle = document.createElement('div'); mapTitle.className = 'sch-map-title';
@@ -54,43 +98,6 @@ const schMap = document.querySelector('.footer-sch-map');
     document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
 });
 
-
-// Owl-carousel
-// *****
-$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
-    responsiveClass:true,
-	nav:false,
-	loop:true,
-	margin:14,
-    lazyLoad: true,
-	autoplay:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true,
-	dots:false,
-	autoWidth:true,
-});
-
-// Poll
-// *****
-const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
-const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
-
-spanRadio.forEach( item => item.classList.add('poll-radio'));
-spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
-
-// Header nav
-// *****
-const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
-navbarNav.classList.add('navbar-nav');
-
-const navbarDropdown = document.querySelectorAll('.header-bottom .navbar .level_0>li.parent');
-navbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
-
-const navbarDropdownMenu = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1');
-navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
-
-const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
-navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
   
 // Scroll-to-top
 // *****
@@ -106,6 +113,4 @@ $('#top').click(function() {
     $('html, body').animate({scrollTop: 0}, 500);
     return false;
 });
-
-
 
