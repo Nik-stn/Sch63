@@ -468,7 +468,7 @@ main {
 }
 
 .section-tabs .card .card-title a:hover {
-    color: var(--color-accent);
+    color: var(--color-teal);
 }
 /* Announcement */
 
