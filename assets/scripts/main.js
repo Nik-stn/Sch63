@@ -1,24 +1,3 @@
-// // Вывод даты
-// // *****
-// const d = new Date();
-// const day = ["Воскресенье,", "Понедельник,", "Вторник,", "Среда,", "Четверг,", "Пятница,", "Суббота,"];
-// const month = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
-
-// // Форматирование даты для атрибута datetime
-// const datetimeString = d.getFullYear() + '-' + 
-//                        String(d.getMonth() + 1).padStart(2, '0') + '-' + 
-//                        String(d.getDate()).padStart(2, '0') + 'T' + 
-//                        String(d.getHours()).padStart(2, '0') + ':' + 
-//                        String(d.getMinutes()).padStart(2, '0') + ':' + 
-//                        String(d.getSeconds()).padStart(2, '0');
-
-// // Установка значения атрибута datetime
-// document.getElementById("currentTime").setAttribute("datetime", datetimeString);
-
-// // Вывод текста в элемент
-// const outputText = day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
-// document.querySelector("#currentTime span").innerHTML = outputText;
-
 // // Вывод подсказки в дате
 // // *****
 document.querySelector(".header-top-date a").setAttribute("data-bs-title", outputText);
@@ -39,6 +18,7 @@ const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkb
 spanRadio.forEach( item => item.classList.add('poll-radio'));
 spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
 
+
 // Header nav
 // *****
 const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
@@ -54,19 +34,26 @@ const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .le
 navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
 
 
-// Owl-carousel
+// Fixed header
 // *****
-$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
-    responsiveClass:true,
-	nav:false,
-	loop:true,
-	margin:14,
-    lazyLoad: true,
-	autoplay:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true,
-	dots:false,
-	autoWidth:true,
+ window.addEventListener('scroll', function() {
+    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
+});
+
+  
+// Scroll-to-top
+// *****
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        $('#top').fadeIn();
+    } else {
+        $('#top').fadeOut();
+    }
+});
+
+$('#top').click(function() {
+    $('html, body').animate({scrollTop: 0}, 500);
+    return false;
 });
 
 
@@ -92,25 +79,18 @@ const schMap = document.querySelector('.footer-sch-map');
      mapTitle.style.display = 'none';
  }
 
-// Fixed header
+
+// Owl-carousel
 // *****
- window.addEventListener('scroll', function() {
-    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
+$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
+    responsiveClass:true,
+	nav:false,
+	loop:true,
+	margin:14,
+    lazyLoad: true,
+	autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+	dots:false,
+	autoWidth:true,
 });
-
-  
-// Scroll-to-top
-// *****
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
-        $('#top').fadeIn();
-    } else {
-        $('#top').fadeOut();
-    }
-});
-
-$('#top').click(function() {
-    $('html, body').animate({scrollTop: 0}, 500);
-    return false;
-});
-
