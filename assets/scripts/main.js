@@ -7,16 +7,18 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 // Active carousel
 // *****
-document.querySelector('.carousel-item').classList.add('active');
+const carouselItem = document.querySelector('.carousel-item');
+if (carouselItem) carouselItem.classList.add('active');
 
 
 // Poll
 // *****
 const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
 const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
-
-spanRadio.forEach( item => item.classList.add('poll-radio'));
-spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
+if (spanRadio, spanCheckbox) {
+    spanRadio.forEach( item => item.classList.add('poll-radio'));
+    spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
+}
 
 
 // Header nav
