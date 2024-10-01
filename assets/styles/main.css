@@ -59,6 +59,7 @@ a, .nav-link, .nav-link:focus {
 
 a:hover,
 a.active,
+li.parent_active>a,
 a:active,
 .nav-link:hover,
 .nav-link.active,
@@ -727,6 +728,10 @@ main {
 
 .nav-page .navbar-nav .dropdown-toggle {
     padding: 0;
+}
+
+.nav-page .navbar-nav .level_1 a+a {
+    display: none;
 }
 
 .nav-page .navbar-nav .nav-link.active, .nav-page .navbar-nav .nav-link.show {

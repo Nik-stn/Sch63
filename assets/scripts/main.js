@@ -35,6 +35,25 @@ navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
 const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
 navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
 
+// Aside nav
+// *****
+const asideNavbarNav = document.querySelector('.aside .navbar .level_0');
+const asideNavbarDropdown = document.querySelectorAll('.aside .navbar .level_0>li.parent');
+const asideNavbarDropdownMenu = document.querySelectorAll('.aside .navbar .level_0 .level_1');
+const asideNavbarDropdownMenuShow = document.querySelector('.aside .navbar .level_0 li.parent_active .level_1');
+const asideNavbarNavLink = document.querySelectorAll('.aside .navbar .level_0>.parent');
+const asideNavbarDropdownItem = document.querySelectorAll('.aside .navbar .level_0 .level_1>li>a');
+
+if (asideNavbarNav) {
+    asideNavbarNav.classList.add('navbar-nav');
+    asideNavbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
+    asideNavbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
+    asideNavbarNavLink.forEach( item => item.classList.add('nav-link'));
+    asideNavbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
+}
+
+if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.classList.add('show');
+
 
 // Fixed header
 // *****
