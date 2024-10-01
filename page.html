@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/styles/slick.css">
+    <link rel="stylesheet" href="assets/styles/icons.css" />
     <link rel="stylesheet" href="assets/styles/main.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <script src="assets/scripts/jquery.min.js"></script>
@@ -39,14 +39,42 @@
 
               <div class="col col-md-2 col-lg">
                 <div class="header-top-col header-top-contacts d-md-block d-flex gap-2">
-                  <a href="mailto:sch63@minskedu.gov.by" class="header-top-mail"><span>sch63@minskedu.gov.by</span></a>
-                  <a href="tel:+375172492500" class="header-top-phone"><span>+37517249-25-00</span></a>
+                  <span class="header-top-mail"><a href="mailto:sch63@minskedu.gov.by">sch63@minskedu.gov.by</a></span>
+                  <span class="header-top-phone"><a href="tel:+375172492500">+375172492500</a></span>
                 </div>
               </div>
 
               <div class="col col-md-4 col-lg">
                 <div class="header-top-col header-top-date">
                   <a href="#" data-bs-toggle="tooltip" data-bs-title="" data-bs-placement="bottom"><time id="currentTime"  datetime=""><span></span></time></a>
+                  <script>
+                    // Вывод даты
+                    // *****
+                    const d = new Date();
+                    const day = ["Воскресенье,", "Понедельник,", "Вторник,", "Среда,", "Четверг,", "Пятница,", "Суббота,"];
+                    const month = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+
+                    // Форматирование даты для атрибута datetime
+                    const datetimeString = d.getFullYear() + '-' + 
+                                          String(d.getMonth() + 1).padStart(2, '0') + '-' + 
+                                          String(d.getDate()).padStart(2, '0') + 'T' + 
+                                          String(d.getHours()).padStart(2, '0') + ':' + 
+                                          String(d.getMinutes()).padStart(2, '0') + ':' + 
+                                          String(d.getSeconds()).padStart(2, '0');
+
+                    // Установка значения атрибута datetime
+                    document.getElementById("currentTime").setAttribute("datetime", datetimeString);
+
+                    // Вывод текста в элемент
+                    const outputText = day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
+                    document.querySelector("#currentTime span").innerHTML = outputText;
+                    
+                    // // Вывод подсказки в дате
+                    // // *****
+                    // document.querySelector(".header-top-date a").setAttribute("data-bs-title", outputText);
+                    // const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+                    // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+                  </script>
                 </div>
               </div>
 
@@ -58,8 +86,8 @@
 
               <div class="col col-md-2 col-lg-1">
                 <div class="header-top-col header-top-lang">
-                  <a class="header-top-lang-rus" href="#">Рус</a>
-                  <a class="header-top-lang-be" href="#">Бел</a>
+                  <span class="header-top-lang-rus" >Рус</span>
+                  <span class="header-top-lang-be" >Бел</span>
                 </div>
               </div>
 
@@ -77,7 +105,7 @@
 
               <div class="col-sm-3 col-6">
                 <div class="header-middle-logo ">
-                  <a href="/"><img src="assets/images/logo.png" alt="Логотип средней школы 63" class="align-middle"></a>
+                  <a href="/"><img src="assets/images/logo.png" alt="Логотип Средней школы 63 г. Минска" class="align-middle"></a>
                 </div>
               </div>
 
@@ -130,131 +158,131 @@
 
                 <div class="offcanvas-body align-items-center gap-2">
                   <a class="nav-link" href="/"><img src="assets/icons/header/home.svg" alt=""></a>
-                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 level_0 gap-2">
+                  <ul class="level_0">
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="https://doka.guide/css/background-size/" role="button" >
                         Об учреждении
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="#" role="button" >
                         Обучающимся
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="#" role="button" >
                         Родителям
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="#" role="button" >
                         Учительская
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="#" role="button" >
                         Пакет безопасности
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
-                    <li class="nav-item dropdown parent">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="parent">
+                      <a class="nav-link" href="#" role="button" >
                         Одно окно
                       </a>
-                      <ul class="dropdown-menu level_1">
-                        <li><a class="dropdown-item" href="#">График работы руководства</a></li>
-                        <li><a class="dropdown-item" href="#">Нормативные правовые документы</a></li>
-                        <li><a class="dropdown-item" href="#">Руководство школы</a></li>
-                        <li><a class="dropdown-item" href="#">Структура школы</a></li>
-                        <li><a class="dropdown-item" href="#">Интегрированное обучение и воспитание</a></li>
-                        <li><a class="dropdown-item" href="#">Юридическое лицо</a></li>
-                        <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                        <li><a class="dropdown-item" href="#">Библиотека</a></li>
-                        <li><a class="dropdown-item" href="#">Профсоюзный вестник</a></li>
-                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
-                        <li><a class="dropdown-item" href="#">СППС</a></li>
-                        <li><a class="dropdown-item" href="#">Организация питания учащихся</a></li>
-                        <li><a class="dropdown-item" href="#">Информационно-разъяснительная работа</a></li>
+                      <ul class="level_1">
+                        <li><a   href="#">График работы руководства</a></li>
+                        <li><a   href="#">Нормативные правовые документы</a></li>
+                        <li><a   href="#">Руководство школы</a></li>
+                        <li><a   href="#">Структура школы</a></li>
+                        <li><a   href="#">Интегрированное обучение и воспитание</a></li>
+                        <li><a   href="#">Юридическое лицо</a></li>
+                        <li><a   href="#">Фотогалерея</a></li>
+                        <li><a   href="#">Библиотека</a></li>
+                        <li><a   href="#">Профсоюзный вестник</a></li>
+                        <li><a   href="#">Вакансии</a></li>
+                        <li><a   href="#">СППС</a></li>
+                        <li><a   href="#">Организация питания учащихся</a></li>
+                        <li><a   href="#">Информационно-разъяснительная работа</a></li>
                       </ul>
                     </li>
 
@@ -264,104 +292,49 @@
               </div>
 
               <!-- Search -->
-              <form class="d-flex" role="search">
-                <div class="site_search">
-                  <div
-                    class="ya-site-form ya-site-form_bg_transparent ya-site-form_inited_yes"
-                    id="ya-site-form0"
-                  >
-                    <div class="ya-site-form__form">
-                      <table class="ya-site-form__wrap" cellpadding="0" cellspacing="0">
-                        <tbody>
-                          <tr>
-                            <td class="ya-site-form__search-wrap">
-                              <table
-                                class="ya-site-form__search"
-                                cellpadding="0"
-                                cellspacing="0"
-                              >
-                                <tbody>
-                                  <tr>
-                                    <td class="ya-site-form__search-input">
-                                      <table class="ya-site-form__search-input-layout">
-                                        <tbody>
-                                          <tr>
-                                            <td class="ya-site-form__search-input-layout-l p-0">
-                                              <div class="ya-site-form__input">
-                                                <input
-                                                  name="text"
-                                                  type="search"
-                                                  value=""
-                                                  class="ya-site-form__input-text form-control"
-                                                  placeholder="Поиск по сайту"
-                                                  autocomplete="off"
-                                                />
-                                                <div class="ya-site-suggest">
-                                                  <div
-                                                    class="ya-site-suggest-popup"
-                                                    style="display: none"
-                                                  >
-                                                    <i class="ya-site-suggest__opera-gap"></i>
-                                                    <div class="ya-site-suggest-list">
-                                                      <div
-                                                        class="ya-site-suggest__iframe"
-                                                      ></div>
-                                                      <ul class="ya-site-suggest-items"></ul>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </td>
-                                            <td class="ya-site-form__search-input-layout-r p-0">
-                                              <input class="btn btn-outline-success ya-site-form__submit px-0" value="🔍" type="button">
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="ya-site-form__gap">
-                                      <div class="ya-site-form__gap-i"></div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                
-                  <style type="text/css">
-                    .ya-page_js_yes .ya-site-form_inited_no {
-                      display: none;
-                    }
-                  </style>
-                
-                  <script type="text/javascript">
-                    (function (w, d, c) {
-                      var s = d.createElement("script"),
-                        h = d.getElementsByTagName("script")[0],
-                        e = d.documentElement;
-                      if ((" " + e.className + " ").indexOf(" ya-page_js_yes ") === -1) {
-                        e.className += " ya-page_js_yes";
-                      }
-                      s.type = "text/javascript";
-                      s.async = true;
-                      s.charset = "utf-8";
-                      s.src =
-                        (d.location.protocol === "https:" ? "https:" : "http:") +
-                        "//site.yandex.net/v2.0/js/all.js";
-                      h.parentNode.insertBefore(s, h);
-                      (w[c] || (w[c] = [])).push(function () {
-                        Ya.Site.Form.init();
-                      });
-                    })(window, document, "yandex_site_callbacks");
-                  </script>
+         
+              <div class="site_search d-flex">
+                <div
+                  class="ya-site-form ya-site-form_inited_no"
+                  onclick="return {'action':'http://sch63.minsk.edu.by/ru/main.aspx?guid=22981','arrow':false,'bg':'transparent','language':'ru','logo':'rb','publicname':'Поиск по sch63.minsk.edu.by','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2291131,'webopt':false,'websearch':false,'input_placeholder':'Поиск по сайту','input_placeholderColor':'#999999'}"
+                >
+                  <form action="http://yandex.ru/sitesearch" method="get" target="_self">
+                    <input type="hidden" name="searchid" value="2291131" />
+                    <input type="hidden" name="l10n" value="ru" />
+                    <input type="hidden" name="reqenc" value="" />
+                    <input type="search" name="text" value="" />
+                    <input type="submit" value="Найти" />
+                  </form>
                 </div>
-              </form>
+              
+                <style type="text/css">
+                  .ya-page_js_yes .ya-site-form_inited_no {
+                    display: none;
+                  }
+                </style>
+              
+                <script type="text/javascript">
+                  (function (w, d, c) {
+                    var s = d.createElement("script"),
+                      h = d.getElementsByTagName("script")[0],
+                      e = d.documentElement;
+                    if ((" " + e.className + " ").indexOf(" ya-page_js_yes ") === -1) {
+                      e.className += " ya-page_js_yes";
+                    }
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.charset = "utf-8";
+                    s.src =
+                      (d.location.protocol === "https:" ? "https:" : "http:") +
+                      "//site.yandex.net/v2.0/js/all.js";
+                    h.parentNode.insertBefore(s, h);
+                    (w[c] || (w[c] = [])).push(function () {
+                      Ya.Site.Form.init();
+                    });
+                  })(window, document, "yandex_site_callbacks");
+                </script>
+              </div>
+              
               <!-- ./Search -->
 
             </div>
@@ -436,7 +409,8 @@
                   <nav class="navbar nav-page">
                     <ul class="navbar-nav level_0 parent_active">
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Об учреждении</a>
+                        <a class="nav-link" href="#">Об учреждении</a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page"></a>
                         <ul class="dropdown-menu level_1">
                           <li><a class="dropdown-item" href="#">График работы руководства</a></li>
                           <li><a class="dropdown-item" href="#">Нормативно правовые документы</a></li>
@@ -449,7 +423,8 @@
                         </ul>
                       </li>
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Обучающимся</a>
+                        <a class="nav-link" href="#">Обучающимся</a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                         <ul class="dropdown-menu level_1">
                           <li><a class="dropdown-item" href="#">График работы руководства</a></li>
                           <li><a class="dropdown-item" href="#">Нормативно правовые документы</a></li>
@@ -462,7 +437,8 @@
                         </ul>
                       </li>
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Родителям</a>
+                        <a class="nav-link active" href="#" >Родителям</a>
+                        <a class="active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"></a>
                           <ul class="dropdown-menu level_1 show">
                             <li><a class="dropdown-item active" href="#">Безотметочное обучение</a></li>
                             <li><a class="dropdown-item" href="#">Индивидуальное обучение</a></li>
@@ -475,7 +451,8 @@
                           </ul>
                       </li>
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Учительская</a>
+                        <a class="nav-link" href="#">Учительская</a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                         <ul class="dropdown-menu level_1">
                           <li><a class="dropdown-item" href="#">График работы руководства</a></li>
                           <li><a class="dropdown-item" href="#">Нормативно правовые документы</a></li>
@@ -488,7 +465,8 @@
                         </ul>
                       </li>
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Пакет безопасности</a>
+                        <a class="nav-link" href="#">Пакет безопасности</a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                         <ul class="dropdown-menu level_1">
                           <li><a class="dropdown-item" href="#">График работы руководства</a></li>
                           <li><a class="dropdown-item" href="#">Нормативно правовые документы</a></li>
@@ -501,7 +479,8 @@
                         </ul>
                       </li>
                       <li class="nav-item parent dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Одно окно</a>
+                        <a class="nav-link" href="#">Одно окно</a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                         <ul class="dropdown-menu level_1">
                           <li><a class="dropdown-item" href="#">График работы руководства</a></li>
                           <li><a class="dropdown-item" href="#">Нормативно правовые документы</a></li>
@@ -542,7 +521,7 @@
               <div class="col-12 mb-4">
                 <!-- Banners -->
                 <div class="banners">
-                  <h2 class="banners-title footer-title">Обратите внимание</h2>
+                  <h3 class="banners-title footer-title">Обратите внимание</h3>
                   <div class="owl-carousel owl-banners owl-theme p-lg-1">
                     <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/1.png" alt=""></a>
                     <a href="#" class="banners-link"><img loading="lazy" src="assets/images/aside-banners/2.png" alt=""></a>
@@ -641,7 +620,7 @@
                   </blockquote>
                 </div>
                 <div class="footer-socials">
-                  <p>Инстаграмм-аккаунт школы</p>
+                  <h4 class="footer-title">Мы в социальный сетях:</h4>
                   <a href="https://instagram.com/school_n63" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.47641 2.59237C7.25855 2.6434 6.42123 2.79768 5.71642 3.10097C5.05682 3.38483 4.66516 3.64639 4.17884 4.12778C3.51939 4.78055 3.10845 5.51414 2.85045 6.49922C2.62287 7.36813 2.57209 8.36855 2.57154 11.9922C2.57098 15.5556 2.61959 16.568 2.83294 17.4367C3.36487 19.6026 4.9543 20.9802 7.2892 21.2989C7.96007 21.3905 9.36436 21.4288 12.0439 21.4284C14.5358 21.4282 15.9727 21.393 16.6195 21.3164C17.941 21.1598 18.9774 20.7044 19.7909 19.9228C20.7115 19.0382 21.1984 17.9785 21.3767 16.4713C21.4465 15.8809 21.4458 8.01342 21.3759 7.45772C21.234 6.32941 20.8949 5.40103 20.3651 4.68987C20.1018 4.33644 19.5424 3.79964 19.1902 3.56241C18.3955 3.02713 17.4405 2.72992 16.1803 2.62566C15.5863 2.57652 9.4845 2.55016 8.47641 2.59237ZM16.4656 4.37227C17.5181 4.52795 18.1089 4.79036 18.6768 5.35433C19.0451 5.72007 19.2508 6.04552 19.4299 6.54552C19.7341 7.39534 19.7614 7.84502 19.7615 12.0106C19.7615 14.4104 19.748 15.5632 19.7153 15.9527C19.6079 17.2308 19.3532 17.9204 18.7527 18.5597C18.1316 19.2209 17.3504 19.5508 16.1434 19.6615C15.4896 19.7215 10.0873 19.7508 8.8437 19.7012C8.282 19.6788 7.69316 19.6425 7.5352 19.6205C6.83679 19.5236 6.15994 19.2778 5.74143 18.9691C5.47692 18.7741 5.0576 18.3199 4.90071 18.0585C4.59233 17.5447 4.40535 16.8186 4.34423 15.8974C4.23317 14.2241 4.26925 8.47896 4.39682 7.52864C4.52918 6.54209 4.83405 5.87995 5.41395 5.31953C6.05154 4.70336 6.88565 4.4035 8.17855 4.3256C8.4561 4.30886 10.3451 4.29935 12.3763 4.30444C15.5268 4.31233 16.1277 4.32228 16.4656 4.37227ZM16.5763 5.94797C16.1571 6.15707 15.9601 6.48005 15.9593 6.96003C15.9586 7.30749 16.0416 7.51331 16.277 7.74829C16.512 7.98286 16.7186 8.06599 17.0667 8.06599C17.3152 8.06599 17.3954 8.04966 17.572 7.96314C17.9457 7.77992 18.1569 7.4582 18.185 7.0293C18.2098 6.65003 18.1272 6.42744 17.864 6.16507C17.6194 5.92113 17.4075 5.83564 17.0475 5.83564C16.8472 5.83564 16.7596 5.85651 16.5763 5.94797ZM11.1596 7.22229C10.189 7.39718 9.33075 7.85236 8.60449 8.57732C7.64626 9.53379 7.18191 10.6485 7.18191 11.9922C7.18191 12.8017 7.33422 13.4686 7.67248 14.1402C8.70476 16.1896 10.9798 17.2407 13.194 16.6913C14.063 16.4758 14.7372 16.1004 15.3891 15.4693C15.9767 14.9006 16.372 14.281 16.6198 13.5405C16.7983 13.0073 16.8635 12.5927 16.8635 11.9922C16.8635 11.3951 16.7983 10.9769 16.6238 10.4559C16.3862 9.7465 16.0428 9.18574 15.5083 8.63457C14.7784 7.88193 13.8662 7.39442 12.8608 7.21979C12.4504 7.14849 11.5619 7.14978 11.1596 7.22229ZM12.6224 8.91054C14.3159 9.23514 15.4376 10.8936 15.1121 12.5918C14.9146 13.6223 14.1569 14.5355 13.1895 14.9089C12.7171 15.0912 12.4424 15.135 11.8962 15.1153C11.5088 15.1014 11.3555 15.0787 11.1022 14.998C9.9813 14.6411 9.16725 13.7412 8.93639 12.6038C8.8475 12.1659 8.8821 11.4848 9.01432 11.0705C9.36451 9.97308 10.2909 9.13339 11.3935 8.91412C11.7223 8.84868 12.2911 8.84706 12.6224 8.91054Z" fill="white"></path></svg></a>
                 </div>
               </div>
@@ -652,9 +631,11 @@
           </div>
 
         </div>
+
         <div class="footer-extra container-fluid">
 
           <div class="row">
+            <!-- Banners-official -->
             <div class="col-12">
               <div class="banners-official my-3">
                 <div class="owl-carousel owl-banners-official owl-theme">
@@ -680,6 +661,7 @@
                 </div>
               </div>
             </div>
+            <!-- ./Banners-official -->
           </div>
 
           <div class="row">

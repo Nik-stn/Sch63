@@ -720,8 +720,13 @@ main {
 }
 
 .nav-page .navbar-nav a {
+    display: inline-block;
     padding-inline: 5px;
     font-size: clamp(12px, 2.12vw, 16px);
+}
+
+.nav-page .navbar-nav .dropdown-toggle {
+    padding: 0;
 }
 
 .nav-page .navbar-nav .nav-link.active, .nav-page .navbar-nav .nav-link.show {
