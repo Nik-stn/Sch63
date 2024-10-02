@@ -46,7 +46,7 @@
     background: url(../icons/header/be.png) center/contain no-repeat;
 }
 
-.section-tabs .card time::before {
+.section-tabs .card time::before, .article .content-news time::before {
     background: url(../icons/main/date-grey.svg) center/contain no-repeat;
 }
 

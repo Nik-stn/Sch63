@@ -450,7 +450,7 @@ main {
     text-decoration: none;
 }
 
-.section-tabs .card time {
+.section-tabs .card time, .article .content-news time {
     color: var(--color-grey);
     display: flex;
     gap: 2px;
@@ -458,7 +458,7 @@ main {
     margin-bottom: 5px;
 }
 
-.section-tabs .card time::before {
+.section-tabs .card time::before, .article .content-news time::before  {
     content: '';
     width: 15px;
     height: 15px;
@@ -736,6 +736,26 @@ main {
 
 .nav-page .navbar-nav .nav-link.active, .nav-page .navbar-nav .nav-link.show {
     color: var(--color-accent);
+}
+
+.content-news h3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--color-teal);
+    font-weight: bold;
+}
+
+.content-news h3::before, .content-news h3::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: var(--color-gradient-blue-teal);
+    min-width: 40px;
+ 
+}
+.content-news h3::after {
+    transform: rotate(180deg);
 }
 
 .share-buttons-description {
