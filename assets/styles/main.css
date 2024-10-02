@@ -758,6 +758,17 @@ main {
     transform: rotate(180deg);
 }
 
+.content-employee .card-img {
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content-employee img {
+    object-fit: cover;
+    min-height: 300px;
+}
+
 .share-buttons-description {
     margin: 18px 0 6px;
     color: var(--color-text);
@@ -826,11 +837,11 @@ main {
         min-height: 400px;
     }
 
-    .section-tabs .card>a {
+    .section-tabs .card>a, .content-employee .card-img {
         height: 250px;
     }
 
-    .section-tabs .card img {
+    .section-tabs .card img, .content-employee img  {
         min-height: 250px;
     }
 
