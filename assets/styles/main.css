@@ -769,6 +769,19 @@ main {
     min-height: 300px;
 }
 
+.content-map-site li.parent_active>a {
+    color: var(--color-text);
+}
+
+.content-map-site li.parent_active>a:hover {
+    color: var(--color-teal);
+}
+
+.content-map-site li.active {
+    color: var(--color-teal);
+    font-weight: bold;
+}
+
 .share-buttons-description {
     margin: 18px 0 6px;
     color: var(--color-text);
