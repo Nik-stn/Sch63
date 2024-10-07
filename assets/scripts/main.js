@@ -11,6 +11,16 @@ const carouselItem = document.querySelector('.carousel-item');
 if (carouselItem) carouselItem.classList.add('active');
 
 
+// Active tabs page
+// *****
+const firstTab = document.querySelector(".content-box .content-tabs .nav-link");
+const firstTabPane= document.querySelector(".content-box .content-tabs .tab-pane");
+if (firstTab) {
+    firstTab.classList.add('active');
+    firstTabPane.classList.add('active', 'show');
+}
+
+
 // Poll
 // *****
 const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
