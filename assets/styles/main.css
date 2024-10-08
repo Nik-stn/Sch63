@@ -695,7 +695,13 @@ main {
 }
 
 .content-box h3 {
-    font-size: clamp(18px, 2.06vw, 24px);
+    font-size: clamp(18px, 1.56vw, 24px);
+    font-weight: bold;
+}
+
+.content-box h4 {
+    font-size: clamp(14px, 1.36vw, 20px);
+    font-weight: bold;
 }
 
 .main-page .content-box {
@@ -790,6 +796,19 @@ main {
 
 .content-spoiler .collapse {
     border-top: 2px solid var(--color-teal);
+}
+
+.content-progress .content-progress-item {
+    border-bottom: 2px dashed var(--color-grey);
+    margin-bottom: 10px;
+}
+
+.content-progress h3 {
+    color: var(--color-teal);
+}
+
+.content-progress .progress-bar {
+    font-weight: bold;
 }
 
 .share-buttons-description {
