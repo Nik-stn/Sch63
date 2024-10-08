@@ -53,3 +53,11 @@
 .header-bottom #ya-site-form0 .ya-site-form__submit {
     background: url(../icons/main/search.svg) center/contain no-repeat;
 }
+
+.content-link p::before {
+    background: url(../icons/main/enter.svg) center/contain no-repeat;
+}
+
+.content-link.link-download p::before {
+    background: url(../icons/main/download.svg) center/contain no-repeat;
+}
