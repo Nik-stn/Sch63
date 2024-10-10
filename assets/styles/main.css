@@ -420,7 +420,7 @@ main {
     line-height: 1;
 }
 
-.section-tabs .card .card-title a {
+.section-tabs .card .card-title a, .card-archive-news .card-title a {
     color: var(--color-text);
     font-size: 24px;
     font-weight: bold;
@@ -432,17 +432,21 @@ main {
     text-decoration: none;
 }
 
-.section-tabs .card>a {
+.card-archive-news .card-title a {
+    font-size: 20px;
+}
+
+.section-tabs .card>a, .card-archive-news>a  {
     height: 250px;
     overflow: hidden;
 }
 
-.section-tabs .card img {
+.section-tabs .card img, .card-archive-news img  {
     object-fit: cover;
     min-height: 250px;
 }
 
-.section-tabs .card .card-text {
+.section-tabs .card .card-text, .card-archive-news .card-text {
     font-size: 16px;
     height: 120px;
     overflow: hidden;
@@ -837,7 +841,6 @@ main {
 }
 
 .content-box .content-link span {
-    font-weight: 700;
     color: var(--color-white);
     padding: .1rem .4rem .1rem;
     text-align: center;
@@ -845,6 +848,7 @@ main {
     border-radius: 5px;
     font-size: 0.65rem;
     background-color: var(--color-blue);
+    margin-right: 5px;
 }
 
 .content-link p::before {
@@ -859,11 +863,79 @@ main {
     color: var(--color-text);
 }
 
+.content-box .MapYear, .content-box .MapMonth {
+    background-image: var(--color-gradient-blue-teal);
+    margin-bottom: 20px;
+    overflow-x: auto;
+    border-radius: 30px;
+}
+
+.content-box .MapYear, .content-box  .MapMonth span {
+    display: flex;
+    height: 2rem;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.content-box .MapYear span.sel, .content-box .MapMonth b {
+    cursor: default;
+    background: var(--color-teal);
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.MapMonth a:hover, .MapYear span:hover {
+    background: #31d2f2;
+    color: var(--color-white);
+    border-radius: 30px;
+}
+
+.content-box .MapYear span, .content-box .MapMonth b, .content-box .MapMonth a {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
 .share-buttons .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
     width: clamp(20px, 2vw, 30px);
     height: clamp(20px, 2vw, 30px);
     background-size: clamp(20px, 2vw, 30px);
     border-radius: 5px;
+}
+
+.card-archive-news {
+    border-radius: 43px;
+}
+
+.card-archive-news img {
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+}
+
+.card-archive-news>a {
+    position: relative;
+}
+
+.card-archive-news>a time {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    background: #2e85ef9d;
+    color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: inherit;
+}
+
+.card-archive-news>a time::before {
+    content: unset;
 }
 
 .share-buttons .ya-share2__list.ya-share2__list_direction_horizontal>.ya-share2__item {
@@ -892,11 +964,11 @@ main {
 }
 
 @media only screen and (max-width: 1200px) {
-    .section-tabs .card>a {
+    .section-tabs .card>a, .card-archive-news>a  {
         height: 200px;
     }
 
-    .section-tabs .card img {
+    .section-tabs .card img, .card-archive-news img  {
         min-height: 200px;
     }
 }
@@ -922,11 +994,11 @@ main {
         min-height: 400px;
     }
 
-    .section-tabs .card>a, .content-employee .card-img {
+    .section-tabs .card>a, .content-employee .card-img, .card-archive-news>a  {
         height: 250px;
     }
 
-    .section-tabs .card img, .content-employee img  {
+    .section-tabs .card img, .content-employee img, .card-archive-news img   {
         min-height: 250px;
     }
 
