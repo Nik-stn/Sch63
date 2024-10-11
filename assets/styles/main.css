@@ -425,7 +425,7 @@ tbody, td, tfoot, th, thead, tr {
     line-height: 1;
 }
 
-.section-tabs .card .card-title a, .card-archive-news .card-title a {
+.section-tabs .card .card-title a, .card-archive .card-title a {
     color: var(--color-text);
     font-size: 24px;
     font-weight: bold;
@@ -437,21 +437,21 @@ tbody, td, tfoot, th, thead, tr {
     text-decoration: none;
 }
 
-.card-archive-news .card-title a {
+.card-archive .card-title a {
     font-size: 20px;
 }
 
-.section-tabs .card>a, .card-archive-news>a  {
+.section-tabs .card>a, .card-archive>a  {
     height: 250px;
     overflow: hidden;
 }
 
-.section-tabs .card img, .card-archive-news img  {
+.section-tabs .card img, .card-archive img  {
     object-fit: cover;
     min-height: 250px;
 }
 
-.section-tabs .card .card-text, .card-archive-news .card-text {
+.section-tabs .card .card-text, .card-archive .card-text {
     font-size: 16px;
     height: 120px;
     overflow: hidden;
@@ -908,20 +908,20 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 5px;
 }
 
-.card-archive-news {
+.card-archive {
     border-radius: 43px;
 }
 
-.card-archive-news img {
+.card-archive img {
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
 }
 
-.card-archive-news>a {
+.card-archive>a {
     position: relative;
 }
 
-.card-archive-news>a time {
+.card-archive>a time {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -939,7 +939,7 @@ tbody, td, tfoot, th, thead, tr {
     font-size: inherit;
 }
 
-.card-archive-news>a time::before {
+.card-archive>a time::before {
     content: unset;
 }
 
@@ -969,11 +969,11 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 @media only screen and (max-width: 1200px) {
-    .section-tabs .card>a, .card-archive-news>a  {
+    .section-tabs .card>a, .card-archive>a  {
         height: 200px;
     }
 
-    .section-tabs .card img, .card-archive-news img  {
+    .section-tabs .card img, .card-archive img  {
         min-height: 200px;
     }
 }
@@ -999,11 +999,11 @@ tbody, td, tfoot, th, thead, tr {
         min-height: 400px;
     }
 
-    .section-tabs .card>a, .content-employee .card-img, .card-archive-news>a  {
+    .section-tabs .card>a, .content-employee .card-img, .card-archive>a  {
         height: 250px;
     }
 
-    .section-tabs .card img, .content-employee img, .card-archive-news img   {
+    .section-tabs .card img, .content-employee img, .card-archive img   {
         min-height: 250px;
     }
 
