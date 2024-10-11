@@ -20,6 +20,13 @@ if (firstTab) {
     firstTabPane.classList.add('active', 'show');
 }
 
+// Archive news
+// *****
+const contentArchiveNews = document.querySelector('.content-archive-news .MapBody');
+if (contentArchiveNews) {
+    contentArchiveNews.classList.add('row');
+}
+
 
 // Poll
 // *****
