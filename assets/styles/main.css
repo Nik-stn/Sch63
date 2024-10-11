@@ -76,6 +76,11 @@ main {
     flex: 1 1 auto;
 }
 
+tbody, td, tfoot, th, thead, tr {
+    border-style: inherit;
+    border-width: inherit;
+}
+
 .btn-info {
     background-color: var(--color-teal);
     border: 0;
@@ -388,24 +393,24 @@ main {
     color: var(--color-text);
 }
 
-.section-tabs .nav-tabs, .content-tabs .nav-tabs {
+.section-tabs .nav-tabs, .content-box .nav-tabs {
     border-bottom: 2px solid var(--color-teal);
 }
 
-.section-tabs .nav-tabs .nav-link, .content-tabs .nav-tabs .nav-link {
+.section-tabs .nav-tabs .nav-link, .content-box .nav-tabs .nav-link {
     color: var(--color-text);
     font-weight: bold;
     border: 0;
 }
 
-.section-tabs .nav-tabs .nav-link:hover, .content-tabs .nav-tabs .nav-link:hover {
+.section-tabs .nav-tabs .nav-link:hover, .content-box .nav-tabs .nav-link:hover {
     color: var(--color-accent);
     border-color: var(--color-teal);
     border-bottom: 0;
     background-color: var(--color-teal);
 }
 
-.section-tabs .nav-tabs .nav-link.active, .content-tabs .nav-tabs .nav-link.active {
+.section-tabs .nav-tabs .nav-link.active, .content-box .nav-tabs .nav-link.active {
     border-color: var(--color-teal);
     border-bottom: 0;
     background-color: var(--color-teal);

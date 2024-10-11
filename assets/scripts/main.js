@@ -27,6 +27,13 @@ if (contentArchiveNews) {
     contentArchiveNews.classList.add('row');
 }
 
+// Table
+// *****
+const table = document.querySelectorAll('.content-box table');
+if (table) {
+    table.forEach( item => item.classList.add('table', 'table-bordered', 'table-hover'));
+}
+
 
 // Poll
 // *****
