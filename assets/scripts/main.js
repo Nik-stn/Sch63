@@ -20,6 +20,36 @@ if (firstTab) {
     firstTabPane.classList.add('active', 'show');
 }
 
+// None tabs page
+// *****
+// Получаем все контейнеры с табами
+const tabContainers = document.querySelectorAll('.content-box .nav-tabs');
+
+tabContainers.forEach(container => {
+    const tabs = container.querySelectorAll('.nav-item'); // Получаем табы в текущем контейнере
+    let hasContent = false;
+
+    tabs.forEach(tab => {
+        const targetId = tab.querySelector('button').getAttribute('data-bs-target');
+        const contentElement = document.querySelector(targetId); // Ищем элемент по селектору
+
+        // Проверяем, существует ли элемент
+        if (contentElement) {
+            const content = contentElement.innerHTML.trim();
+            if (content) {
+                hasContent = true; // Если есть контент, устанавливаем hasContent в true
+            }
+        }
+    });
+
+    // Скрываем табы в текущем контейнере, если нет контента
+    if (!hasContent) {
+        container.style.display = 'none'; // Скрываем контейнер с табами
+    }
+});
+
+
+
 // Archive news
 // *****
 const contentArchiveNews = document.querySelector('.content-archive-news .MapBody');
