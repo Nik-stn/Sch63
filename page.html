@@ -1130,7 +1130,7 @@
                             
                           </div> -->
 
-                          <div class="content-summary-6-days">
+                          <!-- <div class="content-summary-6-days">
 
                             <ul class="nav nav-tabs"  role="tablist">
                               <li class="nav-item" role="presentation">
@@ -1309,6 +1309,192 @@
             
                             </div>
                             
+                          </div> -->
+
+                          <div class="content-quest-book">
+
+                            <ul class="nav nav-tabs"  role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="quest-book-form" data-bs-toggle="tab" data-bs-target="#quest-book-form-pane" type="button" role="tab" aria-controls="quest-book-form-pane" aria-selected="true">Оставить запись</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="quest-book" data-bs-toggle="tab" data-bs-target="#quest-book-pane" type="button" role="tab" aria-controls="quest-book-pane" aria-selected="false">История сообщений</button>
+                              </li>
+                            </ul>
+
+                            <div class="tab-content tab-announcement p-2" >
+                              <div class="tab-pane fade show active" id="quest-book-form-pane" role="tabpanel" aria-labelledby="quest-book-form" tabindex="0">
+
+                                <div class="QA_add guestbook_form">
+                                  <input type="hidden" id="field_dt" value="[[date]] [[time]]" />
+                                  <input type="hidden" id="field_IP" value="[[ip]]" />
+                                  <input type="hidden" id="field_status" value="" />
+                                  
+                                  <div class="form_structure">
+                                   
+                                    <div class="mb-3">
+                                    <label class="info_field form-label" for="field_name">Ваше имя*:</label>
+                                    <span class="input_field"><input class="form-control" type="text" id="field_name" required="" isneed="Не заполнено поле 'Ваше имя'"></input></span>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                    <label class="info_field form-label" for="field_text">Текст сообщения*:</label>
+                                    <span class="input_field">
+                                    <textarea class="form-control" id="field_text" rows="10" required="" isneed="Не заполнено поле 'Текст сообщения'"></textarea></span>
+                                    </div>
+                                    
+                                    <div  class="row">
+                                    <div class="info_field col-auto">Pin:</div>
+                                    <div class="input_field col-auto"><p>
+                                      <span id="pmgimg"><img src="/RandomKey.aspx?guid=320e3644-1dd7-4ebf-a84a-d048cb297af4"></span>
+                                      <a class="ReRe" id="pin_reload" href="#pin_reload" onclick="GetNewPinGraphics(); return false;">обновить</a><br>
+                                      <span id="code_input_help">введите код в поле ниже</span>
+                                      </p>
+                                      
+                                      <p>
+                                      <input type="text" required="" id="pmgtext">
+                                      </p></div>
+                                    </div>
+                                    
+                                    <div>
+                                    <span class="info_field">&#160;</span>
+                                    <span class="input_field">
+                                    <input type="button" class="btn btn-info" [[GO]] class="link-button" value="Отправить" />
+                                    </span>
+                                    </div>
+                                  
+                                  </div>
+                                  
+                                  </div>
+                                  
+            
+                              </div>
+            
+                              <div class="tab-pane fade" id="quest-book-pane" role="tabpanel" aria-labelledby="quest-book" tabindex="0">
+                                
+                                <div class="archive-quest-book">
+                                  <div class="content-archive-news container-fluid">
+                                    <div class="MapYear"><span y="2024" class="sel">2024</span><span y="2023" class="">2023</span><span y="2022"
+                                      class="">2022</span><span y="2021" class="">2021</span><span y="2020" class="">2020</span><span y="2019"
+                                      class="">2019</span><span y="2018" class="">2018</span><span y="2017" class="">2017</span><span y="2016"
+                                      class="">2016</span>
+                                    </div>
+                                    <div class="MapMonth"><span y="2024" style=""><b>Октябрь</b><a href="main.aspx?guid=1031&amp;map=202409">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202408">Август</a><a href="main.aspx?guid=1031&amp;map=202406">Июнь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202405">Май</a><a href="main.aspx?guid=1031&amp;map=202404">Апрель</a><a
+                                        href="main.aspx?guid=1031&amp;map=202403">Март</a><a href="main.aspx?guid=1031&amp;map=202402">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202401">Январь</a></span><span y="2023" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=202312">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202311">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202310">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202309">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202307">Июль</a><a href="main.aspx?guid=1031&amp;map=202306">Июнь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202305">Май</a><a href="main.aspx?guid=1031&amp;map=202304">Апрель</a><a
+                                        href="main.aspx?guid=1031&amp;map=202303">Март</a><a href="main.aspx?guid=1031&amp;map=202302">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202301">Январь</a></span><span y="2022" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=202212">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202211">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202210">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202209">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202207">Июль</a><a href="main.aspx?guid=1031&amp;map=202206">Июнь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202205">Май</a><a href="main.aspx?guid=1031&amp;map=202204">Апрель</a><a
+                                        href="main.aspx?guid=1031&amp;map=202203">Март</a><a href="main.aspx?guid=1031&amp;map=202202">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202201">Январь</a></span><span y="2021" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=202112">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202111">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202110">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202109">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202108">Август</a><a href="main.aspx?guid=1031&amp;map=202107">Июль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202106">Июнь</a><a href="main.aspx?guid=1031&amp;map=202105">Май</a><a
+                                        href="main.aspx?guid=1031&amp;map=202104">Апрель</a><a href="main.aspx?guid=1031&amp;map=202103">Март</a><a
+                                        href="main.aspx?guid=1031&amp;map=202102">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202101">Январь</a></span><span y="2020" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=202012">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202011">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202010">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202009">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=202007">Июль</a><a href="main.aspx?guid=1031&amp;map=202005">Май</a><a
+                                        href="main.aspx?guid=1031&amp;map=202004">Апрель</a><a href="main.aspx?guid=1031&amp;map=202003">Март</a><a
+                                        href="main.aspx?guid=1031&amp;map=202002">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=202001">Январь</a></span><span y="2019" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=201912">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201911">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201910">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201909">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201908">Август</a><a href="main.aspx?guid=1031&amp;map=201906">Июнь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201905">Май</a><a href="main.aspx?guid=1031&amp;map=201904">Апрель</a><a
+                                        href="main.aspx?guid=1031&amp;map=201903">Март</a><a href="main.aspx?guid=1031&amp;map=201902">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201901">Январь</a></span><span y="2018" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=201812">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201811">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201810">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201809">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201808">Август</a><a href="main.aspx?guid=1031&amp;map=201807">Июль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201806">Июнь</a><a href="main.aspx?guid=1031&amp;map=201805">Май</a><a
+                                        href="main.aspx?guid=1031&amp;map=201804">Апрель</a><a href="main.aspx?guid=1031&amp;map=201803">Март</a><a
+                                        href="main.aspx?guid=1031&amp;map=201802">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201801">Январь</a></span><span y="2017" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=201712">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201711">Ноябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201710">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201708">Август</a><a href="main.aspx?guid=1031&amp;map=201707">Июль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201706">Июнь</a><a href="main.aspx?guid=1031&amp;map=201705">Май</a><a
+                                        href="main.aspx?guid=1031&amp;map=201704">Апрель</a><a href="main.aspx?guid=1031&amp;map=201703">Март</a><a
+                                        href="main.aspx?guid=1031&amp;map=201702">Февраль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201701">Январь</a></span><span y="2016" style="display: none;"><a
+                                        href="main.aspx?guid=1031&amp;map=201612">Декабрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201610">Октябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201609">Сентябрь</a><a
+                                        href="main.aspx?guid=1031&amp;map=201608">Август</a><a href="main.aspx?guid=1031&amp;map=201607">Июль</a><a
+                                        href="main.aspx?guid=1031&amp;map=201606">Июнь</a></span>
+                                    </div>
+                                    <div class="MapBody">
+                                      
+                                      <div class="col-12 mb-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <time datetime="2024-08-14">04 окт 2024</time>
+                                            <h3 class="card-title">Шильников Роман Леонидович</h3>
+                                            <p class="card-text">Я считаю, что надо и обновлять информацию, Лев Семенович умер в прошлом году</p>
+
+                                            <button class="btn btn-info mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#quest-book-1" aria-expanded="false" aria-controls="quest-book-1">
+                                              Показать/свернуть ответ
+                                            </button>
+                                            <p class="collapse" id="quest-book-1">
+                                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-12 mb-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <time datetime="2024-08-14">04 окт 2024</time>
+                                            <h3 class="card-title">Шильников Роман Леонидович</h3>
+                                            <p class="card-text">Я считаю, что надо и обновлять информацию, Лев Семенович умер в прошлом году</p>
+
+                                            <button class="btn btn-info mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#quest-book-2" aria-expanded="false" aria-controls="quest-book-2">
+                                              Показать/свернуть ответ
+                                            </button>
+                                            <p class="collapse" id="quest-book-2">
+                                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                      
+                                      
+                                
+                                    </div>
+                                  </div>
+
+                                </div>
+                                
+                              </div>
+            
+                            </div>
                           </div>
 
                         </div>
