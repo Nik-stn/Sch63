@@ -950,6 +950,9 @@ tbody, td, tfoot, th, thead, tr {
     margin-bottom: 0.6em;
 }
 
+.adm-procedure .item-adm-procedure {
+    font-size: clamp(14px, 2.6vw, 20px);
+}
 
 .share-buttons .ya-share2__list.ya-share2__list_direction_horizontal>.ya-share2__item {
     margin-right: 6px;
