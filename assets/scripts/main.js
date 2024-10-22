@@ -169,3 +169,9 @@ $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
 	dots:false,
 	autoWidth:true,
 });
+
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options for a specific gallery
+  });
+  
