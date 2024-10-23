@@ -50,9 +50,9 @@ tabContainers.forEach(container => {
 
 
 
-// Archive news
+// Archive posts
 // *****
-const contentArchiveNews = document.querySelector('.content-archive-news .MapBody');
+const contentArchiveNews = document.querySelector('.content-archive .MapBody');
 if (contentArchiveNews) {
     contentArchiveNews.classList.add('row');
 }
