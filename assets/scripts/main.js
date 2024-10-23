@@ -170,7 +170,8 @@ $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
 	autoWidth:true,
 });
 
-
+// Fancy-box
+// *****
 Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
   });
