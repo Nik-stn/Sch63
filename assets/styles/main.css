@@ -735,6 +735,22 @@ tbody, td, tfoot, th, thead, tr {
     flex: 1 1 auto;
 }
 
+.nav-page .parent_active a {
+    color: var(--color-text);
+}
+
+.nav-page .parent_active .level_2 a {
+    display: block;
+}
+
+.nav-page .level_2 a:hover, .nav-page .level_2 a.active {
+    background-color: var(--color-teal);
+}
+
+.nav-page .level_0>li.parent_active>a {
+    color: var(--color-white);
+}
+
 .nav-page .navbar-nav .dropdown-item {
     white-space: normal;
 }
