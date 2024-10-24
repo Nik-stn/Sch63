@@ -1045,10 +1045,14 @@ tbody, td, tfoot, th, thead, tr {
 
 @media only screen and (max-width: 992px) {
     .header-top-col a>span {
-        display: none;
+       display: none;
+    } 
+
+    .header-top-col.header-top-lang a>span {
+        display: flex;
     }
 
-    .header-top-col>span {
+    .header-top-col>span, .header-top-lang span {
         text-indent: -9999px
     }
 
