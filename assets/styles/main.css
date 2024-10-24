@@ -149,17 +149,19 @@ tbody, td, tfoot, th, thead, tr {
     max-width: clamp(150px, 15.63vw, 300px);
 }
 
-.header-middle-title-box h2, .header-middle-title-box h2 a {
+.header-middle-title-box .header-middle-h2, .header-middle-title-box .header-middle-h2 a {
     color: var(--color-text);
     font-size: clamp(18px, 1.67vw, 32px);
     font-weight: 500;
+    margin-bottom: 0px;
+    line-height: 1.4;
 }
 
-.header-middle-title-box h2 a:hover {
+.header-middle-title-box .header-middle-h2 a:hover {
     color: var(--color-teal);
 }
 
-.header-middle-title-box h1, .header-middle-title-box h2:last-child {
+.header-middle-title-box h1, .header-middle-title-box h2 {
     font-size: clamp(24px, 2.08vw, 40px);
     font-weight: bold;
 }
