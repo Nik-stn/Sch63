@@ -200,6 +200,15 @@ tbody, td, tfoot, th, thead, tr {
     background-color: var(--color-teal);
 }
 
+.header-bottom .dropdown>a {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.header-bottom .dropdown .dropdown-toggle {
+    display: none;
+}
+
 .header-bottom  .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -212,6 +221,7 @@ tbody, td, tfoot, th, thead, tr {
     white-space: normal;
     width: 100%;
     min-width: 350px;
+    font-size: clamp(12px, 2.12vw, 16px);
 }
 
 .ya-site-form__search-input-layout-r, #ya-site-form0 .ya-site-form__search-input {
@@ -1058,6 +1068,14 @@ tbody, td, tfoot, th, thead, tr {
 
     .header-bottom .offcanvas-body>a {
         margin-bottom: 5px;
+    }
+
+    .header-bottom .dropdown>.dropdown-toggle {
+        display: inline-block;
+    }
+    
+    .header-bottom  .dropdown:hover .dropdown-menu {
+        display: none;
     }
 
     .slider .carousel {
