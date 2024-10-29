@@ -1,23 +1,23 @@
 const elements = {
-    siteFont: document.querySelectorAll(".site-content, .site-content h1, .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6"),
+    siteFont: document.querySelectorAll(".wrapper, .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6"),
     siteContent: document.querySelectorAll("button, a, li, h1, h2, h3, h4, h5, h6, figcaption, footer, div, span, b, input"),
     siteBorder: document.querySelectorAll("div, article, hr"),
-    zIndexFix: document.querySelectorAll('.header-nav, .privacy-policy-popup'),
-    img: document.querySelectorAll("#ya-site-form0 input.ya-site-form__submit, img, .gymn-map, .youtube, .ya-share2__list"),
+    zIndexFix: document.querySelectorAll('.header, .privacy-policy-popup'),
+    img: document.querySelectorAll("#ya-site-form0 input.ya-site-form__submit, img, .footer-sch-map, .youtube, .ya-share2__list"),
     crossEyeSvg: document.getElementById("cross-eye"),
     normalEyeSvg: document.getElementById("normal-eye"),
     crossEyeWhiteSvg: document.getElementById("cross-eye-white"),
-    homeSvg: document.querySelectorAll('.home'),
-    homeWhiteSvg: document.querySelectorAll('.home-white'),
-    xMarkSvg: document.querySelector('.x-mark'),
-    xMarkWhiteSvg: document.querySelector('.x-mark-white'),
-    menuBurgerSvg: document.querySelector('.menu-burger'),
-    menuBurgerWhiteSvg: document.querySelector('.menu-burger-white'),
-    chevronSvg: document.querySelectorAll('.mobile-chevron.black'),
-    chevronWhiteSvg: document.querySelectorAll('.mobile-chevron.white'),
+    homeSvg: document.querySelector('.home'),
+    homeWhiteSvg: document.querySelector('.home-white'),
+    // xMarkSvg: document.querySelector('.x-mark'),
+    // xMarkWhiteSvg: document.querySelector('.x-mark-white'),
+    // menuBurgerSvg: document.querySelector('.menu-burger'),
+    // menuBurgerWhiteSvg: document.querySelector('.menu-burger-white'),
+    // chevronSvg: document.querySelectorAll('.mobile-chevron.black'),
+    // chevronWhiteSvg: document.querySelectorAll('.mobile-chevron.white'),
     siteBody: document.querySelector('body'),
     vision: document.querySelector(".vision"),
-    siteBackground: document.querySelector(".site-content"),
+    siteBackground: document.querySelector(".wrapper"),
     imgYes: document.getElementById("imagesYes"),
     letterSpacing: document.querySelectorAll(".changeLetterSpacing")
 };
@@ -27,7 +27,7 @@ function updateStyles() {
     elements.siteContent.forEach(item => item.style.zIndex = 'unset');
     elements.zIndexFix.forEach(item => item.style.zIndex = '20');
     [elements.crossEyeSvg, ...elements.chevronWhiteSvg].forEach(item => item.style.display = 'inline-block');
-    [elements.vision, elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, ...elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
+    [elements.vision, elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
     [elements.xMarkSvg, elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.menuBurgerSvg, ...elements.chevronSvg, ...elements.homeSvg].forEach(item => item.style.display = 'none');
 }
 
@@ -54,8 +54,8 @@ const styles = {
 function applyWhiteStyles() {
     applyColorStyles(styles.white);
     elements.chevronSvg.forEach(item => item.style.display = 'inline-block');
-    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, ...elements.homeWhiteSvg, ...elements.chevronWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.menuBurgerSvg, elements.xMarkSvg, ...elements.homeSvg].forEach(item => item.style.display = 'block');
+    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg, ...elements.chevronWhiteSvg].forEach(item => item.style.display = 'none');
+    [elements.menuBurgerSvg, elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
 }
 
 function applyColorScheme(colorScheme) {
@@ -82,8 +82,8 @@ function deleteVisionStyles() {
     [...elements.chevronWhiteSvg, ...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
     elements.siteBorder.forEach(item => item.style.removeProperty("border-color"));
     elements.siteBody.removeAttribute("class");
-    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.menuBurgerSvg, ...elements.chevronSvg, ...elements.homeSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, ...elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
+    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.menuBurgerSvg, ...elements.chevronSvg, elements.homeSvg].forEach(item => item.style.display = 'none');
+    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
     elements.normalEyeSvg.style.display = "inline-block";
     localStorage.clear();
 }
