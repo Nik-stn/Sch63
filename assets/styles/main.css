@@ -1023,6 +1023,69 @@ tbody, td, tfoot, th, thead, tr {
 }
 /* Page */
 
+/* Privacy-policy */
+.privacy-policy-popup {
+position: fixed;
+border: 1px solid #ddd;
+border-radius: 5px;
+background: #fff;
+bottom: 20px;
+left: 0;
+right: 0;
+margin: auto 10%;
+z-index: 1000000;
+ }
+
+.privacy-policy-content {
+    display: flex;
+    margin: 20px 30px;
+
+}
+
+.privacy-policy-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.privacy-policy-content .privacy-policy-img {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy-policy-content .privacy-policy-text a {
+    text-decoration: underline !important;
+    color: #333333;
+}
+.privacy-policy-content .privacy-policy-text a:hover {
+    color: #5a0b0b;
+}
+
+.privacy-policy-content .privacy-policy-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy-policy-content .privacy-policy-buttons .privacy-policy-btn {
+padding: 11px 35px;
+color: #333333;
+font-weight: bold;
+font-size: 14px;
+text-transform: uppercase;
+max-width: 100%;
+text-align: center;
+border: 1px solid #ddd;
+cursor: pointer;
+background-color: #fff;
+}
+.privacy-policy-content .privacy-policy-buttons .privacy-policy-btn:hover {
+border: 1px solid #ddd;
+color: #333333;
+background-color: #d7d8d9;
+}
+/* Privacy-policy */
+
 @media only screen and (max-width: 1400px) {
     .slider .carousel {
         height: 500px;
@@ -1131,6 +1194,27 @@ tbody, td, tfoot, th, thead, tr {
     .section-tabs .card img {
         min-height: 200px;
     }
+
+    .privacy-policy-popup {
+        margin: auto 5px;
+        bottom: 5px;
+     }
+ 
+     .privacy-policy-content {
+         flex-wrap: wrap;
+     }
+ 
+     .privacy-policy-item {
+         width: 100%;
+     }
+ 
+     .privacy-policy-item:not(:first-child) {
+         margin-left: 0;
+     }
+ 
+     .privacy-policy-item:not(:last-child) {
+         margin-bottom: 20px;
+     }
 }
 
 @media only screen and (min-width: 768px) {
