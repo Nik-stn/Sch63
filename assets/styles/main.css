@@ -1086,6 +1086,75 @@ background-color: #d7d8d9;
 }
 /* Privacy-policy */
 
+/* Vision */
+.vision {
+    margin: 0 15px;
+    border: 1px solid #000;
+    background: #ebebeb;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.vision div, .vision a {
+    background: #ebebeb !important;
+}
+
+.vision-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vision-item {
+    text-align: center;
+}
+
+.vision-block {
+    padding: 10px 0;
+}
+
+.vision-block>div {
+    color: #000 !important;
+    margin-bottom: 10px;
+}
+
+.item-settings {
+    display: inline-block;
+    color: #000 !important;
+    border: 1px solid #525252;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.item-settings:hover {
+    color: #000;
+    background: #eee;
+}
+
+.colorSiteBlack, #colorSiteBlack {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.colorSiteWhite, #colorSiteWhite {
+    background: #fff !important;
+    color: #2E3332 !important;
+}
+
+.colorSiteBlue, #colorSiteBlue {
+    background: #9dd1ff !important;
+    color: #00f !important;
+}
+
+.colorSiteBeige, #colorSiteBeige {
+    background: #f7f3d6 !important;
+    color: brown !important;
+}
+/* Vision */
+
 @media only screen and (max-width: 1400px) {
     .slider .carousel {
         height: 500px;
