@@ -184,8 +184,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .header-bottom .navbar {
-    background-color: transparent !important;
-    background-image: var(--color-gradient-blue-teal);
+    background-color: var(--color-gradient-blue-teal);
 }
 
 .header-bottom .navbar .nav-link {

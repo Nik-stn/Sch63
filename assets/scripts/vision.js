@@ -1,8 +1,7 @@
 const elements = {
     siteFont: document.querySelectorAll(".wrapper, .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6"),
-    siteContent: document.querySelectorAll("button, a, li, h1, h2, h3, h4, h5, h6, figcaption, footer, div, span, b, input"),
-    siteBorder: document.querySelectorAll("div, article, hr"),
-    zIndexFix: document.querySelectorAll('.header, .privacy-policy-popup'),
+    siteContent: document.querySelectorAll("button, a, li, h1, h2, h3, h4, h5, h6, figcaption, footer, div, span, b, input, nav"),
+    siteBorder: document.querySelectorAll("div, article, hr, h2, ul"),
     img: document.querySelectorAll("#ya-site-form0 input.ya-site-form__submit, img, .footer-sch-map, .youtube, .ya-share2__list"),
     crossEyeSvg: document.getElementById("cross-eye"),
     normalEyeSvg: document.getElementById("normal-eye"),
@@ -11,8 +10,7 @@ const elements = {
     homeWhiteSvg: document.querySelector('.home-white'),
     xMarkSvg: document.querySelector('.btn-close'),
     xMarkWhiteSvg: document.querySelector('.btn-close-white'),
-    // menuBurgerSvg: document.querySelector('.menu-burger'),
-    // menuBurgerWhiteSvg: document.querySelector('.menu-burger-white'),
+    menuBurgerSvg: document.querySelector('.navbar'),
     // chevronSvg: document.querySelectorAll('.mobile-chevron.black'),
     // chevronWhiteSvg: document.querySelectorAll('.mobile-chevron.white'),
     siteBody: document.querySelector('body'),
@@ -23,39 +21,38 @@ const elements = {
 };
 
 function updateStyles() {
-    elements.siteBackground.style.background = "#fff";
-    elements.siteContent.forEach(item => item.style.zIndex = 'unset');
-    elements.zIndexFix.forEach(item => item.style.zIndex = '20');
-    [elements.crossEyeSvg, ...elements.chevronWhiteSvg].forEach(item => item.style.display = 'inline-block');
-    [elements.vision, elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
-    [elements.xMarkSvg, elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.menuBurgerSvg, ...elements.chevronSvg, ...elements.homeSvg].forEach(item => item.style.display = 'none');
+    elements.siteBackground.style.backgroundColor = "#fff";
+    elements.menuBurgerSvg.classList.remove("navbar-dark");
+    [elements.crossEyeSvg].forEach(item => item.style.display = 'flex');
+    [elements.vision, elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
+    [elements.xMarkSvg, elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.homeSvg].forEach(item => item.style.display = 'none');
 }
 
-function applyStyles(borderColor, background, color) {
+function applyStyles(borderColor, backgroundColor, color) {
     updateStyles();
     elements.siteBorder.forEach(item => item.style.borderColor = borderColor);
     elements.siteContent.forEach(item => {
-        item.style.background = background;
+        item.style.backgroundColor = backgroundColor;
         item.style.color = color;
     });
 }
 
 function applyColorStyles(colorStyles) {
-    applyStyles(colorStyles.borderColor, colorStyles.background, colorStyles.color);
+    applyStyles(colorStyles.borderColor, colorStyles.backgroundColor, colorStyles.color);
 }
 
 const styles = {
-    white: { borderColor: '#2E3332', background: '#fff', color: '#2E3332' },
-    blue: { borderColor: '#00f', background: '#9dd1ff', color: '#00f' },
-    black: { borderColor: '#fff', background: '#000', color: '#fff' },
-    beige: { borderColor: 'brown', background: '#f7f3d6', color: 'brown' }
+    white: { borderColor: '#2E3332', backgroundColor: '#fff', color: '#2E3332' },
+    blue: { borderColor: '#00f', backgroundColor: '#9dd1ff', color: '#00f' },
+    black: { borderColor: '#fff', backgroundColor: '#000', color: '#fff' },
+    beige: { borderColor: 'brown', backgroundColor: '#f7f3d6', color: 'brown' }
 };
 
 function applyWhiteStyles() {
     applyColorStyles(styles.white);
-    elements.chevronSvg.forEach(item => item.style.display = 'inline-block');
-    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg, ...elements.chevronWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.menuBurgerSvg, elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
+    elements.menuBurgerSvg.classList.remove("navbar-dark");
+    [elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
+    [elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
 }
 
 function applyColorScheme(colorScheme) {
@@ -66,7 +63,8 @@ function applyColorScheme(colorScheme) {
         case 'black':
             applyColorStyles(styles.black);
             elements.crossEyeSvg.style.display = "none";
-            elements.crossEyeWhiteSvg.style.display = "block";
+            elements.crossEyeWhiteSvg.style.display = "flex";
+            elements.menuBurgerSvg.classList.add("navbar-dark");
             break;
         case 'beige':
             applyColorStyles(styles.beige);
@@ -79,12 +77,13 @@ function applyColorScheme(colorScheme) {
 function deleteVisionStyles() {
     elements.imgYes.dispatchEvent(new Event("click"));
     elements.siteContent.forEach(item => item.removeAttribute("style"));
-    [...elements.chevronWhiteSvg, ...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
+    [, ...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
     elements.siteBorder.forEach(item => item.style.removeProperty("border-color"));
     elements.siteBody.removeAttribute("class");
-    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.menuBurgerSvg, ...elements.chevronSvg, elements.homeSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkWhiteSvg, elements.menuBurgerWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
-    elements.normalEyeSvg.style.display = "inline-block";
+    elements.menuBurgerSvg.classList.toggle("navbar-dark");
+    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
+    [elements.xMarkWhiteSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
+    elements.normalEyeSvg.style.display = "flex";
     localStorage.clear();
 }
 
