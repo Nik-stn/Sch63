@@ -83,8 +83,8 @@ function deleteVisionStyles() {
     elements.siteBorder.forEach(item => item.style.removeProperty("border-color"));
     elements.siteBody.removeAttribute("class");
     elements.menuBurgerSvg.classList.toggle("navbar-dark");
-    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkWhiteSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
+    [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.homeWhiteSvg, elements.mapWhiteSvg].forEach(item => item.style.display = 'none');
+    [elements.xMarkWhiteSvg, elements.homeSvg, elements.mapSvg].forEach(item => item.style.display = 'flex');
     elements.normalEyeSvg.style.display = "flex";
     localStorage.clear();
 }
