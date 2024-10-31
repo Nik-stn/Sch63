@@ -1,5 +1,5 @@
 const elements = {
-    siteFont: document.querySelectorAll(".wrapper, .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6"),
+    siteFont: document.querySelectorAll(".wrapper, .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6, .wrapper a, .wrapper p, .wrapper time"),
     siteContent: document.querySelectorAll("button, a, li, h1, h2, h3, h4, h5, h6, figcaption, footer, div, span, b, input, nav"),
     siteBorder: document.querySelectorAll("div, article, hr, h2, ul"),
     img: document.querySelectorAll("#ya-site-form0 input.ya-site-form__submit, img, .footer-sch-map, .youtube, .ya-share2__list"),
