@@ -1,8 +1,12 @@
-.header-top-site-map a::before {
+.header-top-site-map .site-map::before {
     background: url(../icons/header/sitemap.svg) center/contain no-repeat;
 }
 
-.header-top-site-map a:hover::before {
+.header-top-site-map .site-map:hover::before {
+    background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
+}
+
+.header-top-site-map .site-map-white::before {
     background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
 }
 

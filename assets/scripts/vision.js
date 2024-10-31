@@ -8,6 +8,8 @@ const elements = {
     crossEyeWhiteSvg: document.getElementById("cross-eye-white"),
     homeSvg: document.querySelector('.home'),
     homeWhiteSvg: document.querySelector('.home-white'),
+    mapSvg: document.querySelector('.site-map'),
+    mapWhiteSvg: document.querySelector('.site-map-white'),
     xMarkSvg: document.querySelector('.btn-close'),
     xMarkWhiteSvg: document.querySelector('.btn-close-white'),
     menuBurgerSvg: document.querySelector('.navbar'),
@@ -51,8 +53,8 @@ const styles = {
 function applyWhiteStyles() {
     applyColorStyles(styles.white);
     elements.menuBurgerSvg.classList.remove("navbar-dark");
-    [elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
+    [elements.xMarkWhiteSvg, elements.homeWhiteSvg, elements.mapWhiteSvg].forEach(item => item.style.display = 'none');
+    [elements.xMarkSvg, elements.homeSvg, elements.mapSvg].forEach(item => item.style.display = 'flex');
 }
 
 function applyColorScheme(colorScheme) {
@@ -62,8 +64,8 @@ function applyColorScheme(colorScheme) {
             break;
         case 'black':
             applyColorStyles(styles.black);
-            elements.crossEyeSvg.style.display = "none";
-            elements.crossEyeWhiteSvg.style.display = "flex";
+            [elements.crossEyeSvg, elements.mapSvg].forEach(item => item.style.display = "none");
+            [elements.crossEyeWhiteSvg, elements.mapWhiteSvg].forEach(item => item.style.display = "flex");
             elements.menuBurgerSvg.classList.add("navbar-dark");
             break;
         case 'beige':
