@@ -9,7 +9,7 @@ const elements = {
     homeSvg: document.querySelector('.home'),
     homeWhiteSvg: document.querySelector('.home-white'),
     headerTopSvg: document.querySelectorAll('.header-top-col a'),
-    xMarkSvg: document.querySelector('.btn-close'),
+    xMarkSvg: document.querySelector('.btn-close-black'),
     xMarkWhiteSvg: document.querySelector('.btn-close-white'),
     menuBurgerSvg: document.querySelector('.navbar'),
     // chevronSvg: document.querySelectorAll('.mobile-chevron.black'),
@@ -22,12 +22,10 @@ const elements = {
 };
 
 function updateStyles() {
-    elements.siteBackground.style.backgroundColor = "#fff";
     elements.menuBurgerSvg.classList.remove("navbar-dark");
     elements.headerTopSvg.forEach(item => item.classList.remove("white"));
-    [elements.crossEyeSvg].forEach(item => item.style.display = 'flex');
-    [elements.vision, elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
-    [elements.xMarkSvg, elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.homeSvg].forEach(item => item.style.display = 'none');
+    [elements.crossEyeSvg, elements.vision, elements.homeSvg, elements.xMarkSvg].forEach(item => item.style.display = 'flex');
+    [elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
 }
 
 function applyStyles(borderColor, backgroundColor, color) {
@@ -52,9 +50,6 @@ const styles = {
 
 function applyWhiteStyles() {
     applyColorStyles(styles.white);
-    elements.menuBurgerSvg.classList.remove("navbar-dark");
-    [elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
 }
 
 function applyColorScheme(colorScheme) {
@@ -64,8 +59,8 @@ function applyColorScheme(colorScheme) {
             break;
         case 'black':
             applyColorStyles(styles.black);
-            elements.crossEyeSvg.style.display = "none";
-            elements.crossEyeWhiteSvg.style.display = "flex";
+            [elements.crossEyeSvg, elements.xMarkSvg, elements.homeSvg].forEach(item => item.style.display = "none");
+            [elements.crossEyeWhiteSvg, elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = "flex");
             elements.menuBurgerSvg.classList.add("navbar-dark");
             elements.headerTopSvg.forEach(item => item.classList.add("white"));
             break;
@@ -80,13 +75,13 @@ function applyColorScheme(colorScheme) {
 function deleteVisionStyles() {
     elements.imgYes.dispatchEvent(new Event("click"));
     elements.siteContent.forEach(item => item.removeAttribute("style"));
-    [, ...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
+    [...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
     elements.siteBorder.forEach(item => item.style.removeProperty("border-color"));
     elements.siteBody.removeAttribute("class");
-    elements.menuBurgerSvg.classList.toggle("navbar-dark");
+    elements.menuBurgerSvg.classList.add("navbar-dark");
+    elements.headerTopSvg.forEach(item => item.classList.remove("white"));
     [elements.vision, elements.crossEyeSvg, elements.crossEyeWhiteSvg, elements.xMarkSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'none');
-    [elements.xMarkWhiteSvg, elements.homeSvg].forEach(item => item.style.display = 'block');
-    elements.normalEyeSvg.style.display = "flex";
+    [elements.xMarkWhiteSvg, elements.homeSvg, elements.normalEyeSvg].forEach(item => item.style.display = 'flex');
     localStorage.clear();
 }
 
