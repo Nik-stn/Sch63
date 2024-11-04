@@ -685,25 +685,26 @@ tbody, td, tfoot, th, thead, tr {
 /* Footer */
 
 /* Page */
-.main-page {
+.section-page {
     padding: 19px 15px;
     border: 3px solid var(--color-blue);
     height: fit-content;
     border-radius: 5px;
+    overflow-x: auto;
 }
 
 /* Breadcrumb */
-.main-page .breadcrumb {
+.section-page .breadcrumb {
     padding-bottom: 5px;
     border-bottom: 2px dotted var(--color-blue);
 }
 
-.main-page .breadcrumb a {
+.section-page .breadcrumb a {
     color: var(--color-text);
     font-weight: bold;
 }
 
-.main-page .breadcrumb a:hover, .main-page .breadcrumb li.active {
+.section-page .breadcrumb a:hover, .section-page .breadcrumb li.active {
     color: var(--color-teal);
     font-weight: bold;
 }
@@ -725,13 +726,13 @@ tbody, td, tfoot, th, thead, tr {
     font-weight: bold;
 }
 
-.main-page .content-box {
+.section-page .content-box {
     color: var(--color-text);
 }
 
-.main-page a:hover,
-.main-page a.active,
-.main-page a:active {
+.section-page a:hover,
+.section-page a.active,
+.section-page a:active {
     color: var(--color-teal);
 }
 
