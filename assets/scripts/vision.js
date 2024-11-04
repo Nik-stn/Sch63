@@ -8,6 +8,7 @@ const elements = {
     crossEyeWhiteSvg: document.getElementById("cross-eye-white"),
     homeSvg: document.querySelector('.home'),
     homeWhiteSvg: document.querySelector('.home-white'),
+    headerTopSvg: document.querySelectorAll('.header-top-col a'),
     xMarkSvg: document.querySelector('.btn-close'),
     xMarkWhiteSvg: document.querySelector('.btn-close-white'),
     menuBurgerSvg: document.querySelector('.navbar'),
@@ -23,6 +24,7 @@ const elements = {
 function updateStyles() {
     elements.siteBackground.style.backgroundColor = "#fff";
     elements.menuBurgerSvg.classList.remove("navbar-dark");
+    elements.headerTopSvg.forEach(item => item.classList.remove("white"));
     [elements.crossEyeSvg].forEach(item => item.style.display = 'flex');
     [elements.vision, elements.xMarkWhiteSvg, elements.homeWhiteSvg].forEach(item => item.style.display = 'block');
     [elements.xMarkSvg, elements.crossEyeWhiteSvg, elements.normalEyeSvg, elements.homeSvg].forEach(item => item.style.display = 'none');
@@ -65,6 +67,7 @@ function applyColorScheme(colorScheme) {
             elements.crossEyeSvg.style.display = "none";
             elements.crossEyeWhiteSvg.style.display = "flex";
             elements.menuBurgerSvg.classList.add("navbar-dark");
+            elements.headerTopSvg.forEach(item => item.classList.add("white"));
             break;
         case 'beige':
             applyColorStyles(styles.beige);
