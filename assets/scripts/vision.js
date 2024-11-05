@@ -12,8 +12,6 @@ const elements = {
     xMarkSvg: document.querySelector('.btn-close-black'),
     xMarkWhiteSvg: document.querySelector('.btn-close-white'),
     menuBurgerSvg: document.querySelector('.navbar'),
-    // chevronSvg: document.querySelectorAll('.mobile-chevron.black'),
-    // chevronWhiteSvg: document.querySelectorAll('.mobile-chevron.white'),
     siteBody: document.querySelector('body'),
     vision: document.querySelector(".vision"),
     siteBackground: document.querySelector(".wrapper"),
