@@ -1,3 +1,7 @@
+body {
+    background: url(../images/background.jpg);
+}
+
 .header-top-site-map a::before {
     background: url(../icons/header/sitemap.svg) center/contain no-repeat;
 }
