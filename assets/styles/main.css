@@ -123,7 +123,7 @@ tbody, td, tfoot, th, thead, tr {
 .header-top-col a, .header-top-date time, .header-top-col span {
     display: flex;
     gap: 5px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     cursor: pointer;
 }
@@ -143,6 +143,12 @@ tbody, td, tfoot, th, thead, tr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-middle .container-header-middle {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .header-middle-logo img {
@@ -1184,6 +1190,10 @@ background-color: #d7d8d9;
 
     .section-tabs .card img, .card-archive img  {
         min-height: 200px;
+    }
+
+    .header-top-col a, .header-top-date time, .header-top-col span {
+        justify-content: center;
     }
 }
 
