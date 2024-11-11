@@ -2,6 +2,7 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
+    --background-white-transparent: #ffffffb5;
     --color-text: #2E3332;
     --color-grey: #888888;
     --color-teal: #60dfcd; 
@@ -92,6 +93,10 @@ tbody, td, tfoot, th, thead, tr {
 
 .btn.btn-info:hover, .btn.btn-info:active {
     color: var(--color-accent);
+}
+
+.card {
+    background-color: var(--background-white-transparent);
 }
 
 #top {
@@ -418,6 +423,7 @@ tbody, td, tfoot, th, thead, tr {
     color: var(--color-text);
     font-weight: bold;
     border: 0;
+    background-color: var(--background-white-transparent);
 }
 
 .section-tabs .nav-tabs .nav-link:hover, .content-box .nav-tabs .nav-link:hover {
@@ -697,7 +703,7 @@ tbody, td, tfoot, th, thead, tr {
     height: fit-content;
     border-radius: 5px;
     overflow-x: auto;
-    background-color: #ffffffb5;
+    background-color: var(--background-white-transparent);
 }
 
 /* Breadcrumb */
