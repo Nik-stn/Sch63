@@ -697,6 +697,7 @@ tbody, td, tfoot, th, thead, tr {
     height: fit-content;
     border-radius: 5px;
     overflow-x: auto;
+    background-color: #ffffffb5;
 }
 
 /* Breadcrumb */
@@ -711,7 +712,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .section-page .breadcrumb a:hover, .section-page .breadcrumb li.active {
-    color: var(--color-teal);
+    color: var(--color-blue);
     font-weight: bold;
 }
 /* Breadcrumb */

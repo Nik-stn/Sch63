@@ -1,5 +1,8 @@
-body {
-    background: url(../images/background.jpg);
+main {
+    /* background: url(../images/background.jpg); */
+    background: url(../images/background2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .header-top-site-map a::before {
