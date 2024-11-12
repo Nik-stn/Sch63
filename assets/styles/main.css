@@ -748,10 +748,14 @@ tbody, td, tfoot, th, thead, tr {
     color: var(--color-text);
 }
 
-.section-page a:hover,
+.section-page a,
 .section-page a.active,
 .section-page a:active {
-    color: var(--color-teal);
+    color: var(--color-blue);
+}
+
+.section-page a:hover {
+    text-decoration: underline;
 }
 
 .nav-page {
