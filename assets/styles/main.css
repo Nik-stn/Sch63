@@ -77,6 +77,11 @@ main {
     flex: 1 1 auto;
 }
 
+main>.container-fluid {
+    background-color: var(--color-white);
+    border-inline: 1px solid var(--color-grey);
+}
+
 tbody, td, tfoot, th, thead, tr {
     border-style: inherit;
     border-width: inherit;
