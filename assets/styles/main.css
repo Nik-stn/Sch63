@@ -856,8 +856,18 @@ tbody, td, tfoot, th, thead, tr {
     font-weight: bold;
 }
 
+.content-spoiler {
+    border-radius: 43px;
+    border-bottom: 2px solid var(--color-teal);
+}
+
 .content-spoiler .collapse {
     border-top: 2px solid var(--color-teal);
+}
+
+.content-spoiler img {
+    min-width: 0;
+    max-width: 200px;
 }
 
 .content-progress .content-progress-item {
