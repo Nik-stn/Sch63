@@ -165,6 +165,10 @@ if(images.length > 0) {
     });
 }
 
+// lang=ru
+// *****
+document.querySelector('html').setAttribute('lang', 'ru');
+
 
 // Owl-carousel
 // *****
