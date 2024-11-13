@@ -96,7 +96,7 @@ navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
 const asideNavbarNav = document.querySelector('.aside .navbar .level_0');
 const asideNavbarDropdown = document.querySelectorAll('.aside .navbar .level_0>li.parent');
 const asideNavbarDropdownMenu = document.querySelectorAll('.aside .navbar .level_0 .level_1');
-const asideNavbarDropdownMenuShow = document.querySelector('.aside .navbar .level_0 li.parent_active .level_1');
+const asideNavbarDropdownMenuShow = document.querySelectorAll('.aside .navbar .level_0 li.parent_active .level_1, .aside .navbar .level_0 li.active .level_1');
 const asideNavbarNavLink = document.querySelectorAll('.aside .navbar .level_0>.parent');
 const asideNavbarDropdownItem = document.querySelectorAll('.aside .navbar .level_0 .level_1>li>a');
 
@@ -108,7 +108,7 @@ if (asideNavbarNav) {
     asideNavbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
 }
 
-if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.classList.add('show');
+if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.forEach( item => item.classList.add('show'));
 
 
 // Fixed header
