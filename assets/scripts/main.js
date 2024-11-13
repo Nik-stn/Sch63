@@ -20,6 +20,7 @@ if (firstTab) {
     firstTabPane.classList.add('active', 'show');
 }
 
+
 // None tabs page
 // *****
 // Получаем все контейнеры с табами
@@ -49,13 +50,13 @@ tabContainers.forEach(container => {
 });
 
 
-
 // Archive posts
 // *****
 const contentArchiveNews = document.querySelector('.content-archive .MapBody');
 if (contentArchiveNews) {
     contentArchiveNews.classList.add('row');
 }
+
 
 // Table
 // *****
@@ -88,6 +89,7 @@ navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
 
 const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
 navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
+
 
 // Aside nav
 // *****
@@ -137,22 +139,31 @@ $('#top').click(function() {
 const mapTitle = document.createElement('div'); mapTitle.className = 'sch-map-title';
 const schMap = document.querySelector('.footer-sch-map');
 
- mapTitle.textContent = 'Для активации карты нажмите по ней';
- schMap.appendChild(mapTitle);
+mapTitle.textContent = 'Для активации карты нажмите по ней';
+schMap.appendChild(mapTitle);
 
- schMap.onclick = function() {
-     this.children[0].removeAttribute('style');
-     mapTitle.parentElement.removeChild(mapTitle);
- }
+schMap.onclick = function() {
+    this.children[0].removeAttribute('style');
+    mapTitle.parentElement.removeChild(mapTitle);
+}
 
- schMap.onmousemove = function(event) {
-     mapTitle.style.display = 'block';
-     if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
-     if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
- }
- schMap.onmouseleave = function() {
-     mapTitle.style.display = 'none';
- }
+schMap.onmousemove = function(event) {
+    mapTitle.style.display = 'block';
+    if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
+    if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+}
+schMap.onmouseleave = function() {
+    mapTitle.style.display = 'none';
+}
+
+// Loading=lazy
+// *****
+const images = document.querySelectorAll('img');
+if(images.length > 0) {
+    images.forEach((img) => {
+        img.setAttribute('loading', 'lazy');
+    });
+}
 
 
 // Owl-carousel
@@ -169,6 +180,7 @@ $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
 	dots:false,
 	autoWidth:true,
 });
+
 
 // Fancy-box
 // *****
