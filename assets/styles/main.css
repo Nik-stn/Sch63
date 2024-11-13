@@ -469,16 +469,6 @@ tbody, td, tfoot, th, thead, tr {
     font-size: 20px;
 }
 
-.section-tabs .card>a, .card-archive>a  {
-    height: 250px;
-    overflow: hidden;
-}
-
-.section-tabs .card img, .card-archive img  {
-    object-fit: cover;
-    min-height: 250px;
-}
-
 .section-tabs .card .card-text, .card-archive .card-text {
     font-size: 16px;
     height: 120px;
@@ -1210,14 +1200,6 @@ background-color: #d7d8d9;
 }
 
 @media only screen and (max-width: 1200px) {
-    .section-tabs .card>a, .card-archive>a  {
-        height: 200px;
-    }
-
-    .section-tabs .card img, .card-archive img  {
-        min-height: 200px;
-    }
-
     .header-top-col a, .header-top-date time, .header-top-col span {
         justify-content: center;
     }
@@ -1256,14 +1238,6 @@ background-color: #d7d8d9;
         min-height: 400px;
     }
 
-    .section-tabs .card>a, .content-employee .card-img, .card-archive>a  {
-        height: 250px;
-    }
-
-    .section-tabs .card img, .content-employee img, .card-archive img   {
-        min-height: 250px;
-    }
-
     .section-tabs .card .card-title a {
         height: 48px;
         font-size: 16px;
@@ -1292,14 +1266,6 @@ background-color: #d7d8d9;
     
     .slider .carousel-item img{
         min-height: 325px;
-    }
-
-    .section-tabs .card>a {
-        height: 200px;
-    }
-    
-    .section-tabs .card img {
-        min-height: 200px;
     }
 
     .privacy-policy-popup {
