@@ -960,6 +960,10 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 5px;
 }
 
+.content-archive .MapMonth a {
+    color: var(--color-text);
+}
+
 .card-archive {
     border-radius: 43px;
 }
