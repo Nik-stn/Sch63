@@ -75,11 +75,14 @@ a::before {
 
 main {
     flex: 1 1 auto;
+    z-index: 1;
 }
 
 main>.container-fluid {
     background-color: var(--color-white);
     border-inline: 1px solid var(--color-grey);
+    position: relative;
+    z-index: 2;
 }
 
 tbody, td, tfoot, th, thead, tr {
@@ -701,7 +704,6 @@ tbody, td, tfoot, th, thead, tr {
     height: fit-content;
     border-radius: 5px;
     overflow-x: auto;
-    background-color: var(--background-white-transparent);
 }
 
 /* Breadcrumb */
@@ -1049,6 +1051,44 @@ tbody, td, tfoot, th, thead, tr {
     box-shadow: 9px 9px 23px 3px #60dfcc60;
 }
 
+.button-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.button-link-wrapper .button-link {
+    padding: 13px 20px 13px;
+    border: 1px solid var(--color-text);
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.button-link-wrapper .button-link:after {
+    content: "";
+    background-color: var(--color-blue);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: var(--transition);
+  }
+  
+  .button-link-wrapper .button-link:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
 .share-buttons .ya-share2__list.ya-share2__list_direction_horizontal>.ya-share2__item {
     margin-right: 6px;
 }
@@ -1300,6 +1340,10 @@ background-color: #d7d8d9;
 @media only screen and (min-width: 768px) {
     .row>div:has(aside){
         padding-inline: 0;
+    }
+
+    .button-link-wrapper .button-link {
+      padding: 13px 50px 13px;
     }
 }
 
