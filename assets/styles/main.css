@@ -15,15 +15,15 @@
     --transition: all .3s;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 15px;
 }
 
-html::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #f4f4f4;
 }
 
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background:  var(--color-teal);
     border: 3px solid #f4f4f4;
     border-radius: 20px;
@@ -204,10 +204,6 @@ tbody, td, tfoot, th, thead, tr {
 
 .header-bottom .navbar {
     background-color: var(--color-gradient-blue-teal);
-}
-
-.header-bottom .navbar .offcanvas.offcanvas-start {
-    background-image: var(--color-gradient-blue-teal);
 }
 
 .header-bottom .navbar .nav-link {
@@ -1302,7 +1298,7 @@ background-color: #d7d8d9;
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991.99px) {
     .header-bottom .offcanvas {
         background-image: var(--color-gradient-blue-teal);
     }
