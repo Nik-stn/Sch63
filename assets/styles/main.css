@@ -211,8 +211,10 @@ tbody, td, tfoot, th, thead, tr {
     max-width: initial;
 }
 
-.header-bottom .navbar .level_1 a:hover {
+.header-bottom .navbar .level_1 a:hover, 
+.header-bottom .navbar .level_1 li.parent_active>a {
     background-color: var(--color-teal);
+    color: var(--color-text);
 }
 
 .header-bottom .dropdown>a {
