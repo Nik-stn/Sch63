@@ -418,6 +418,7 @@ tbody, td, tfoot, th, thead, tr {
     border-bottom-right-radius: var(--border-radius);
     border-top: 0;
     color: var(--color-text);
+    overflow-x: auto;
 }
 
 .section-tabs .nav-tabs, .content-box .nav-tabs {
