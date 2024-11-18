@@ -206,6 +206,10 @@ tbody, td, tfoot, th, thead, tr {
     background-color: var(--color-gradient-blue-teal);
 }
 
+.header-bottom .navbar .offcanvas.offcanvas-start {
+    background-image: var(--color-gradient-blue-teal);
+}
+
 .header-bottom .navbar .nav-link {
     padding: 0;
 }
@@ -215,7 +219,9 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .header-bottom .navbar .level_1 a:hover, 
-.header-bottom .navbar .level_1 li.parent_active>a {
+.header-bottom .navbar .level_1 li.parent_active>a,
+.header-bottom .navbar .dropdown-item.active, 
+.header-bottom .navbar .dropdown-item:active {
     background-color: var(--color-teal);
     color: var(--color-text);
 }
