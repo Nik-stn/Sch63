@@ -1,7 +1,7 @@
 const elements = {
     siteFont: document.querySelectorAll(".wrapper, .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper h6, .wrapper a, .wrapper p, .wrapper time"),
     siteContent: document.querySelectorAll("button, a, li, h1, h2, h3, h4, h5, h6, figcaption, footer, div, span, b, input, nav"),
-    siteBorder: document.querySelectorAll("div, article, hr, h2, h3, img, ul, main, ol"),
+    siteBorder: document.querySelectorAll("div, article, hr, h2, h3, img, ul, main, ol, section"),
     img: document.querySelectorAll("#ya-site-form0 input.ya-site-form__submit, img, .footer-sch-map, .youtube, .ya-share2__list"),
     crossEyeSvg: document.getElementById("cross-eye"),
     normalEyeSvg: document.getElementById("normal-eye"),
@@ -14,7 +14,7 @@ const elements = {
     menuBurgerSvg: document.querySelector('.navbar'),
     siteBody: document.querySelector('body'),
     vision: document.querySelector(".vision"),
-    siteBackground: document.querySelector(".wrapper"),
+    siteBackground: document.querySelectorAll("main, .header-top"),
     imgYes: document.getElementById("imagesYes"),
     letterSpacing: document.querySelectorAll(".changeLetterSpacing")
 };
@@ -29,6 +29,7 @@ function updateStyles() {
 function applyStyles(borderColor, backgroundColor, color) {
     updateStyles();
     elements.siteBorder.forEach(item => item.style.borderColor = borderColor);
+    elements.siteBackground.forEach(item => item.style.background = 0);
     elements.siteContent.forEach(item => {
         item.style.backgroundColor = backgroundColor;
         item.style.color = color;
@@ -73,7 +74,7 @@ function applyColorScheme(colorScheme) {
 function deleteVisionStyles() {
     elements.imgYes.dispatchEvent(new Event("click"));
     elements.siteContent.forEach(item => item.removeAttribute("style"));
-    [...elements.siteFont, ...elements.img].forEach(item => item.removeAttribute("style"));
+    [...elements.siteFont, ...elements.img, ...elements.siteBackground].forEach(item => item.removeAttribute("style"));
     elements.siteBorder.forEach(item => item.style.removeProperty("border-color"));
     elements.siteBody.removeAttribute("class");
     elements.menuBurgerSvg.classList.add("navbar-dark");
