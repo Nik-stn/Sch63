@@ -418,7 +418,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 /* Popular*/
 
-/* Announcement */
+/* Announcement, News*/
 .section-tabs .tab-content {
     border: 2px solid var(--color-teal);
     border-bottom-left-radius: var(--border-radius);
@@ -455,6 +455,15 @@ tbody, td, tfoot, th, thead, tr {
 
 .section-tabs .card {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.section-tabs .tab-content .card>a {
+    height: 25vh;
+    overflow: hidden;
+}
+
+.section-tabs .tab-content .card>a img {
+    height: 100%;
 }
 
 .section-tabs .card .card-title {
@@ -508,7 +517,7 @@ tbody, td, tfoot, th, thead, tr {
 .section-tabs .card .card-title a:hover {
     color: var(--color-teal);
 }
-/* Announcement */
+/* Announcement, News*/
 
 /* Poll */
 .section-poll .card {
@@ -1246,11 +1255,19 @@ background-color: #d7d8d9;
         font-size: 14px;
         height: 102px;
     }
+
+    .section-tabs .tab-content .card>a {
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     .header-top-col a, .header-top-date time, .header-top-col span {
         justify-content: center;
+    }
+
+    .section-tabs .tab-content .card>a {
+        height: 15vh;
     }
 }
 
@@ -1296,6 +1313,10 @@ background-color: #d7d8d9;
         font-size: 12px;
         height: 92px;
     }
+
+    .section-tabs .tab-content .card>a {
+        height: 25vh;
+    }
 }
 
 @media only screen and (max-width: 991.99px) {
@@ -1315,6 +1336,10 @@ background-color: #d7d8d9;
     
     .slider .carousel-item img{
         min-height: 325px;
+    }
+
+    .section-tabs .tab-content .card>a {
+        height: 20vh;
     }
 
     .privacy-policy-popup {
@@ -1349,6 +1374,12 @@ background-color: #d7d8d9;
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .section-tabs .tab-content .card>a {
+        height: 30vh;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .slider .carousel {
         height: 250px;
@@ -1356,6 +1387,10 @@ background-color: #d7d8d9;
     
     .slider .carousel-item img{
         min-height: 250px;
+    }
+
+    .section-tabs .tab-content .card>a {
+        height: 25vh;
     }
 }
 
@@ -1366,5 +1401,9 @@ background-color: #d7d8d9;
     
     .slider .carousel-item img{
         min-height: 200px;
+    }
+
+    .section-tabs .tab-content .card>a {
+        height: 20vh;
     }
 }
