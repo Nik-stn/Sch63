@@ -458,7 +458,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .section-tabs .tab-content .card>a {
-    height: 25vh;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -1257,17 +1257,13 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .tab-content .card>a {
-        height: 20vh;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .header-top-col a, .header-top-date time, .header-top-col span {
         justify-content: center;
-    }
-
-    .section-tabs .tab-content .card>a {
-        height: 15vh;
     }
 }
 
@@ -1315,7 +1311,7 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .tab-content .card>a {
-        height: 25vh;
+        height: 300px;
     }
 }
 
@@ -1339,7 +1335,7 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .tab-content .card>a {
-        height: 20vh;
+        height: 250px;
     }
 
     .privacy-policy-popup {
@@ -1376,7 +1372,7 @@ background-color: #d7d8d9;
 
 @media only screen and (max-width: 576px) {
     .section-tabs .tab-content .card>a {
-        height: 30vh;
+        height: 300px;
     }
 }
 
@@ -1390,7 +1386,7 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .tab-content .card>a {
-        height: 25vh;
+        height: 250px;
     }
 }
 
@@ -1404,6 +1400,6 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .tab-content .card>a {
-        height: 20vh;
+        height: 200px;
     }
 }
