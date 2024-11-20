@@ -474,10 +474,10 @@ tbody, td, tfoot, th, thead, tr {
     color: var(--color-text);
     font-size: 24px;
     font-weight: bold;
-    height: 72px;
+    height: 122px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     text-decoration: none;
 }
@@ -1247,7 +1247,7 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .card .card-title a {
-        height: 62px;
+        height: 105px;
         font-size: 21px;
     }
 
@@ -1305,7 +1305,7 @@ background-color: #d7d8d9;
     }
 
     .section-tabs .card .card-title a {
-        height: 48px;
+        height: 80px;
         font-size: 16px;
     }
 
