@@ -131,7 +131,7 @@ tbody, td, tfoot, th, thead, tr {
   position: sticky;
   top: 54px;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   overflow: hidden;
   margin-bottom: -100px;
 }

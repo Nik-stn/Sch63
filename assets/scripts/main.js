@@ -14,11 +14,26 @@ if (carouselItem) carouselItem.classList.add('active');
 // Active tabs page
 // *****
 const firstTab = document.querySelector(".content-box .content-tabs .nav-link");
-const firstTabPane= document.querySelector(".content-box .content-tabs .tab-pane");
+const firstTabPane = document.querySelector(".content-box .content-tabs .tab-pane");
 if (firstTab) {
     firstTab.classList.add('active');
     firstTabPane.classList.add('active', 'show');
 }
+
+// Получаем элемент гирлянды
+const bells = document.querySelectorAll('.bell');
+
+// Добавляем обработчик события mouseover
+bells.forEach(bell => {
+    bell.addEventListener('mouseover', function () {
+        this.classList.add('swing');
+    });
+
+    // Убираем класс swing, когда анимация заканчивается
+    bell.addEventListener('animationend', function () {
+        this.classList.remove('swing');
+    });
+});
 
 
 // None tabs page
@@ -62,7 +77,7 @@ if (contentArchiveNews) {
 // *****
 const table = document.querySelectorAll('.content-box table');
 if (table) {
-    table.forEach( item => item.classList.add('table', 'table-bordered', 'table-hover'));
+    table.forEach(item => item.classList.add('table', 'table-bordered', 'table-hover'));
 }
 
 
@@ -71,8 +86,8 @@ if (table) {
 const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
 const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
 if (spanRadio, spanCheckbox) {
-    spanRadio.forEach( item => item.classList.add('poll-radio'));
-    spanCheckbox.forEach( item => item.classList.add('poll-checkbox'));
+    spanRadio.forEach(item => item.classList.add('poll-radio'));
+    spanCheckbox.forEach(item => item.classList.add('poll-checkbox'));
 }
 
 
@@ -82,13 +97,13 @@ const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
 navbarNav.classList.add('navbar-nav');
 
 const navbarDropdown = document.querySelectorAll('.header-bottom .navbar .level_0>li.parent');
-navbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
+navbarDropdown.forEach(item => item.classList.add('nav-item', 'dropdown'));
 
 const navbarDropdownMenu = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1');
-navbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
+navbarDropdownMenu.forEach(item => item.classList.add('dropdown-menu'));
 
 const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
-navbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
+navbarDropdownItem.forEach(item => item.classList.add('dropdown-item'));
 
 
 // Aside nav
@@ -102,25 +117,25 @@ const asideNavbarDropdownItem = document.querySelectorAll('.aside .navbar .level
 
 if (asideNavbarNav) {
     asideNavbarNav.classList.add('navbar-nav');
-    asideNavbarDropdown.forEach( item => item.classList.add('nav-item', 'dropdown'));
-    asideNavbarDropdownMenu.forEach( item => item.classList.add('dropdown-menu'));
-    asideNavbarNavLink.forEach( item => item.classList.add('nav-link'));
-    asideNavbarDropdownItem.forEach( item => item.classList.add('dropdown-item'));
+    asideNavbarDropdown.forEach(item => item.classList.add('nav-item', 'dropdown'));
+    asideNavbarDropdownMenu.forEach(item => item.classList.add('dropdown-menu'));
+    asideNavbarNavLink.forEach(item => item.classList.add('nav-link'));
+    asideNavbarDropdownItem.forEach(item => item.classList.add('dropdown-item'));
 }
 
-if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.forEach( item => item.classList.add('show'));
+if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.forEach(item => item.classList.add('show'));
 
 
 // Fixed header
 // *****
- window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 335)
 });
 
-  
+
 // Scroll-to-top
 // *****
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
         $('#top').fadeIn();
     } else {
@@ -128,8 +143,8 @@ $(window).scroll(function() {
     }
 });
 
-$('#top').click(function() {
-    $('html, body').animate({scrollTop: 0}, 500);
+$('#top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 500);
     return false;
 });
 
@@ -142,24 +157,24 @@ const schMap = document.querySelector('.footer-sch-map');
 mapTitle.textContent = 'Для активации карты нажмите по ней';
 schMap.appendChild(mapTitle);
 
-schMap.onclick = function() {
+schMap.onclick = function () {
     this.children[0].removeAttribute('style');
     mapTitle.parentElement.removeChild(mapTitle);
 }
 
-schMap.onmousemove = function(event) {
+schMap.onmousemove = function (event) {
     mapTitle.style.display = 'block';
-    if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
-    if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+    if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
+    if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
 }
-schMap.onmouseleave = function() {
+schMap.onmouseleave = function () {
     mapTitle.style.display = 'none';
 }
 
 // Loading=lazy
 // *****
 const images = document.querySelectorAll('img');
-if(images.length > 0) {
+if (images.length > 0) {
     images.forEach((img) => {
         img.setAttribute('loading', 'lazy');
     });
@@ -173,16 +188,16 @@ document.querySelector('html').setAttribute('lang', 'ru');
 // Owl-carousel
 // *****
 $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
-    responsiveClass:true,
-	nav:false,
-	loop:true,
-	margin:14,
+    responsiveClass: true,
+    nav: false,
+    loop: true,
+    margin: 14,
     lazyLoad: true,
-	autoplay:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true,
-	dots:false,
-	autoWidth:true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    dots: false,
+    autoWidth: true,
 });
 
 
@@ -219,7 +234,7 @@ function setCookie(name, value, options = {}) {
 
     let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
 
-    
+
 
     for (let optionKey in options) {
         updatedCookie += "; " + optionKey;
@@ -229,7 +244,7 @@ function setCookie(name, value, options = {}) {
         }
     }
 
-    
+
 
     document.cookie = updatedCookie;
 }
@@ -238,7 +253,7 @@ console.log(getCookie('privacy_policy'));
 
 if (getCookie('privacy_policy') === undefined) {
     document.getElementById('privacy_policy').style.display = '';
-console.log(document.getElementById('privacy_policy'));
+    console.log(document.getElementById('privacy_policy'));
 }
 
 document.getElementById('privacy_policy_btn').addEventListener('click', function () {
@@ -247,4 +262,3 @@ document.getElementById('privacy_policy_btn').addEventListener('click', function
     setCookie('privacy_policy', 1, { expires: date });
     document.getElementById('privacy_policy').style.display = 'none';
 });
-  
