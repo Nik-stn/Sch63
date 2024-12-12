@@ -126,6 +126,138 @@ tbody, td, tfoot, th, thead, tr {
 }
 /* General rules */
 
+/* Garland */
+.garland-container {
+  position: sticky;
+  top: 54px;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  margin-bottom: -100px;
+}
+
+.christmas-branch {
+  width: 100%;
+  height: 104px;
+  display: flex;
+}
+
+.christmas-branch:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -115px;
+  left: 0;
+  z-index: 3;
+  height: 115px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgb(0 0 0 / 75%);
+}
+
+.balls-part {
+  display: flex;
+  position: relative;
+}
+
+.bell {
+  z-index: 2;
+}
+
+.bell-b {
+  width: 56px;
+  height: 67px;
+}
+
+.bell-r {
+  width: 49px;
+  height: 57px;
+}
+
+.bell-rl {
+  width: 49px;
+  height: 66px;
+}
+
+.bell-w {
+  width: 54px;
+  height: 70px;
+}
+
+.tree-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.balls-part:nth-child(1) > div:nth-child(8) {
+  margin-left: 20px;
+}
+
+.tree-branch {
+  position: absolute;
+}
+
+.tree-branch1 {
+  width: 25px;
+  height: 71px;
+  top: 0;
+  left: 0;
+}
+
+.tree-branch2 {
+  left: 25px;
+  width: 61px;
+  height: 27px;
+}
+
+.tree-branch3 {
+  width: 29px;
+  height: 31px;
+  left: 170px;
+}
+
+.tree-branch4 {
+  width: 51px;
+  height: 50px;
+  left: 200px;
+}
+
+.tree-branch5 {
+  width: 78px;
+  height: 28px;
+  right: 6px;
+}
+
+.tree-branch6 {
+  width: 6px;
+  height: 69px;
+  right: 0;
+}
+
+.swing {
+  transform-origin: top center;
+  animation: swing 2s ease infinite;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* Garland */
+
 /* Header */
 .header-top, .header-bottom {
     background-color: transparent;

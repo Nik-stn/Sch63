@@ -10,7 +10,8 @@ main {
     background: url(../icons/header/sitemap.svg) center/contain no-repeat;
 }
 
-.header-top-site-map a:hover::before, .header-top-site-map a.white::before {
+.header-top-site-map a:hover::before,
+.header-top-site-map a.white::before {
     background: url(../icons/header/sitemap-hover.svg) center/contain no-repeat;
 }
 
@@ -18,7 +19,8 @@ main {
     background: url(../icons/header/mail.svg) center/contain no-repeat;
 }
 
-.header-top-contacts .header-top-mail a:hover::before, .header-top-contacts .header-top-mail a.white::before {
+.header-top-contacts .header-top-mail a:hover::before,
+.header-top-contacts .header-top-mail a.white::before {
     background: url(../icons/header/mail-hover.svg) center/contain no-repeat;
 }
 
@@ -26,7 +28,8 @@ main {
     background: url(../icons/header/phone.svg) center/contain no-repeat;
 }
 
-.header-top-contacts .header-top-phone a:hover::before, .header-top-contacts .header-top-phone a.white::before {
+.header-top-contacts .header-top-phone a:hover::before,
+.header-top-contacts .header-top-phone a.white::before {
     background: url(../icons/header/phone-hover.svg) center/contain no-repeat;
 }
 
@@ -34,7 +37,8 @@ main {
     background: url(../icons/header/date.svg) center/contain no-repeat;
 }
 
-.header-top-date a:hover:before, .header-top-date a.white:before {
+.header-top-date a:hover:before,
+.header-top-date a.white:before {
     background: url(../icons/header/date-hover.svg) center/contain no-repeat;
 }
 
@@ -62,7 +66,8 @@ main {
     background: url(../icons/header/be.png) center/contain no-repeat;
 }
 
-.section-tabs .card time::before, .article  time::before {
+.section-tabs .card time::before,
+.article time::before {
     background: url(../icons/main/date-grey.svg) center/contain no-repeat;
 }
 
@@ -76,4 +81,48 @@ main {
 
 .content-link.link-download p::before {
     background: url(../icons/main/download.svg) center/contain no-repeat;
+}
+
+.christmas-branch {
+    background: url("../images/garland/christmas-branches.png");
+}
+
+.bell-b {
+    background: url("../images/garland/bell-b.png");
+}
+
+.bell-r {
+    background: url("../images/garland/bell-r.png");
+}
+
+.bell-rl {
+    background: url("../images/garland/bell-rl.png");
+}
+
+.bell-w {
+    background: url("../images/garland/bell-w.png") no-repeat;
+}
+
+.tree-branch1 {
+    background: url("../images/garland/tree-branch1.png");
+}
+
+.tree-branch2 {
+    background: url("../images/garland/tree-branch2.png");
+}
+
+.tree-branch3 {
+    background: url("../images/garland/tree-branch3.png");
+}
+
+.tree-branch4 {
+    background: url("../images/garland/tree-branch4.png");
+}
+
+.tree-branch5 {
+    background: url("../images/garland/tree-branch5.png");
+}
+
+.tree-branch6 {
+    background: url("../images/garland/tree-branch6.png");
 }

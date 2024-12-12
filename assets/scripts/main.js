@@ -114,7 +114,7 @@ if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.forEach( item => it
 // Fixed header
 // *****
  window.addEventListener('scroll', function() {
-    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 435)
+    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 335)
 });
 
   
