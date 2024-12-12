@@ -236,7 +236,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .swing {
   transform-origin: top center;
-  animation: swing 2s ease infinite;
+  animation: swing 2s ease normal;
 }
 
 @keyframes swing {
