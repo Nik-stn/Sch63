@@ -1008,6 +1008,10 @@ tbody, td, tfoot, th, thead, tr {
     max-width: 200px;
 }
 
+.content-spoiler p img {
+    max-width: 100%;
+}
+
 .content-progress .content-progress-item {
     border-bottom: 2px dashed var(--color-grey);
     margin-bottom: 10px;
