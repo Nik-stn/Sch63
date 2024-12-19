@@ -236,7 +236,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .swing {
   transform-origin: top center;
-  animation: swing 2s ease infinite;
+  animation: swing 2s ease normal;
 }
 
 @keyframes swing {
@@ -1006,6 +1006,10 @@ tbody, td, tfoot, th, thead, tr {
 .content-spoiler img {
     min-width: 0;
     max-width: 200px;
+}
+
+.content-spoiler p img {
+    max-width: 100%;
 }
 
 .content-progress .content-progress-item {
