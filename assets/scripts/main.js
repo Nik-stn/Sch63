@@ -249,16 +249,19 @@ function setCookie(name, value, options = {}) {
     document.cookie = updatedCookie;
 }
 
-console.log(getCookie('privacy_policy'));
 
-if (getCookie('privacy_policy') === undefined) {
-    document.getElementById('privacy_policy').style.display = '';
-    console.log(document.getElementById('privacy_policy'));
+if (document.getElementById('privacy_policy')) {
+    if (getCookie('privacy_policy') === undefined) {
+        document.getElementById('privacy_policy').style.display = '';
+        console.log(document.getElementById('privacy_policy'));
+    }
 }
 
-document.getElementById('privacy_policy_btn').addEventListener('click', function () {
-    var date = new Date;
-    date.setDate(date.getDate() + 1);
-    setCookie('privacy_policy', 1, { expires: date });
-    document.getElementById('privacy_policy').style.display = 'none';
-});
+if (document.getElementById('privacy_policy_btn')) {
+    document.getElementById('privacy_policy_btn').addEventListener('click', function () {
+        var date = new Date;
+        date.setDate(date.getDate() + 1);
+        setCookie('privacy_policy', 1, { expires: date });
+        document.getElementById('privacy_policy').style.display = 'none';
+    });
+}
