@@ -75,14 +75,11 @@ a::before {
 
 main {
     flex: 1 1 auto;
-    z-index: 1;
 }
 
 main>.container-fluid {
     background-color: var(--color-white);
     border-inline: 1px solid var(--color-grey);
-    position: relative;
-    z-index: 2;
 }
 
 tbody, td, tfoot, th, thead, tr {
@@ -847,6 +844,8 @@ tbody, td, tfoot, th, thead, tr {
     height: fit-content;
     border-radius: 5px;
     overflow-x: auto;
+    position: relative;
+    z-index: 1;
 }
 
 /* Breadcrumb */
