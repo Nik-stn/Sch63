@@ -1,193 +1,146 @@
-// // Вывод подсказки в дате
-// // *****
 document.querySelector(".header-top-date a").setAttribute("data-bs-title", outputText);
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+const tooltipTriggerList = document.querySelectorAll("[data-bs-toggle='tooltip']");
+const tooltipList = Array.from(tooltipTriggerList).map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+const carouselItem = document.querySelector(".carousel-item");
+if (carouselItem) {
+    carouselItem.classList.add("active");
+}
 
-// Active carousel
-// *****
-const carouselItem = document.querySelector('.carousel-item');
-if (carouselItem) carouselItem.classList.add('active');
-
-
-// Active tabs page
-// *****
 const firstTab = document.querySelector(".content-box .content-tabs .nav-link");
 const firstTabPane = document.querySelector(".content-box .content-tabs .tab-pane");
 if (firstTab) {
-    firstTab.classList.add('active');
-    firstTabPane.classList.add('active', 'show');
+    firstTab.classList.add("active");
+    firstTabPane.classList.add("active", "show");
 }
 
-// Получаем элемент гирлянды
-const bells = document.querySelectorAll('.bell');
-
-// Добавляем обработчик события mouseover
+const bells = document.querySelectorAll(".bell");
 bells.forEach(bell => {
-    bell.addEventListener('mouseover', function () {
-        this.classList.add('swing');
+    bell.addEventListener("mouseover", () => {
+        bell.classList.add("swing");
     });
 
-    // Убираем класс swing, когда анимация заканчивается
-    bell.addEventListener('animationend', function () {
-        this.classList.remove('swing');
+    bell.addEventListener("animationend", () => {
+        bell.classList.remove("swing");
     });
 });
 
-
-// None tabs page
-// *****
-// Получаем все контейнеры с табами
-const tabContainers = document.querySelectorAll('.content-box .nav-tabs');
-
+const tabContainers = document.querySelectorAll(".content-box .nav-tabs");
 tabContainers.forEach(container => {
-    const tabs = container.querySelectorAll('.nav-item'); // Получаем табы в текущем контейнере
+    const tabs = container.querySelectorAll(".nav-item"); 
     let hasContent = false;
 
     tabs.forEach(tab => {
-        const targetId = tab.querySelector('button').getAttribute('data-bs-target');
-        const contentElement = document.querySelector(targetId); // Ищем элемент по селектору
+        const targetId = tab.querySelector("button").getAttribute("data-bs-target");
+        const contentElement = document.querySelector(targetId); 
 
-        // Проверяем, существует ли элемент
         if (contentElement) {
             const content = contentElement.innerHTML.trim();
             if (content) {
-                hasContent = true; // Если есть контент, устанавливаем hasContent в true
+                hasContent = true; 
             }
         }
     });
 
-    // Скрываем табы в текущем контейнере, если нет контента
     if (!hasContent) {
-        container.style.display = 'none'; // Скрываем контейнер с табами
+        container.style.display = "none"; 
     }
 });
 
-
-// Archive posts
-// *****
-const contentArchiveNews = document.querySelector('.content-archive .MapBody');
+const contentArchiveNews = document.querySelector(".content-archive .MapBody");
 if (contentArchiveNews) {
-    contentArchiveNews.classList.add('row');
+    contentArchiveNews.classList.add("row");
 }
 
+const tables = document.querySelectorAll(".content-box table");
+tables.forEach(item => item.classList.add("table", "table-bordered", "table-hover"));
 
-// Table
-// *****
-const table = document.querySelectorAll('.content-box table');
-if (table) {
-    table.forEach(item => item.classList.add('table', 'table-bordered', 'table-hover'));
+const spanRadio = document.querySelectorAll(".section-poll input[type='radio'] ~ span");
+const spanCheckbox = document.querySelectorAll(".section-poll input[type='checkbox'] ~ span");
+spanRadio.forEach(item => item.classList.add("poll-radio"));
+spanCheckbox.forEach(item => item.classList.add("poll-checkbox"));
+
+const navbarNav = document.querySelector(".header-bottom .navbar .level_0");
+if (navbarNav) {
+    navbarNav.classList.add("navbar-nav");
 }
 
+const navbarDropdown = document.querySelectorAll(".header-bottom .navbar .level_0 > li.parent");
+navbarDropdown.forEach(item => item.classList.add("nav-item", "dropdown"));
 
-// Poll
-// *****
-const spanRadio = document.querySelectorAll('.section-poll input[type="radio"]~span');
-const spanCheckbox = document.querySelectorAll('.section-poll input[type="checkbox"]~span');
-if (spanRadio, spanCheckbox) {
-    spanRadio.forEach(item => item.classList.add('poll-radio'));
-    spanCheckbox.forEach(item => item.classList.add('poll-checkbox'));
-}
+const navbarDropdownMenu = document.querySelectorAll(".header-bottom .navbar .level_0 .level_1");
+navbarDropdownMenu.forEach(item => item.classList.add("dropdown-menu"));
 
+const navbarDropdownItem = document.querySelectorAll(".header-bottom .navbar .level_0 .level_1 > li > a");
+navbarDropdownItem.forEach(item => item.classList.add("dropdown-item"));
 
-// Header nav
-// *****
-const navbarNav = document.querySelector('.header-bottom .navbar .level_0');
-navbarNav.classList.add('navbar-nav');
-
-const navbarDropdown = document.querySelectorAll('.header-bottom .navbar .level_0>li.parent');
-navbarDropdown.forEach(item => item.classList.add('nav-item', 'dropdown'));
-
-const navbarDropdownMenu = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1');
-navbarDropdownMenu.forEach(item => item.classList.add('dropdown-menu'));
-
-const navbarDropdownItem = document.querySelectorAll('.header-bottom .navbar .level_0 .level_1>li>a');
-navbarDropdownItem.forEach(item => item.classList.add('dropdown-item'));
-
-
-// Aside nav
-// *****
-const asideNavbarNav = document.querySelector('.aside .navbar .level_0');
-const asideNavbarDropdown = document.querySelectorAll('.aside .navbar .level_0>li.parent');
-const asideNavbarDropdownMenu = document.querySelectorAll('.aside .navbar .level_0 .level_1');
-const asideNavbarDropdownMenuShow = document.querySelectorAll('.aside .navbar .level_0 li.parent_active .level_1, .aside .navbar .level_0 li.active .level_1');
-const asideNavbarNavLink = document.querySelectorAll('.aside .navbar .level_0>.parent');
-const asideNavbarDropdownItem = document.querySelectorAll('.aside .navbar .level_0 .level_1>li>a');
-
+const asideNavbarNav = document.querySelector(".aside .navbar .level_0");
 if (asideNavbarNav) {
-    asideNavbarNav.classList.add('navbar-nav');
-    asideNavbarDropdown.forEach(item => item.classList.add('nav-item', 'dropdown'));
-    asideNavbarDropdownMenu.forEach(item => item.classList.add('dropdown-menu'));
-    asideNavbarNavLink.forEach(item => item.classList.add('nav-link'));
-    asideNavbarDropdownItem.forEach(item => item.classList.add('dropdown-item'));
+    asideNavbarNav.classList.add("navbar-nav");
 }
 
-if (asideNavbarDropdownMenuShow) asideNavbarDropdownMenuShow.forEach(item => item.classList.add('show'));
+const asideNavbarDropdown = document.querySelectorAll(".aside .navbar .level_0 > li.parent");
+const asideNavbarDropdownMenu = document.querySelectorAll(".aside .navbar .level_0 .level_1");
+const asideNavbarNavLink = document.querySelectorAll(".aside .navbar .level_0 > .parent");
+const asideNavbarDropdownItem = document.querySelectorAll(".aside .navbar .level_0 .level_1 > li > a");
 
+asideNavbarDropdown.forEach(item => item.classList.add("nav-item", "dropdown"));
+asideNavbarDropdownMenu.forEach(item => item.classList.add("dropdown-menu"));
+asideNavbarNavLink.forEach(item => item.classList.add("nav-link"));
+asideNavbarDropdownItem.forEach(item => item.classList.add("dropdown-item"));
 
-// Fixed header
-// *****
-window.addEventListener('scroll', function () {
-    document.getElementById('header-nav').classList.toggle('header-nav-fixed', window.scrollY > 335)
+const asideNavbarDropdownMenuShow = document.querySelectorAll(".aside .navbar .level_0 li.parent_active .level_1, .aside .navbar .level_0 li.active .level_1");
+asideNavbarDropdownMenuShow.forEach(item => item.classList.add("show"));
+
+window.addEventListener("scroll", () => {
+    document.getElementById("header-nav").classList.toggle("header-nav-fixed", window.scrollY > 335);
 });
 
-
-// Scroll-to-top
-// *****
 $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-        $('#top').fadeIn();
+        $("#top").fadeIn();
     } else {
-        $('#top').fadeOut();
+        $("#top").fadeOut();
     }
 });
 
-$('#top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 500);
+$("#top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
     return false;
 });
 
+const mapTitle = document.createElement("div");
+mapTitle.className = "sch-map-title";
+const schMap = document.querySelector(".footer-sch-map");
 
-// Sch-map
-// *****
-const mapTitle = document.createElement('div'); mapTitle.className = 'sch-map-title';
-const schMap = document.querySelector('.footer-sch-map');
+if (schMap) {
+    mapTitle.textContent = "Для активации карты нажмите по ней";
+    schMap.appendChild(mapTitle);
 
-mapTitle.textContent = 'Для активации карты нажмите по ней';
-schMap.appendChild(mapTitle);
+    schMap.addEventListener("click", () => {
+        schMap.children[0].removeAttribute("style");
+        mapTitle.parentElement.removeChild(mapTitle);
+    });
 
-schMap.onclick = function () {
-    this.children[0].removeAttribute('style');
-    mapTitle.parentElement.removeChild(mapTitle);
-}
+    schMap.addEventListener("mousemove", event => {
+        mapTitle.style.display = "block";
+        if (event.offsetY > 10) mapTitle.style.top = `${event.offsetY + 20}px`;
+        if (event.offsetX > 10) mapTitle.style.left = `${event.offsetX + 20}px`;
+    });
 
-schMap.onmousemove = function (event) {
-    mapTitle.style.display = 'block';
-    if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
-    if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
-}
-schMap.onmouseleave = function () {
-    mapTitle.style.display = 'none';
-}
-
-// Loading=lazy
-// *****
-const images = document.querySelectorAll('img');
-if (images.length > 0) {
-    images.forEach((img) => {
-        img.setAttribute('loading', 'lazy');
+    schMap.addEventListener("mouseleave", () => {
+        mapTitle.style.display = "none";
     });
 }
 
-// lang=ru
-// *****
-document.querySelector('html').setAttribute('lang', 'ru');
+const images = document.querySelectorAll("img");
+images.forEach(img => {
+    img.setAttribute("loading", "lazy");
+});
 
+document.documentElement.setAttribute("lang", "ru");
 
-// Owl-carousel
-// *****
-$('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
+$(".owl-carousel.owl-banners-official, .owl-carousel.owl-banners").owlCarousel({
     responsiveClass: true,
     nav: false,
     loop: true,
@@ -200,67 +153,49 @@ $('.owl-carousel.owl-banners-official, .owl-carousel.owl-banners').owlCarousel({
     autoWidth: true,
 });
 
-
-// Fancy-box
-// *****
-const fancy = document.querySelectorAll('[data-fancybox="gallery"]');
+const fancy = document.querySelectorAll("[data-fancybox='gallery']");
 if (fancy.length > 0) {
-    Fancybox.bind(fancy.forEach(item => item, {
-        // Your custom options for a specific gallery
-    }));
+    Fancybox.bind(fancy);
 }
 
-
-// Privacy-policy
-// *****
 function getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    const matches = document.cookie.match(new RegExp(
+        `(?:^|; )${name.replace(/([.$?*|{}()\[\]\\/+^])/g, '\\$1')}=([^;]*)`
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
 function setCookie(name, value, options = {}) {
-
-    options = {
-        path: '/',
-        // при необходимости добавьте другие значения по умолчанию
-        ...options
-    };
+    options = { path: '/', ...options };
 
     if (options.expires instanceof Date) {
         options.expires = options.expires.toUTCString();
     }
 
-    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+    let updatedCookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}`;
 
-
-
-    for (let optionKey in options) {
-        updatedCookie += "; " + optionKey;
-        let optionValue = options[optionKey];
-        if (optionValue !== true) {
-            updatedCookie += "=" + optionValue;
+    Object.entries(options).forEach(([key, val]) => {
+        updatedCookie += `; ${key}`;
+        if (val !== true) {
+            updatedCookie += `=${val}`;
         }
-    }
-
-
+    });
 
     document.cookie = updatedCookie;
 }
 
-if (document.getElementById('privacy_policy')) {
-    if (getCookie('privacy_policy') === undefined) {
-        document.getElementById('privacy_policy').style.display = '';
-        console.log(document.getElementById('privacy_policy'));
-    }
+const privacyPolicy = document.getElementById("privacy_policy");
+const privacyPolicyBtn = document.getElementById("privacy_policy_btn");
+
+if (privacyPolicy && getCookie("privacy_policy") === undefined) {
+    privacyPolicy.style.display = "";
 }
 
-if (document.getElementById('privacy_policy_btn')) {
-    document.getElementById('privacy_policy_btn').addEventListener('click', function () {
-        var date = new Date;
+if (privacyPolicyBtn) {
+    privacyPolicyBtn.addEventListener("click", () => {
+        const date = new Date();
         date.setDate(date.getDate() + 1);
-        setCookie('privacy_policy', 1, { expires: date });
-        document.getElementById('privacy_policy').style.display = 'none';
+        setCookie("privacy_policy", 1, { expires: date });
+        privacyPolicy.style.display = "none";
     });
 }
